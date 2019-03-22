@@ -1,0 +1,1 @@
+dist = x+32*sign(obj_player.image_xscale)

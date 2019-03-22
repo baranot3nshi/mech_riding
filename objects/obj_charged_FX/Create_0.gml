@@ -1,0 +1,1 @@
+origin = obj_player
