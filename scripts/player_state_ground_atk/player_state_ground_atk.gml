@@ -10,7 +10,7 @@ enum atk
 //==========================================================================================
 #region STEP ATK1 !charged	- normal first atk
 //==========================================================================================
-if (atk_step = atk.atk1 && !atk_charged)
+if (atk_step = atk.atk1 && (!charging || (charging && global.AP <= 0)))
 {
 	//player anim
 	if (sprite_index != spr_player_atk1) {image_index = 0;}
@@ -40,9 +40,9 @@ if (atk_step = atk.atk1 && !atk_charged)
 //==========================================================================================
 #region STEP ATK1 charged	- charge atk
 //==========================================================================================
-if (atk_step = atk.atk1 && atk_charged = true)
+if (atk_step = atk.atk1 && charging && global.AP > 0)
 {
-	if (sprite_index != spr_player_atk1_charge_anim) {image_index = 0;}
+	if (sprite_index != spr_player_atk1_charge_anim) {image_index = 0; global.AP --;} //AP reduction is here bc it only happens once
 	sprite_index = spr_player_atk1_charge_anim;
 
 	//atkFX
@@ -51,6 +51,7 @@ if (atk_step = atk.atk1 && atk_charged = true)
 		var atkcFX = instance_create_depth(x, y-16, depth - 5, obj_player_atk_charge);
 		atkcFX.image_xscale = image_xscale
 	}
+	
 	
 	//STEP RESET activated in Animation End
 }

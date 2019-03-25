@@ -1,4 +1,4 @@
-surface_hair = 0;
+surface_hair = -1;
 
 //activate for shader method
 //upixel_h = shader_get_uniform(sh_draw_outline, "pixel_h")

@@ -41,8 +41,9 @@ can_move = true;
 current_mech = 0;
 
 //atk vars
-atk_charge_timer = 0;
-atk_charge_timer_max = 50;
+charge_timer = 0;
+charge_timer_max = 50;
+charging = false;
 atk1_timer = 0;
 atkmid_timer = 0;
 atk2_timer = 0;
