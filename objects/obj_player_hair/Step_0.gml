@@ -6,7 +6,6 @@
 
 #region	BOTH HAIR COORDINATES	(Y, VISIBLE)
 	
-	#region human
 	//atk
 	if (obj_player.state = states.ground_atk)
 	{anim_Y_offset = +1;}
@@ -14,14 +13,9 @@
 	//walk
 	else if (obj_player.sprite_index = spr_player_walk || obj_mech1.sprite_index = spr_mech1_walk)
 	{
-		timer++
-		if timer%10 = 0
-		{
-			if (anim_Y_offset = 0)	anim_Y_offset = 1
-			else					anim_Y_offset = 0
-		}
-		//else if timer %20 = 0
-		//{anim_Y_offset = 0}
+		timer++;
+		if timer%10 = 0 if (anim_Y_offset = 1) anim_Y_offset = 0 else anim_Y_offset = 1
+		if timer >= 60 timer = 0;		
 	}
 	
 	//jump atk
@@ -34,7 +28,7 @@
 	
 	//fall
 	else if (obj_player.state = states.fall || obj_mech1.state = mech1_states.jump_atk)
-	{anim_Y_offset = -3;}
+	{anim_Y_offset = -1;}
 	
 	//jetpack
 	else if (obj_player.state = states.jetpack)
@@ -48,7 +42,9 @@
 		else
 		{visible = false;}
 	}
-	#endregion
+	else if (obj_mech1.state = mech1_states.wake)
+	{if (anim_Y_offset != 3) {anim_Y_offset = 3;} anim_Y_offset -= 2}
+	
 	//idle
 	else {anim_Y_offset = 0; timer = 0}
 
