@@ -3,9 +3,7 @@
     "modelName": "GMProject",
     "mvc": "1.0",
     "IsDnDProject": false,
-    "configs": [
-        
-    ],
+    "configs": [],
     "option_ecma": false,
     "parentProject": {
         "id": "b073830b-d641-424f-bf5c-1f6a80117846",
@@ -24,9 +22,7 @@
                 }
             }
         ],
-        "hiddenResources": [
-            
-        ],
+        "hiddenResources": [],
         "projectPath": "${base_project}"
     },
     "resources": [
@@ -1180,6 +1176,22 @@
                 "id": "a8b8f69a-231c-4004-899c-4f7d4a4ddc3a",
                 "resourcePath": "views\\ff97dbfa-583f-4f72-a94e-332e5e291b47.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "4d914152-9fba-4ce7-b9ec-67ec0d1cf2d5",
+            "Value": {
+                "id": "2525b60c-6b5e-4d32-adaf-504ec6f7b5ac",
+                "resourcePath": "sprites\\spr_mech1_atk1\\spr_mech1_atk1.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "5b6aa1fe-02b4-4ac0-be1b-02c93cf92072",
+            "Value": {
+                "id": "d36791b4-3e09-4111-ae3d-1a18a1c6fdae",
+                "resourcePath": "sprites\\spr_mech1_atk1_fx\\spr_mech1_atk1_fx.yy",
+                "resourceType": "GMSprite"
             }
         }
     ],
