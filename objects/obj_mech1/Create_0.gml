@@ -4,6 +4,7 @@ enum mech1_states {
 	jump,
 	ground_atk,
 	jump_atk,
+	jump_charge,
 	
 	//add states before these
 	wait,
@@ -35,11 +36,16 @@ collider = obj_wall;
 state = mech1_states.wait;
 can_move = true;
 
-//jump vars
+//charging vars
 charging = false;
 charge_timer = 0;
 charge_timer_max = 70;
+
+//charge jump vars
 charge_jump_power = 7.5
+jump_charge_step = 0;
+jump_charge_timer = 0;
+jump_charge_timer_max = 20;
 
 
 //atk vars

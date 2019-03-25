@@ -56,13 +56,16 @@ atk_charged = false;
 
 
 
+
 #region create hair strands
+//hair_F0 = create_hair_strand(spr_player_hair_f, -4, -15,  1);
 hair_F1 = create_hair_strand(spr_player_hair_f, -4, -15, .9);
 hair_F2 = create_hair_strand(spr_player_hair_f, -4, -14, .7);
 hair_F3 = create_hair_strand(spr_player_hair_f, -4, -13, .6);
 hair_F4 = create_hair_strand(spr_player_hair_f, -4, -12, .5);
 
-hair_B1 = create_hair_strand(spr_player_hair_b, +4, -15, .8);
+//hair_B0 = create_hair_strand(spr_player_hair_b, +4, -15,  1);
+hair_B1 = create_hair_strand(spr_player_hair_b, +4, -15, .9);
 hair_B2 = create_hair_strand(spr_player_hair_b, +4, -14, .7);
 hair_B3 = create_hair_strand(spr_player_hair_b, +4, -13, .6);
 hair_B4 = create_hair_strand(spr_player_hair_b, +4, -12, .5);

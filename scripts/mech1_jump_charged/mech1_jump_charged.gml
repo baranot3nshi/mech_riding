@@ -1,9 +1,7 @@
 if (but_CROSS_pressed && jump_number > 0)
 {
-	y_spd = 0;
-	y_spd -= charge_jump_power; 
-	jump_number -= 1;
-	state = mech1_states.jump;
+	state = mech1_states.jump_charge;
 	
-	global.AP --
+	jump_charge_step = 0;
+	jump_charge_timer = 0;	
 }

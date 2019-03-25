@@ -9,3 +9,4 @@ global.AP_max = 1;
 //creates other controller objects
 instance_create_depth(0,0,0,obj_input)
 instance_create_depth(0,0,0,obj_CAMERA)
+instance_create_depth(0,0,0,obj_RENDER_outline)

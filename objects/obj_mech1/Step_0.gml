@@ -7,6 +7,7 @@ switch(state)
 	case mech1_states.fall:			mech1_state_fall();			break;
 	case mech1_states.ground_atk:	mech1_state_ground_atk();	break;
 	case mech1_states.jump_atk:		mech1_state_jump_atk();		break;
+	case mech1_states.jump_charge:	mech1_state_jump_charge();	break;
 	case mech1_states.wait:			mech1_state_wait();			break;
 	case mech1_states.wake:			mech1_state_wake();			break;
 }

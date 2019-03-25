@@ -1,4 +1,4 @@
-if (y_spd >= 0)
+if (y_spd > 0)
 {
 	state = mech1_states.fall;
 }
