@@ -16,7 +16,7 @@ if (global.AP > 0 && charging)	{mech1_jump_charged();}
 else							{mech1_jump();}
 
 //atk1
-//mech1_atk();
+mech1_atk();
 
 //dismount
 if (but_TRIANGLE_pressed)

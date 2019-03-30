@@ -2,11 +2,17 @@ can_move = false; //is set again to true in Animation End
 
 enum atk 
 {
+	atk1_init,
 	atk1,
+	atk1_post,
+	atk2_init,
 	atk2,
+	atk2_post,
 	safe,
 	reset
 }
+
+if (atk_step = atk.atk1_init){atk_step = atk.atk1}
 //==========================================================================================
 #region STEP ATK1 !charged	- normal first atk
 //==========================================================================================
@@ -42,7 +48,7 @@ if (atk_step = atk.atk1 && (!charging || (charging && global.AP <= 0)))
 //==========================================================================================
 if (atk_step = atk.atk1 && charging && global.AP > 0)
 {
-	if (sprite_index != spr_player_atk1_charge_anim) {image_index = 0; global.AP --;} //AP reduction is here bc it only happens once
+	if (sprite_index != spr_player_atk1_charge_anim) {image_index = 0;} //AP reduction is here bc it only happens once
 	sprite_index = spr_player_atk1_charge_anim;
 
 	//atkFX
@@ -53,7 +59,7 @@ if (atk_step = atk.atk1 && charging && global.AP > 0)
 	}
 	
 	
-	//STEP RESET activated in Animation End
+	//STEP RESET and AP REDUCTION activated in Animation End
 }
 
 #endregion
@@ -105,7 +111,7 @@ if (atk_step = atk.reset)
 	atk2_timer = 0;
 	state = states.on_ground;
 	can_move = true;
-	atk_step = 0;
+	atk_step = atk.atk1_init;
 	image_speed = 1;
 	atk_charged = false;
 }

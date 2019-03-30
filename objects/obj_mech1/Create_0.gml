@@ -49,13 +49,12 @@ jump_charge_timer_max = 20;
 
 
 //atk vars
-atk_charge_timer = 0;
-atk_charge_timer_max = 25;
-
+atk_init_timer = 0;
 atk1_timer = 0;
 atkmid_timer = 0;
 atk2_timer = 0;
 
+atk_init_timer_max = 10;
 atk_timer_max = 12;
 
 atk_step = 0;

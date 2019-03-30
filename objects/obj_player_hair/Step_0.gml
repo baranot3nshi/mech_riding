@@ -45,6 +45,9 @@
 	else if (obj_mech1.state = mech1_states.wake)
 	{if (anim_Y_offset != 3) {anim_Y_offset = 3;} anim_Y_offset -= 2}
 	
+	//mech atk1
+	else if (obj_mech1.state = mech1_states.ground_atk)
+	{anim_Y_offset = 3;}
 	//idle
 	else {anim_Y_offset = 0; timer = 0}
 
@@ -59,10 +62,10 @@ if (sprite_index = spr_player_hair_f)
 	{flip_offset = 0;} 
 	else {flip_offset = +6;}
 	
-	#region human
+
 	//atk
 	if (obj_player.state = states.ground_atk)
-	{anim_X_offset = -1; depth = obj_player.depth +5}
+	{depth = obj_player.depth -5}
 	
 	//charge
 	else if (obj_player.state = states.on_ground && obj_player.x_spd = 0 && obj_player.atk_charged)
@@ -71,16 +74,24 @@ if (sprite_index = spr_player_hair_f)
 	//jump atk
 	else if (obj_player.state = states.jump_atk)
 	{anim_X_offset = -1;}
-	
-		#endregion
-	#region mech1
+
 	//mech jump charge
 	else if (obj_mech1.state = mech1_states.jump_charge)
 	{
 		if (obj_mech1.jump_charge_step = 0) 
 		{depth = obj_player.depth +5;}
+		
 	}
-	#endregion
+		//mech atk1
+	else if (obj_mech1.state = mech1_states.ground_atk)
+	{	
+		if (anim_X_offset != 7) {anim_X_offset = 7;}
+		anim_X_offset--
+		
+		depth = obj_player.depth -5;
+	}
+	
+
 	//idle
 	else {anim_X_offset = 0; depth = obj_player.depth +5;}
 }
@@ -94,7 +105,6 @@ else if (sprite_index = spr_player_hair_b)
 	{flip_offset = 0} 
 	else {flip_offset = -10}
 	
-	#region human
 	//front hair animation offset
 	//atk
 	if (obj_player.state = states.ground_atk)
@@ -107,15 +117,19 @@ else if (sprite_index = spr_player_hair_b)
 	else if (obj_player.state = states.jump_atk)
 	{anim_X_offset = -1;}
 	
-	#endregion
-	#region mech1
+	else if (obj_mech1.state = mech1_states.ground_atk)
+	{
+		if (anim_X_offset != 7) {anim_X_offset = 7;}
+		anim_X_offset--
+	}
 
 
-	#endregion
 	//idle
 	else {anim_X_offset = 0;}
 }
 #endregion
+
+
 var anim_flipping = sign(obj_player.image_xscale); //needed to flip the animation offset
 
 //apply coordinates

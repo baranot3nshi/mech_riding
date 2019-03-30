@@ -3,7 +3,9 @@
     "modelName": "GMProject",
     "mvc": "1.0",
     "IsDnDProject": false,
-    "configs": [],
+    "configs": [
+        
+    ],
     "option_ecma": false,
     "parentProject": {
         "id": "b073830b-d641-424f-bf5c-1f6a80117846",
@@ -22,7 +24,9 @@
                 }
             }
         ],
-        "hiddenResources": [],
+        "hiddenResources": [
+            
+        ],
         "projectPath": "${base_project}"
     },
     "resources": [
@@ -355,6 +359,14 @@
             }
         },
         {
+            "Key": "4d914152-9fba-4ce7-b9ec-67ec0d1cf2d5",
+            "Value": {
+                "id": "2525b60c-6b5e-4d32-adaf-504ec6f7b5ac",
+                "resourcePath": "sprites\\spr_mech1_atk1\\spr_mech1_atk1.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "570a374e-ac92-4de3-8db0-c57e0046b15f",
             "Value": {
                 "id": "57590f2e-0ea6-4e6a-a1f8-2c2481ea55dc",
@@ -368,6 +380,14 @@
                 "id": "72074e1d-a6c8-4f6d-ac83-d0812e8a9aa7",
                 "resourcePath": "scripts\\mech1_state_fall\\mech1_state_fall.yy",
                 "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "5b6aa1fe-02b4-4ac0-be1b-02c93cf92072",
+            "Value": {
+                "id": "d36791b4-3e09-4111-ae3d-1a18a1c6fdae",
+                "resourcePath": "sprites\\spr_mech1_atk1_fx\\spr_mech1_atk1_fx.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
@@ -723,6 +743,14 @@
             }
         },
         {
+            "Key": "a53e07be-daf6-47a2-b956-ad337e978439",
+            "Value": {
+                "id": "f74fc9c3-850f-43fc-a442-c238de0930f2",
+                "resourcePath": "sprites\\spr_mech1_atk2\\spr_mech1_atk2.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "a5c7e783-3064-49da-bba0-c741e8f9f9da",
             "Value": {
                 "id": "8e691322-626d-40e3-963b-b901b3a33820",
@@ -775,6 +803,14 @@
             "Value": {
                 "id": "59d02ef8-3a4b-40cc-af38-9bf4a3b92055",
                 "resourcePath": "sprites\\spr_mech1_jump_downward\\spr_mech1_jump_downward.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "b2e1761e-2352-4506-9f1e-30d7e71817e1",
+            "Value": {
+                "id": "922d5c0c-88ad-4101-8d63-313198d12ac2",
+                "resourcePath": "sprites\\spr_mech1_atk2_init\\spr_mech1_atk2_init.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -931,6 +967,22 @@
             }
         },
         {
+            "Key": "c8de5686-b6d7-4390-84eb-5e67370c4bc6",
+            "Value": {
+                "id": "9f2aa678-78d7-4c01-afeb-5f32a44a9c55",
+                "resourcePath": "objects\\obj_mech1_atk2\\obj_mech1_atk2.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "c93364fa-61b2-49ea-b0e5-e3e43b81e888",
+            "Value": {
+                "id": "602bfbf9-d01e-4b8d-b365-c68c288af588",
+                "resourcePath": "objects\\obj_mech1_atk1\\obj_mech1_atk1.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "c9879b39-b193-4e11-b19b-9d852a30a573",
             "Value": {
                 "id": "d9afaca4-5d6d-4b19-aa5a-f33c42e7f332",
@@ -992,6 +1044,14 @@
                 "id": "e33a9021-e448-410f-8fdb-957c804e2c38",
                 "resourcePath": "scripts\\input_set_button\\input_set_button.yy",
                 "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "d9d3e3fb-4b4d-42e0-93dc-02d6d326d0ad",
+            "Value": {
+                "id": "f10199b6-3fc6-41a8-863c-542c68b63afe",
+                "resourcePath": "sprites\\spr_mech1_atk2_fx\\spr_mech1_atk2_fx.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
@@ -1131,6 +1191,14 @@
             }
         },
         {
+            "Key": "f68b09c0-3e82-4a1a-ad69-cc4c862c382a",
+            "Value": {
+                "id": "c18d6701-01aa-4207-b082-e484381fd9e1",
+                "resourcePath": "sprites\\spr_mech1_atk1_init\\spr_mech1_atk1_init.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "f8f8eb65-74d4-4fb5-9af1-46bb32b8c68a",
             "Value": {
                 "id": "82794b95-1772-41d5-91d5-85dc9a98e48f",
@@ -1176,22 +1244,6 @@
                 "id": "a8b8f69a-231c-4004-899c-4f7d4a4ddc3a",
                 "resourcePath": "views\\ff97dbfa-583f-4f72-a94e-332e5e291b47.yy",
                 "resourceType": "GMFolder"
-            }
-        },
-        {
-            "Key": "4d914152-9fba-4ce7-b9ec-67ec0d1cf2d5",
-            "Value": {
-                "id": "2525b60c-6b5e-4d32-adaf-504ec6f7b5ac",
-                "resourcePath": "sprites\\spr_mech1_atk1\\spr_mech1_atk1.yy",
-                "resourceType": "GMSprite"
-            }
-        },
-        {
-            "Key": "5b6aa1fe-02b4-4ac0-be1b-02c93cf92072",
-            "Value": {
-                "id": "d36791b4-3e09-4111-ae3d-1a18a1c6fdae",
-                "resourcePath": "sprites\\spr_mech1_atk1_fx\\spr_mech1_atk1_fx.yy",
-                "resourceType": "GMSprite"
             }
         }
     ],

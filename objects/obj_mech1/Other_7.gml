@@ -20,3 +20,9 @@ else if (sprite_index = spr_mech1_enter)
 	state = mech1_states.on_ground;
 }
 
+//ATK
+else if (sprite_index = spr_mech1_atk1 || sprite_index = spr_mech1_atk1_init ||
+		 sprite_index = spr_mech1_atk2 || sprite_index = spr_mech1_atk2_init)
+{
+	image_index = image_number - 1;
+}
