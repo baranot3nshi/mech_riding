@@ -1,6 +1,7 @@
 //resetting states
 atk_step = 0;
 jump_atk_step = 0;
+global.charging = true;
 
 jump_number = jump_number_max;
 
@@ -19,7 +20,7 @@ player_atk();
 
 #endregion
 
-//animation
+#region animation
 if (but_right || but_left)
 {
 	sprite_index = spr_player_walk;
@@ -37,3 +38,4 @@ else
 	{sprite_index = spr_player_idle;}
 }
 
+#endregion

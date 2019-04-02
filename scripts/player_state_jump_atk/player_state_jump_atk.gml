@@ -1,9 +1,19 @@
 player_land();
 
-if (jump_atk_step = atk.atk1_init){jump_atk_step = atk.atk1}
+//==========================================================================================
+#region STEP ATK1_INIT
+//==========================================================================================
+if (jump_atk_step = atk.atk1_init)
+{
+	jump_atk_step = atk.atk1;
+}
 
-//not charged
-if (jump_atk_step = atk.atk1 && (!charging || (charging && global.AP <= 0)))
+
+#endregion
+//==========================================================================================
+#region STEP ATK1
+//==========================================================================================
+if (jump_atk_step = atk.atk1 && (!charging || (charging && global.AP < global.charge)))
 {
 	//player anim
 	if (sprite_index != spr_player_jump_atk) {image_index = 0;}
@@ -20,28 +30,32 @@ if (jump_atk_step = atk.atk1 && (!charging || (charging && global.AP <= 0)))
 }
 
 
+#endregion
+//==========================================================================================
+#region STEP CHARGED (INACTIVE)
+//==========================================================================================
+//if (jump_atk_step = atk.atk1 && charging && global.AP >= global.charge)
+//{
+//		//player anim
+//	if (sprite_index != spr_player_jump_atk) {image_index = 0;}
+//	sprite_index = spr_player_jump_atk;
 
-//charged
-if (jump_atk_step = atk.atk1 && charging && global.AP > 0)
-{
-		//player anim
-	if (sprite_index != spr_player_jump_atk) {image_index = 0;}
-	sprite_index = spr_player_jump_atk;
-
-	//atkFX
-	if (!instance_exists(obj_player_jump_atk))
-	{
-		//FX offset is set in horizontal movement
-		var atkcFX = instance_create_depth(x, y, depth - 5, obj_player_atk_charge);
-		atkcFX.image_xscale = image_xscale;
-	}
-	jump_atk_step = atk.safe;
-	atk_charged = false;
-}
+//	//atkFX
+//	if (!instance_exists(obj_player_jump_atk))
+//	{
+//		//FX offset is set in horizontal movement
+//		var atkcFX = instance_create_depth(x, y, depth - 5, obj_player_atk_charge);
+//		atkcFX.image_xscale = image_xscale;
+//	}
+//	jump_atk_step = atk.safe;
+//	atk_charged = false;
+//}
 
 
-
-//goes to step 2 in Animation End
+#endregion
+//==========================================================================================
+#region STEP RESET
+//==========================================================================================
 
 if (jump_atk_step = atk.reset)
 {
@@ -49,3 +63,5 @@ if (jump_atk_step = atk.reset)
 	jump_atk_step = atk.atk1_init;
 	state = states.fall;
 }
+#endregion
+//==========================================================================================

@@ -1,4 +1,4 @@
-if (but_SQUARE_pressed || (atk_charged && but_SQUARE_released)) 
+if (but_SQUARE_pressed) 
 {
 	state = states.jump_atk;	
 	jump_atk_step = 0;

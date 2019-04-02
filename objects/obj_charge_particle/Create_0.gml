@@ -9,6 +9,13 @@ else
 
 origin = obj_player;
 
-x_dist = origin.x;
-y_dist = origin.y - 8;
+//TOWARDS CENTER
+//x_dist = origin.x;
+//y_dist = origin.y - 8;
+
+//UP
+dist = 15;
+x_dist = x;
+y_dist = y - dist;
+
 spd = .2;

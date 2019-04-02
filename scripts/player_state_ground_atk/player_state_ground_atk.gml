@@ -16,7 +16,7 @@ if (atk_step = atk.atk1_init){atk_step = atk.atk1}
 //==========================================================================================
 #region STEP ATK1 !charged	- normal first atk
 //==========================================================================================
-if (atk_step = atk.atk1 && (!charging || (charging && global.AP <= 0)))
+if (atk_step = atk.atk1 && (!charging || (charging && global.AP < global.charge)))
 {
 	//player anim
 	if (sprite_index != spr_player_atk1) {image_index = 0;}
@@ -46,7 +46,7 @@ if (atk_step = atk.atk1 && (!charging || (charging && global.AP <= 0)))
 //==========================================================================================
 #region STEP ATK1 charged	- charge atk
 //==========================================================================================
-if (atk_step = atk.atk1 && charging && global.AP > 0)
+if (atk_step = atk.atk1 && charging && global.AP >= global.charge)
 {
 	if (sprite_index != spr_player_atk1_charge_anim) {image_index = 0;} //AP reduction is here bc it only happens once
 	sprite_index = spr_player_atk1_charge_anim;

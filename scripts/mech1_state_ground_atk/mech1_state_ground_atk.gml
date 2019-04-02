@@ -21,7 +21,7 @@ if (atk_step = atk.atk1_init)
 //==========================================================================================
 #region STEP ATK1 !charged	- normal first atk
 //==========================================================================================
-if (atk_step = atk.atk1 && (!charging || (charging && global.AP <= 0)))
+if (atk_step = atk.atk1 && (!charging || (charging && global.AP < global.charge)))
 {
 	//player anim
 	if (sprite_index != spr_mech1_atk1) {image_index = 0;}

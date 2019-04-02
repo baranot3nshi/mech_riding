@@ -10,7 +10,7 @@
 	if (obj_player.state = states.ground_atk)
 	{anim_Y_offset = +1;}
 	
-	//walk
+	//human & mech walk
 	else if (obj_player.sprite_index = spr_player_walk || obj_mech1.sprite_index = spr_mech1_walk)
 	{
 		timer++;
@@ -64,7 +64,7 @@ if (sprite_index = spr_player_hair_f)
 	
 
 	//atk
-	if (obj_player.state = states.ground_atk)
+	if (obj_player.state = states.ground_atk && obj_player.atk_step = atk.atk2)
 	{depth = obj_player.depth -5}
 	
 	//charge

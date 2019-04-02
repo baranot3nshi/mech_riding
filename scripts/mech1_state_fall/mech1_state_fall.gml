@@ -3,7 +3,7 @@ mech1_land();
 //jump
 mech1_jump();
 //jump_atk
-//mech1_jump_atk();
+mech1_jump_atk();
 
 //go to jetpack
 

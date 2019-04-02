@@ -12,8 +12,8 @@ if (!place_meeting(x,y + 1, obj_wall))
 }
 
 //jump
-if (global.AP > 0 && charging)	{mech1_jump_charged();}
-else							{mech1_jump();}
+if (global.AP > global.charge && charging)	{mech1_jump_charged();}
+else										{mech1_jump();}
 
 //atk1
 mech1_atk();

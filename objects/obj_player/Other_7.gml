@@ -20,13 +20,12 @@ else if (sprite_index = spr_player_atk1_init)
 else if(sprite_index = spr_player_atk1_charge_anim)
 {
 	image_index = image_number -1; 
-	global.AP --;
+	global.AP -= global.charge;
 	
 	atk_step = atk.reset;
 }
 
 else if (sprite_index = spr_player_jump_atk)
 {
-	global.AP --;
 	jump_atk_step = atk.reset;
 }

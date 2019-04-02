@@ -1,7 +1,7 @@
 //go to on_ground
-mech1_land();
+player_land();
 //jump
-mech1_jump();
+player_jump();
 //jump_atk
 player_jump_atk();
 

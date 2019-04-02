@@ -57,6 +57,9 @@ atk2_timer = 0;
 atk_init_timer_max = 10;
 atk_timer_max = 12;
 
+jump_atk_init_timer = 0;
+jump_atk_init_timer_max = 10;
+
 atk_step = 0;
 jump_atk_step = 0;
 

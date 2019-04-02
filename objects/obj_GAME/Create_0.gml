@@ -1,10 +1,17 @@
 randomise();
 
+
 global.HP_max = 3;
 global.HP = global.HP_max;
 
 global.AP = 0;
-global.AP_max = 10;
+global.AP_max = 1000;
+
+global.charging = true;
+global.charge = 300;
+
+charge_timer = 0;
+charge_timer_max = 120;
 
 //creates other controller objects
 instance_create_depth(0,0,0,obj_input)

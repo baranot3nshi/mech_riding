@@ -21,7 +21,7 @@ if (jump_charge_step = 1)
 	y_spd -= charge_jump_power; 
 	jump_number -= 1;
 	
-	global.AP --;
+	global.AP -= global.charge;
 	jump_charge_step = 2;
 }
 
