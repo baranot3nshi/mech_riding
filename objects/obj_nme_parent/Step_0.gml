@@ -17,8 +17,7 @@ switch (state)
 	case nme_states.dead	: nme_state_dead();				break;
 }
 
-
-//falling
+#region falling
 if (!grounded && y_spd < fall_spd_max)
 {
 	y_spd += weight;
@@ -33,3 +32,6 @@ else //don't fall through
 	move_contact_solid(point_direction(x,y,x,y+y_spd),fall_spd_max);
 	y_spd = 0;
 }
+#endregion
+
+if (HP > 0) {image_xscale = dir;}

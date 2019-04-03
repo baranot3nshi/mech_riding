@@ -47,3 +47,6 @@ else if (atk_step = atk.reset)
 	state = nme_states.idle;
 }
 #endregion
+
+//go to other states
+nme_fall();

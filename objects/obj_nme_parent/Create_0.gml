@@ -31,8 +31,8 @@ y_spd = 0;
 
 
 //X VARS
-x_spd_max = 1
-accel = .2
+x_spd_max = 1;
+accel = .2;
 
 //Y VARS
 weight = .3;
@@ -50,5 +50,8 @@ y_spd_push = 0;
 
 hurt_timer = 0;
 hurt_timer_max = 15;
+
+dead_timer = 0;
+dead_timer_max = 30;
 
 collider = obj_wall;

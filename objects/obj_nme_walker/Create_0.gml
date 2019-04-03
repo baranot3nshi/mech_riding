@@ -14,8 +14,8 @@ idle_timer = 0;
 idle_timer_max = 20;
 
 //X VARS
-x_spd_max = .5;
-accel = .1;
+x_spd_max = 1;
+accel = .2;
 
 atk_step = 0;
 atk_timer = 0;
