@@ -1,3 +1,4 @@
+#region 1	- GO INTO CHARGING ANIMATION
 if (atk_step = atk.atk1_init)
 {
 	if (sprite_index != spr_nme_walker_atk_init)
@@ -7,7 +8,8 @@ if (atk_step = atk.atk1_init)
 	}
 	//goes to step 1 in Animation End
 }
-
+#endregion
+#region 2	- CHARGING ANIMATION
 else if (atk_step = atk.atk2)
 {
 	sprite_index = spr_nme_walker_atk_charge;
@@ -19,7 +21,8 @@ else if (atk_step = atk.atk2)
 		atk_timer = 0;
 	}
 }
-
+#endregion
+#region 3	- ATK ANIMATION, SHOOT BULLET
 
 else if (atk_step = atk.atk1)
 {
@@ -34,13 +37,8 @@ else if (atk_step = atk.atk1)
 	}
 	//goes to step 1 in Animation End
 }
-
-else if (atk_step = atk.atk1_post)
-{
-
-	
-	atk_step = atk.reset;
-}
+#endregion
+#region END - RESET
 
 else if (atk_step = atk.reset)
 {
@@ -48,3 +46,4 @@ else if (atk_step = atk.reset)
 	atk_step = atk.atk1_init;
 	state = nme_states.idle;
 }
+#endregion

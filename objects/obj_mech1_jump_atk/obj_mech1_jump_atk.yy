@@ -5,16 +5,6 @@
     "name": "obj_mech1_jump_atk",
     "eventList": [
         {
-            "id": "d1b9dbcf-f8e0-4b9d-94e3-82c940b46e80",
-            "modelName": "GMEvent",
-            "mvc": "1.0",
-            "IsDnD": false,
-            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
-            "enumb": 0,
-            "eventtype": 0,
-            "m_owner": "43587e01-7d18-4994-a647-6fa377a1f486"
-        },
-        {
             "id": "9a441e9f-dae5-4ea5-9d27-0227fac5151a",
             "modelName": "GMEvent",
             "mvc": "1.0",
@@ -37,7 +27,7 @@
     ],
     "maskSpriteId": "00000000-0000-0000-0000-000000000000",
     "overriddenProperties": null,
-    "parentObjectId": "735325c5-4979-469b-829f-9485215fc149",
+    "parentObjectId": "cfe7e86c-c584-45c5-a724-3e02e2a2d6d0",
     "persistent": false,
     "physicsAngularDamping": 0.1,
     "physicsDensity": 0.5,

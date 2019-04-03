@@ -6,6 +6,6 @@ if (sprite_index = spr_nme_walker_atk_init)
 else if(sprite_index = spr_nme_walker_atk)
 {
 	sprite_index = spr_nme_walker_idle;
-	atk_step = atk.atk1_post;
+	atk_step = atk.reset;
 }
 

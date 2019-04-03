@@ -5,16 +5,6 @@
     "name": "obj_player_jump_atk",
     "eventList": [
         {
-            "id": "0f096072-dd20-48c3-b8b3-e386f841c576",
-            "modelName": "GMEvent",
-            "mvc": "1.0",
-            "IsDnD": false,
-            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
-            "enumb": 0,
-            "eventtype": 0,
-            "m_owner": "65231cb0-e518-477a-9201-ad73238ed605"
-        },
-        {
             "id": "40fdfa40-c63f-4451-b720-6e67f6d6056d",
             "modelName": "GMEvent",
             "mvc": "1.0",
@@ -37,7 +27,7 @@
     ],
     "maskSpriteId": "00000000-0000-0000-0000-000000000000",
     "overriddenProperties": null,
-    "parentObjectId": "735325c5-4979-469b-829f-9485215fc149",
+    "parentObjectId": "cfe7e86c-c584-45c5-a724-3e02e2a2d6d0",
     "persistent": false,
     "physicsAngularDamping": 0.1,
     "physicsDensity": 0.5,

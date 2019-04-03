@@ -5,6 +5,9 @@
 //collider = obj_wall;
 //accel = .1;
 
+var x_spd = argument0;
+
+
 //go right
 if (dir = 1 && x_spd < x_spd_max && !place_meeting(x+1, y, collider))
 {

@@ -38,8 +38,17 @@ accel = .2
 weight = .3;
 fall_spd_max = 5;
 
+//simultaneous states
 grounded = false;
+vulnerable = true;
 
 dir = 1;
+
+//hurt vars
+x_spd_push = 0;
+y_spd_push = 0;
+
+hurt_timer = 0;
+hurt_timer_max = 15;
 
 collider = obj_wall;

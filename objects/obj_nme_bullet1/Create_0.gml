@@ -1,1 +1,3 @@
-spd = 1
+spd = 1;
+
+collider = [obj_player, obj_wall];

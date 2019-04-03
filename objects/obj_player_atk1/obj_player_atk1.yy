@@ -5,16 +5,6 @@
     "name": "obj_player_atk1",
     "eventList": [
         {
-            "id": "0dd67b28-e516-4b71-b4fb-7f94b264df7c",
-            "modelName": "GMEvent",
-            "mvc": "1.0",
-            "IsDnD": false,
-            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
-            "enumb": 0,
-            "eventtype": 0,
-            "m_owner": "859877eb-75af-4bd3-96bf-f94c6973d5d1"
-        },
-        {
             "id": "99bba9ba-b200-4976-999c-5bca51af89ed",
             "modelName": "GMEvent",
             "mvc": "1.0",
@@ -37,7 +27,7 @@
     ],
     "maskSpriteId": "00000000-0000-0000-0000-000000000000",
     "overriddenProperties": null,
-    "parentObjectId": "735325c5-4979-469b-829f-9485215fc149",
+    "parentObjectId": "cfe7e86c-c584-45c5-a724-3e02e2a2d6d0",
     "persistent": false,
     "physicsAngularDamping": 0.1,
     "physicsDensity": 0.5,

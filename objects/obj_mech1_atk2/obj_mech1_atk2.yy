@@ -5,16 +5,6 @@
     "name": "obj_mech1_atk2",
     "eventList": [
         {
-            "id": "36a83bf2-3e8d-40df-97c0-32327ab32e08",
-            "modelName": "GMEvent",
-            "mvc": "1.0",
-            "IsDnD": false,
-            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
-            "enumb": 0,
-            "eventtype": 0,
-            "m_owner": "c8de5686-b6d7-4390-84eb-5e67370c4bc6"
-        },
-        {
             "id": "d3e5dafe-7ed9-4638-ad16-9f9b3c6ad4b0",
             "modelName": "GMEvent",
             "mvc": "1.0",
@@ -37,7 +27,7 @@
     ],
     "maskSpriteId": "00000000-0000-0000-0000-000000000000",
     "overriddenProperties": null,
-    "parentObjectId": "735325c5-4979-469b-829f-9485215fc149",
+    "parentObjectId": "cfe7e86c-c584-45c5-a724-3e02e2a2d6d0",
     "persistent": false,
     "physicsAngularDamping": 0.1,
     "physicsDensity": 0.5,
