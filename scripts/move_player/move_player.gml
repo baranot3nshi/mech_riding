@@ -75,3 +75,10 @@ else //don't fall through
 	y_spd = 0;
 }
 #endregion
+
+#region//inside wall failsafe
+if (place_meeting (x,y,obj_wall))
+{
+	x -= dir
+}
+#endregion

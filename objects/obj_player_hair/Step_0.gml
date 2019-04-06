@@ -55,7 +55,7 @@
 		anim_Y_offset = 2;
 	}
 	//idle
-	else {anim_Y_offset = 0; timer = 0}
+	else {anim_Y_offset = 0; timer = 0; visible = obj_player.visible;}
 
 
 #endregion
@@ -162,3 +162,5 @@ y = lerp(y,	obj_player.y + real_Y			+anim_Y_offset,					hair_lerp)
 
 //depth = obj_player.depth -50;
 //image_blend = c_red;
+
+alarm[11] = obj_player.alarm[11];

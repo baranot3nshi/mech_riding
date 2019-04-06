@@ -8,6 +8,7 @@ switch(state)
 	case states.jetpack:		player_state_jetpack();			break;
 	case states.ground_atk:		player_state_ground_atk();		break;
 	case states.jump_atk:		player_state_jump_atk();		break;
+	case states.hurt:			player_state_hurt();			break;
 	case states.mech:			player_state_mech();			break;
 }
 #endregion
@@ -37,3 +38,18 @@ else //if riding a mech
 	visible = false;
 	image_xscale = current_mech.image_xscale;
 }
+
+
+//vulnerability
+if (!vulnerable)
+{
+	vul_timer++
+	if (vul_timer >= vul_timer_max)
+	{
+		vulnerable = true;
+		vul_timer = 0;
+	}
+	
+	if (vul_timer % 2 = 0 && alarm[11] = -1) {visible = true ? visible = false : visible = true}
+}
+if (vul_timer = 0  && state != states.mech) {visible = true;}

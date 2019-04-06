@@ -5,6 +5,7 @@ enum mech1_states {
 	ground_atk,
 	jump_atk,
 	jump_charge,
+	hurt,
 	
 	//add states before these
 	wait,
@@ -13,6 +14,7 @@ enum mech1_states {
 
 x_spd = 0;
 y_spd = 0;
+dir = 1;
 
 //X movement vars
 x_spd_max = 2;
@@ -36,6 +38,7 @@ collider = obj_wall;
 state = mech1_states.wait;
 can_move = true;
 walk_timer = 0;
+vulnerable = true;
 
 //charging vars
 charging = false;
@@ -65,5 +68,10 @@ atk_step = 0;
 jump_atk_step = 0;
 
 
+//hurt
+hurt_timer = 0;
+hurt_timer_max = 25;
+vul_timer = 0;
+vul_timer_max = 100;
 
 create_mech1_walls();

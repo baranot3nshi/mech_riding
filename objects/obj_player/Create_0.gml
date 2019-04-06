@@ -8,6 +8,7 @@ enum states {
 	jetpack,
 	ground_atk,
 	jump_atk,
+	hurt,
 	mech
 }
 #endregion
@@ -40,6 +41,7 @@ collider = obj_wall;
 state = states.fall;
 can_move = true;
 current_mech = 0;
+vulnerable = true;
 
 //atk vars
 charge_timer = 0;
@@ -52,6 +54,13 @@ atk_timer_max = 15;
 
 atk_step = 0;
 jump_atk_step = 0;
+
+
+//hurt
+hurt_timer = 0;
+hurt_timer_max = 25;
+vul_timer = 0;
+vul_timer_max = 100;
 
 #endregion
 

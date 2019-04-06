@@ -18,19 +18,23 @@ switch (state)
 }
 
 #region falling
-if (!grounded && y_spd < fall_spd_max)
+
+if(!grounded)
 {
-	y_spd += weight;
-}
-//apply movement
-if (!place_meeting(x,y+y_spd,obj_wall))
-{
-	y += y_spd;
-}
-else //don't fall through
-{
-	move_contact_solid(point_direction(x,y,x,y+y_spd),fall_spd_max);
-	y_spd = 0;
+	if (y_spd < fall_spd_max)
+	{
+		y_spd += weight;
+	}
+	//apply movement
+	if (!place_meeting(x,y+y_spd,obj_wall))
+	{
+		y += y_spd;
+	}
+	else //don't fall through
+	{
+		move_contact_solid(point_direction(x,y,x,y+y_spd),fall_spd_max);
+		y_spd = 0;
+	}
 }
 #endregion
 
