@@ -29,7 +29,11 @@ if (atk_step = atk.atk1 && (!charging || (charging && global.AP < global.charge)
 		var atk1FX = instance_create_depth(x, y, depth - 5, obj_player_atk1);
 		atk1FX.image_xscale = image_xscale;
 	}
-	
+	atk_step = atk.atk1_post;
+}
+
+if (atk_step = atk.atk1_post)
+{
 	//go to atk2
 	atk2_timer = 0;
 	atk1_timer ++;
@@ -78,16 +82,22 @@ if (atk_step = atk.safe)
 if(atk_step = atk.atk2)
 {
 	//player anim
-	if (sprite_index != spr_player_atk2) {image_index = 0;}
+	if (sprite_index != spr_player_atk2) 
+	{image_index = 0;}
 	sprite_index = spr_player_atk2;
 
+	if (instance_exists(obj_player_atk1)){instance_destroy(obj_player_atk1)}
 	//atkFX
 	if (!instance_exists(obj_player_atk2))
 	{
 		var atk2FX = instance_create_depth(x, y, depth - 5, obj_player_atk2);
 		atk2FX.image_xscale = image_xscale
 	}
-	
+	atk_step = atk.atk2_post
+}
+ 
+if (atk_step = atk.atk2_post)
+{
 	//go to atk1
 	atk1_timer = 0;
 	atk2_timer ++;
@@ -113,7 +123,6 @@ if (atk_step = atk.reset)
 	can_move = true;
 	atk_step = atk.atk1_init;
 	image_speed = 1;
-	atk_charged = false;
 }
 
 #endregion

@@ -25,7 +25,7 @@ if (!grounded && y_spd < fall_spd_max)
 //apply movement
 if (!place_meeting(x,y+y_spd,obj_wall))
 {
-	y += y_spd
+	y += y_spd;
 }
 else //don't fall through
 {

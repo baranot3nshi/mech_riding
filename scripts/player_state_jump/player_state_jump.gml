@@ -8,5 +8,4 @@ player_jump();
 
 player_jump_atk();
 
-
 sprite_index = spr_player_jump_upward;

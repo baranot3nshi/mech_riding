@@ -109,32 +109,22 @@ if(atk_step = atk.atk2)
 	if (sprite_index != spr_mech1_atk2) {image_index = 0;}
 	sprite_index = spr_mech1_atk2;
 
-	//if (!instance_exists(obj_mech1_atk1))
+	if (!instance_exists(obj_mech1_atk1))
 	{instance_destroy(obj_mech1_atk1)}
 	
 	//atkFX
 	if (!instance_exists(obj_mech1_atk2))
 	{
-
-		//FX offset is set in horizontal movement
 		var atk1FX = instance_create_depth(x+37*sign(image_xscale), y-18, depth - 5, obj_mech1_atk2);
 		atk1FX.image_xscale = image_xscale;
 	}
+	
 	atk_step = atk.atk2_post
 }
 
 if(atk_step = atk.atk2_post)
 {
-		
-	//go to atk1
-	atk1_timer = 0;
-	atk2_timer ++;
-	
-	if (but_SQUARE_pressed && atk1_timer > atk_timer_max/3 && atk2_timer < atk_timer_max)
-	{
-		atk_step = atk.atk1;
-	}
-	
+	atk2_timer ++;	
 	if (atk2_timer > atk_timer_max) {atk_step = atk.reset;}
 }
 #endregion

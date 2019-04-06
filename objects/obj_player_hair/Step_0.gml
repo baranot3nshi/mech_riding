@@ -47,7 +47,13 @@
 	
 	//mech atk1
 	else if (obj_mech1.state = mech1_states.ground_atk)
-	{anim_Y_offset = 3;}
+	{anim_Y_offset = 1;}
+	
+	//mech jump_atk
+	else if (obj_mech1.state = mech1_states.jump_atk)
+	{
+		anim_Y_offset = 2;
+	}
 	//idle
 	else {anim_Y_offset = 0; timer = 0}
 
@@ -67,10 +73,6 @@ if (sprite_index = spr_player_hair_f)
 	if (obj_player.state = states.ground_atk && obj_player.atk_step = atk.atk2)
 	{depth = obj_player.depth -5}
 	
-	//charge
-	else if (obj_player.state = states.on_ground && obj_player.x_spd = 0 && obj_player.atk_charged)
-	{anim_X_offset = 2; depth = obj_player.depth -5;}
-	
 	//jump atk
 	else if (obj_player.state = states.jump_atk)
 	{anim_X_offset = -1;}
@@ -82,12 +84,25 @@ if (sprite_index = spr_player_hair_f)
 		{depth = obj_player.depth +5;}
 		
 	}
-		//mech atk1
+	
+	//mech atk1
 	else if (obj_mech1.state = mech1_states.ground_atk)
 	{	
-		if (anim_X_offset != 7) {anim_X_offset = 7;}
-		anim_X_offset--
+		switch(obj_mech1.atk_step)
+			{
+				case atk.atk1_init: anim_X_offset = 6; break;
+				case atk.atk1_post:	anim_X_offset = 9; depth = obj_player.depth -5; break;
+				case atk.atk2_init: anim_X_offset = 9;  depth = obj_player.depth -5; break;
+				case atk.atk2_post:	anim_X_offset = 10; depth = obj_player.depth -5; break;
+			}
 		
+		
+		
+	}
+	
+	else if (obj_mech1.state = mech1_states.jump_atk)
+	{
+		anim_X_offset = 6;
 		depth = obj_player.depth -5;
 	}
 	
@@ -109,20 +124,29 @@ else if (sprite_index = spr_player_hair_b)
 	//atk
 	if (obj_player.state = states.ground_atk)
 	{anim_X_offset = 0;}
-	//charge
-	else if (obj_player.state = states.on_ground && obj_player.x_spd = 0 && obj_player.atk_charged)
-	{anim_X_offset = -2}
+
 	
 	//jump atk
 	else if (obj_player.state = states.jump_atk)
 	{anim_X_offset = -1;}
 	
+	//mech atk
 	else if (obj_mech1.state = mech1_states.ground_atk)
-	{
-		if (anim_X_offset != 7) {anim_X_offset = 7;}
-		anim_X_offset--
+	{	
+		switch(obj_mech1.atk_step)
+			{
+				case atk.atk1_init: anim_X_offset = 5; break;
+				case atk.atk1_post:	anim_X_offset = 5; break;
+				case atk.atk2_init: anim_X_offset = 3; break;
+				case atk.atk2_post:	anim_X_offset = 6; break;
+			}
 	}
-
+	
+	//mech jump atk
+	else if (obj_mech1.state = mech1_states.jump_atk)
+	{
+		anim_X_offset = 2;
+	}
 
 	//idle
 	else {anim_X_offset = 0;}

@@ -13,7 +13,7 @@ enum nme_states {
 state = nme_states.fall;
 
 //define in each enemy create event after inheriting
-HP = 2;
+HP = 5;
 
 sprite_idle = undefined;
 sprite_walk = undefined;
@@ -40,7 +40,6 @@ fall_spd_max = 5;
 
 //simultaneous states
 grounded = false;
-vulnerable = true;
 
 dir = 1;
 
@@ -48,10 +47,19 @@ dir = 1;
 x_spd_push = 0;
 y_spd_push = 0;
 
+stun = false;
+stun_y = y;
+
 hurt_timer = 0;
-hurt_timer_max = 15;
+hurt_timer_max = 20;
+hitting_atk = undefined;
 
 dead_timer = 0;
 dead_timer_max = 30;
+dead_FX = obj_explosion_S_FX;
 
 collider = obj_wall;
+
+
+//DEBUG FEATURES
+hits_taken = 0

@@ -30,18 +30,21 @@ if (but_TRIANGLE_pressed)
 if (but_right || but_left)
 {
 	sprite_index = spr_mech1_walk;
+	
+	//DUST FX
+	walk_timer++;
+	if (walk_timer %4 = 0)
+	{
+		create_dust_particle();
+	}
+	
 }
 else
-//{
-//	// jump charging animation
-//	if (jump_charged)
-//	{
-//		if (sprite_index != spr_mech1_jump_charge) {image_index = 0;}
-//		sprite_index = spr_mech1_jump_charge;
-//	}
-	//else
-	{sprite_index = spr_mech1_idle;}
-//}
+{
+	sprite_index = spr_mech1_idle; 
+	walk_timer = 0;
+}
+
 
 
 

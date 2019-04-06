@@ -35,6 +35,7 @@ collider = obj_wall;
 //states and conditions
 state = mech1_states.wait;
 can_move = true;
+walk_timer = 0;
 
 //charging vars
 charging = false;
@@ -54,7 +55,7 @@ atk1_timer = 0;
 atkmid_timer = 0;
 atk2_timer = 0;
 
-atk_init_timer_max = 10;
+atk_init_timer_max = 15;
 atk_timer_max = 12;
 
 jump_atk_init_timer = 0;
@@ -63,6 +64,6 @@ jump_atk_init_timer_max = 10;
 atk_step = 0;
 jump_atk_step = 0;
 
-atk_charged = false;
+
 
 create_mech1_walls();

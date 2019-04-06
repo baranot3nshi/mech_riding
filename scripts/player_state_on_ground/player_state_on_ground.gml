@@ -24,18 +24,18 @@ player_atk();
 if (but_right || but_left)
 {
 	sprite_index = spr_player_walk;
+	
+	//DUST FX
+	walk_timer++;
+	if (walk_timer %5 = 0)
+	{
+		create_dust_particle();
+	}
 }
 else
 {
-	//charging animation
-	if (atk_charged)
-	{
-		if (sprite_index != spr_player_atk1_init) {image_index = 0;}
-		sprite_index = spr_player_atk1_init;
-	}
-	
-	else
-	{sprite_index = spr_player_idle;}
+sprite_index = spr_player_idle; 
+walk_timer = 0;
 }
 
 #endregion

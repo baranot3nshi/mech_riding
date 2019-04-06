@@ -1,6 +1,8 @@
 // Inherit the parent event
 event_inherited();
 
+HP = 10;
+
 sprite_idle = spr_nme_walker_idle;
 sprite_walk = spr_nme_walker_walk;
 sprite_hurt = spr_nme_walker_hurt;
@@ -17,6 +19,11 @@ idle_timer_max = 20;
 x_spd_max = 1;
 accel = .2;
 
+//ATK VARS
 atk_step = 0;
 atk_timer = 0;
 atk_timer_max = 40;
+
+//vision
+c_height = y-sprite_height;
+c_length = x+110*dir;

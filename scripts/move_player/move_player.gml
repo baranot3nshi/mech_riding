@@ -21,6 +21,7 @@ if (can_move)
 	{
 		x_spd += accel; 
 		image_xscale = 1;
+		dir = 1;
 		
 		jetpack_FX_offset = -5;
 	}
@@ -39,6 +40,7 @@ if (can_move)
 	{
 		//if (x_spd != 0)	{x_spd -= sign(x_spd)*frict;}
 		x_spd = 0;
+		dir = -1;
 	}
 
 	//apply movement to player

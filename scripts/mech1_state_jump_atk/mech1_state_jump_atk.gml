@@ -57,7 +57,7 @@ if (jump_atk_step = atk.atk1 && (!charging || (charging && global.AP = global.ch
 //		atkcFX.image_xscale = image_xscale;
 //	}
 //	jump_atk_step = atk.safe;
-//	atk_charged = false;
+
 //}
 
 
@@ -69,7 +69,6 @@ if (jump_atk_step = atk.atk1 && (!charging || (charging && global.AP = global.ch
 if (jump_atk_step = atk.reset)
 {
 	jump_atk_init_timer = 0;
-	atk_charged = false;
 	jump_atk_step = atk.atk1_init;
 	state = states.fall;
 }

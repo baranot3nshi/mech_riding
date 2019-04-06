@@ -15,7 +15,7 @@ if (jump_charge_step = 0)
 if (jump_charge_step = 1)
 {
 	sprite_index = spr_mech1_jump_high;
-	
+		
 	x_spd = 0;
 	y_spd = 0;
 	y_spd -= charge_jump_power; 
@@ -25,10 +25,18 @@ if (jump_charge_step = 1)
 	jump_charge_step = 2;
 }
 
+//mid jump, dust fx
+if (jump_charge_step = 2 && y_spd < 0)
+{
+walk_timer++;
+if (walk_timer % 2 = 0) {create_dust_particle();}
+}
+
 //start falling
 if (jump_charge_step = 2 && y_spd > 0)
 {
 	state = mech1_states.fall;
 	jump_charge_step = 0;
 	jump_charge_timer = 0;
+
 }
