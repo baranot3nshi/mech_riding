@@ -21,7 +21,7 @@ if (state < mech1_states.wait) //DO THESE THINGS ONLY WHEN ACTIVE
 	move_player();
 	
 	//charge_hold(); //<--- OLD CHARGING SYSTEM
-	charge_overtime_obj();
+	charge_overtime();
 	
 
 }

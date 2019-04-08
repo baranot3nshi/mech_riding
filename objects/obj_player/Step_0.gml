@@ -19,7 +19,7 @@ if (state != states.mech)
 	move_player();
 	
 	//charge_hold(); //<--- OLD CHARGING SYSTEM
-	charge_overtime_obj();
+	charge_overtime();
 
 	visible = true;
 	
