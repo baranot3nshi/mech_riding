@@ -46,7 +46,7 @@ if (can_move)
 	//apply movement to player
 	if (!place_meeting(x+x_spd,y,collider))
 	{
-		x += x_spd;
+		x += x_spd * global.dt;
 	}
 	else
 	{
@@ -67,7 +67,7 @@ if (state != states.on_ground && y_spd < fall_spd_max)
 //apply movement
 if (!place_meeting(x,y+y_spd,obj_wall))
 {
-	y += y_spd
+	y += y_spd * global.dt;
 }
 else //don't fall through
 {
@@ -79,6 +79,8 @@ else //don't fall through
 #region//inside wall failsafe
 if (place_meeting (x,y,obj_wall))
 {
-	x -= dir
+	x_spd = 0;
+	x += dir;
+	y--;
 }
 #endregion

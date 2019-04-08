@@ -28,7 +28,7 @@ if(!grounded)
 	//apply movement
 	if (!place_meeting(x,y+y_spd,obj_wall))
 	{
-		y += y_spd;
+		y += y_spd * global.dt;
 	}
 	else //don't fall through
 	{

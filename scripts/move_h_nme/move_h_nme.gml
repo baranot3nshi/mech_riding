@@ -23,10 +23,10 @@ else if (dir = -1 && x_spd > -x_spd_max && !place_meeting(x-1, y, collider))
 }
 
 
-//apply movement to player
+//apply movement to enemy
 if (!place_meeting(x+x_spd,y,collider))
 {
-	x += x_spd;
+	x += x_spd * global.dt;
 }
 else
 {
@@ -46,6 +46,7 @@ if (place_meeting(x+dir,y,collider))
 if (place_meeting (x,y,obj_wall))
 {
 	x_spd = 0;
-	x -= dir
+	x -= dir;
+	y--;
 }
 #endregion
