@@ -50,6 +50,6 @@ if (!vulnerable)
 		vul_timer = 0;
 	}
 	
-	if (vul_timer % 2 = 0 && alarm[11] = -1) {visible = true ? visible = false : visible = true}
+	if (vul_timer % 3 = 0 && alarm[11] = -1  && state != states.mech) {visible = true ? visible = false : visible = true}
 }
-if (vul_timer = 0  && state != states.mech) {visible = true;}
+if (vul_timer = 0 && state != states.mech) {visible = true;}

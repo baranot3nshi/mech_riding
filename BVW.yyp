@@ -599,11 +599,27 @@
             }
         },
         {
+            "Key": "5f83737c-daaa-43ac-a655-0d2efb19555d",
+            "Value": {
+                "id": "94dfa8d9-477d-4491-b64e-fdadd5fe7e39",
+                "resourcePath": "sprites\\spr_mech1_hurt\\spr_mech1_hurt.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "60f9c0f7-57f4-43d4-be67-a423654daba1",
             "Value": {
                 "id": "c9acb2f4-a910-4602-a846-91080a2a943b",
                 "resourcePath": "sprites\\spr_mech1_jump_high\\spr_mech1_jump_high.yy",
                 "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "62800472-e9a5-49e3-95ca-4d625273558c",
+            "Value": {
+                "id": "92ea6f4a-1800-423e-a2d6-51326f828856",
+                "resourcePath": "objects\\obj_mech1\\obj_mech1.yy",
+                "resourceType": "GMObject"
             }
         },
         {
@@ -859,6 +875,14 @@
             "Value": {
                 "id": "00617700-a45d-422f-a032-59f7c1b1f551",
                 "resourcePath": "sprites\\spr_player_atk_charge_fx\\spr_player_atk_charge_fx.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "87885bd5-301c-4eb7-87f4-a68b482848ea",
+            "Value": {
+                "id": "6080c54f-31ab-4403-b698-b2192ebb8acf",
+                "resourcePath": "sprites\\spr_player_hurt\\spr_player_hurt.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -1559,14 +1583,6 @@
             }
         },
         {
-            "Key": "e7e5a07b-a89e-4ab8-a5d9-c641e44f48a1",
-            "Value": {
-                "id": "ab44d22b-2838-4c7c-a4fd-de5fdf30d69b",
-                "resourcePath": "objects\\obj_mech1\\obj_mech1.yy",
-                "resourceType": "GMObject"
-            }
-        },
-        {
             "Key": "e845bd19-9878-4e03-9999-9876642cdfa0",
             "Value": {
                 "id": "8ed6b309-eeaa-4591-ada4-13b53f5a7b14",
@@ -1754,7 +1770,9 @@
         "122468d6-8611-4320-bfd0-4ba8386da067",
         "5dbb4350-4943-4afd-af07-bf66fd80339f",
         "a254a867-2a8d-4723-90f9-d99c8c06496f",
-        "b3319562-0240-44cd-ac71-20164729cf78"
+        "b3319562-0240-44cd-ac71-20164729cf78",
+        "35cd39b5-e206-441b-b542-e04722770c55",
+        "7bd3e4b8-56c7-40b6-bac1-2eb3b7bea7f4"
     ],
     "tutorial": ""
 }

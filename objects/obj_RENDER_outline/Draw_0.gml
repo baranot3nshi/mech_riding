@@ -31,6 +31,11 @@ else
 	var wx = 0
 	var wy = 0
 	
+	//set alpha for character blinking
+	if (obj_player.state != states.mech) {var alpha = obj_player.visible;}
+	else								 {var alpha = obj_mech1.visible;}
+	draw_set_alpha(alpha)
+	
 	gpu_set_fog(true,c_black,0,1)
 	//draw outline
 	draw_surface(surface_hair,wx,wy+1)
@@ -41,5 +46,7 @@ else
 	gpu_set_fog(false,c_black,0,1)
 	//draw the hair again
 	draw_surface(surface_hair,wx,wy)
+	
+	draw_set_alpha(1)
 	#endregion
 }

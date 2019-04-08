@@ -41,3 +41,11 @@ if (place_meeting(x+dir,y,collider))
 {
 	dir = -dir;
 }
+
+#region//inside wall failsafe
+if (place_meeting (x,y,obj_wall))
+{
+	x_spd = 0;
+	x -= dir
+}
+#endregion

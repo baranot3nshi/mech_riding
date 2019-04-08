@@ -55,7 +55,10 @@
 		anim_Y_offset = 2;
 	}
 	//idle
-	else {anim_Y_offset = 0; timer = 0; visible = obj_player.visible;}
+	else {anim_Y_offset = 0; timer = 0; 
+		if (obj_player.state != states.mech) {visible = obj_player.visible;}
+		else								 {visible = obj_mech1.visible;}
+		}
 
 
 #endregion
