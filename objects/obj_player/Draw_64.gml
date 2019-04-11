@@ -8,4 +8,5 @@ draw_text(10,10+75,"atk1_timer = " + string(atk1_timer))
 draw_text(10,10+90,"atk2_timer = " + string(atk2_timer))
 
 
+
 draw_set_color(c_white)

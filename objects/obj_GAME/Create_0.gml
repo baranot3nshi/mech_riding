@@ -2,8 +2,10 @@ randomise();
 
 //DELTA TIME
 target_framerate = 60;
-bullet_time = 1;
 
+freeze_timer = 0;
+
+global.screenfreeze = 0;
 
 
 

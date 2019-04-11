@@ -567,6 +567,14 @@
             }
         },
         {
+            "Key": "485eca17-6a10-40f8-9053-ae21dfa06ff4",
+            "Value": {
+                "id": "9076716b-7036-4a94-b010-2c63b725f984",
+                "resourcePath": "sounds\\snd_nme_hit\\snd_nme_hit.yy",
+                "resourceType": "GMSound"
+            }
+        },
+        {
             "Key": "49b1b3f3-6d06-4723-a85f-3c5eba0f90ea",
             "Value": {
                 "id": "2871e987-fa0f-4fde-b315-beba1b28ee75",

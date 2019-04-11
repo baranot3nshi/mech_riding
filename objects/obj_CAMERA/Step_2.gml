@@ -20,6 +20,12 @@ if (instance_exists(follow))
 	//lerp speed
 	var spd = .12;
 	
+	//screenshake
+	cur_x += random_range(global.screenshake,-global.screenshake);
+	cur_y += random_range(global.screenshake,-global.screenshake);
+	
+	global.screenshake = lerp(global.screenshake,0,.2)
+	
 	//save X and Y to globals
 	global.view_X = lerp(cur_x,X,spd)
 	global.view_Y = lerp(cur_y,Y,spd)

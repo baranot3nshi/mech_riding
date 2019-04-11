@@ -15,3 +15,5 @@ alarm[0] = 1;
 surface_resize(application_surface, vw*window_scale, vh*window_scale);
 
 follow = obj_player;
+
+global.screenshake = 0;
