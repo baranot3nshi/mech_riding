@@ -37,7 +37,7 @@ else
 	x_spd = 0;
 }
 
-if (place_meeting(x+dir,y,collider))
+if (place_meeting(x+x_spd,y,collider))
 {
 	dir = -dir;
 }
@@ -46,7 +46,6 @@ if (place_meeting(x+dir,y,collider))
 if (place_meeting (x,y,obj_wall))
 {
 	x_spd = 0;
-	x -= dir;
-	y--;
+	x += dir*2;
 }
 #endregion

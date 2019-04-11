@@ -1,16 +1,3 @@
-enum mech1_states {
-	on_ground,
-	fall,
-	jump,
-	ground_atk,
-	jump_atk,
-	jump_charge,
-	hurt,
-	
-	//add states before these
-	wait,
-	wake
-}
 
 x_spd = 0;
 y_spd = 0;
@@ -18,8 +5,7 @@ dir = 1;
 
 //X movement vars
 x_spd_max = 2;
-accel = .4; 
-frict = .8;
+accel = .4;
 
 //Y movement vars
 jump_power = 6; //3 tiles
@@ -27,7 +13,7 @@ jump_number = 0;
 jump_number_max = 1;
 
 weight = .3;
-fall_spd_max = 5;
+fall_spd_max = 7;
 
 //FX vars
 jetpack_FX_offset = -5;
@@ -35,8 +21,9 @@ jetpack_FX_offset = -5;
 collider = obj_wall;	
 
 //states and conditions
-state = mech1_states.wait;
+state = states.wait;
 can_move = true;
+can_fall = true;
 walk_timer = 0;
 vulnerable = true;
 
@@ -67,8 +54,23 @@ jump_atk_init_timer_max = 10;
 atk_step = 0;
 jump_atk_step = 0;
 
+//dash
+dash_init_timer = 0;
+dash_init_timer_max = 15;
+
+dash_timer = 0;
+dash_timer_max = 25;
+
+dash_atk_timer = 0;
+dash_atk_timer_max = 20; 
+
+dash_step = 0;
+
+dash_spd = 12;
 
 //hurt
+sprite_hurt = spr_mech1_hurt;
+
 hurt_timer = 0;
 hurt_timer_max = 25;
 vul_timer = 0;

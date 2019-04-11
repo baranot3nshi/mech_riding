@@ -21,7 +21,8 @@
         "60f9c0f7-57f4-43d4-be67-a423654daba1",
         "a38f6546-ac3a-4428-8c51-e76d83b829b8",
         "7e1cd56b-b7ea-4d9d-929d-b78762848cf5",
-        "c1c84c7c-de1b-4cb3-bed3-2b9483ebf308"
+        "c1c84c7c-de1b-4cb3-bed3-2b9483ebf308",
+        "5f83737c-daaa-43ac-a655-0d2efb19555d"
     ],
     "filterType": "GMSprite",
     "folderName": "mech1",

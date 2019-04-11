@@ -16,16 +16,24 @@ switch(state)
 //if human unit is active and not riding a mech
 if (state != states.mech)
 {
-	move_player();
 	
-	//charge_hold(); //<--- OLD CHARGING SYSTEM
+	//X INPUT
+	if (can_move) {player_input_x();}
+	
+	//X APPLY
+	apply_x_spd(x_spd);
+	//Y APPLY
+	if (can_fall) {apply_y_spd();}
+	
+	
+	//charging
 	charge_overtime();
 
 	visible = true;
 	
+	
 	//creates the servodrone
 	if (!instance_exists(obj_drone)) {instance_create_depth(x-10,y-10,depth-5,obj_drone)}
-	
 }
 else //if riding a mech
 {

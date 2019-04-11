@@ -23,11 +23,11 @@
 	{anim_Y_offset = -2;}
 	
 	//jump
-	else if (obj_player.state = states.jump || obj_mech1.state = mech1_states.jump_atk)
+	else if (obj_player.state = states.jump || obj_mech1.state = states.jump_atk)
 	{anim_Y_offset = -1;}
 	
 	//fall
-	else if (obj_player.state = states.fall || obj_mech1.state = mech1_states.jump_atk)
+	else if (obj_player.state = states.fall || obj_mech1.state = states.jump_atk)
 	{anim_Y_offset = -1;}
 	
 	//jetpack
@@ -35,22 +35,22 @@
 	{anim_Y_offset = -1;}
 	
 	//mech jump charge
-	else if (obj_mech1.state = mech1_states.jump_charge)
+	else if (obj_mech1.state = states.jump_charge)
 	{
 		if (obj_mech1.jump_charge_step = 0) 
 		{anim_Y_offset = 4;}
 		else
 		{visible = false;}
 	}
-	else if (obj_mech1.state = mech1_states.wake)
+	else if (obj_mech1.state = states.wake)
 	{if (anim_Y_offset != 3) {anim_Y_offset = 3;} anim_Y_offset -= 2}
 	
 	//mech atk1
-	else if (obj_mech1.state = mech1_states.ground_atk)
+	else if (obj_mech1.state = states.ground_atk)
 	{anim_Y_offset = 1;}
 	
 	//mech jump_atk
-	else if (obj_mech1.state = mech1_states.jump_atk)
+	else if (obj_mech1.state = states.jump_atk)
 	{
 		anim_Y_offset = 2;
 	}
@@ -81,7 +81,7 @@ if (sprite_index = spr_player_hair_f)
 	{anim_X_offset = -1;}
 
 	//mech jump charge
-	else if (obj_mech1.state = mech1_states.jump_charge)
+	else if (obj_mech1.state = states.jump_charge)
 	{
 		if (obj_mech1.jump_charge_step = 0) 
 		{depth = obj_player.depth +5;}
@@ -89,7 +89,7 @@ if (sprite_index = spr_player_hair_f)
 	}
 	
 	//mech atk1
-	else if (obj_mech1.state = mech1_states.ground_atk)
+	else if (obj_mech1.state = states.ground_atk)
 	{	
 		switch(obj_mech1.atk_step)
 			{
@@ -103,7 +103,7 @@ if (sprite_index = spr_player_hair_f)
 		
 	}
 	
-	else if (obj_mech1.state = mech1_states.jump_atk)
+	else if (obj_mech1.state = states.jump_atk)
 	{
 		anim_X_offset = 6;
 		depth = obj_player.depth -5;
@@ -134,7 +134,7 @@ else if (sprite_index = spr_player_hair_b)
 	{anim_X_offset = -1;}
 	
 	//mech atk
-	else if (obj_mech1.state = mech1_states.ground_atk)
+	else if (obj_mech1.state = states.ground_atk)
 	{	
 		switch(obj_mech1.atk_step)
 			{
@@ -146,7 +146,7 @@ else if (sprite_index = spr_player_hair_b)
 	}
 	
 	//mech jump atk
-	else if (obj_mech1.state = mech1_states.jump_atk)
+	else if (obj_mech1.state = states.jump_atk)
 	{
 		anim_X_offset = 2;
 	}

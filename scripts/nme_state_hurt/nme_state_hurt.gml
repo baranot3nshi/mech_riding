@@ -1,22 +1,17 @@
+//GETS HIT IN obj_wpn_parent
+
+//flashing
 if (hurt_timer = 0) {alarm[11] = 5;}
+
+//can fall
 grounded = false;
 
+//spr
 sprite_index = sprite_hurt;
 
 //FLY AWAY
-if (!stun)
-{
-	//movement
-	move_h_nme(x_spd_push);
-	
-	//fade the speed
-	x_spd_push = lerp(x_spd_push,0,.3);
-}
-else
-//STUN FX
-{
-	if (hurt_timer%2 = 0) {if (y = stun_y) {y = stun_y-1} else {y = stun_y}}
-}
+x_spd = lerp(x_spd,0,.3);
+
 
 //end atk fase
 hurt_timer++;
@@ -25,9 +20,10 @@ if (hurt_timer = hurt_timer_max)
 {
 	hurt_timer = 0;
 	
-	x_spd_push = 0;
-	y_spd_push = 0;
+	x_spd = 0;
+	y_spd = 0;
 
+	stun = false;
 	
 	//kill if no HP, otherwise go back to idle
 	if (HP > 0) 

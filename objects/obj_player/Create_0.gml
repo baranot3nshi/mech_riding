@@ -7,9 +7,14 @@ enum states {
 	jump,
 	jetpack,
 	ground_atk,
+	dash,
 	jump_atk,
+	jump_charge,
 	hurt,
-	mech
+	
+	mech,
+	wait,
+	wake
 }
 #endregion
 #region variables
@@ -19,8 +24,7 @@ dir = 1;
 
 //X movement vars
 x_spd_max = 1.7;
-accel = .4; 
-frict = .8;
+accel = .4;
 
 //Y movement vars
 jump_power = 5;
@@ -40,6 +44,7 @@ collider = obj_wall;
 //states and conditions
 state = states.fall;
 can_move = true;
+can_fall = true;
 current_mech = 0;
 vulnerable = true;
 
@@ -57,6 +62,8 @@ jump_atk_step = 0;
 
 
 //hurt
+sprite_hurt = spr_player_hurt;
+
 hurt_timer = 0;
 hurt_timer_max = 25;
 vul_timer = 0;

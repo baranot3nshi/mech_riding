@@ -6,6 +6,8 @@ if (atk_step = atk.atk1_init)
 		sprite_index = spr_nme_walker_atk_init;
 		image_index = 0;
 	}
+	
+	x_spd = 0;
 	//goes to step 1 in Animation End
 }
 #endregion

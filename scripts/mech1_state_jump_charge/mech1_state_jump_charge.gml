@@ -35,7 +35,7 @@ if (walk_timer % 2 = 0) {create_dust_particle();}
 //start falling
 if (jump_charge_step = 2 && y_spd > 0)
 {
-	state = mech1_states.fall;
+	state = states.fall;
 	jump_charge_step = 0;
 	jump_charge_timer = 0;
 

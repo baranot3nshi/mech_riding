@@ -1,4 +1,5 @@
 can_move = false; //is set again to true in Animation End
+x_spd = 0;
 
 //==========================================================================================
 #region STEP ATK1 INIT
@@ -21,7 +22,7 @@ if (atk_step = atk.atk1_init)
 //==========================================================================================
 #region STEP ATK1 !charged	- normal first atk
 //==========================================================================================
-if (atk_step = atk.atk1 && (!charging || (charging && global.AP < global.charge)))
+if (atk_step = atk.atk1)
 {
 	//player anim
 	if (sprite_index != spr_mech1_atk1) {image_index = 0;}
@@ -52,26 +53,6 @@ if(atk_step = atk.atk1_post)
 	
 	if (atk1_timer > atk_timer_max + atk_init_timer_max) {atk_step = atk.reset;}
 }
-
-#endregion
-//==========================================================================================
-#region STEP ATK1 charged	- charge atk
-//==========================================================================================
-//if (atk_step = atk.atk1 && charging && global.AP > 0)
-//{
-//	if (sprite_index != spr_player_atk1_charge_anim) {image_index = 0; global.AP --;} //AP reduction is here bc it only happens once
-//	sprite_index = spr_player_atk1_charge_anim;
-
-//	//atkFX
-//	if (!instance_exists(obj_player_atk_charge))
-//	{
-//		var atkcFX = instance_create_depth(x, y-16, depth - 5, obj_player_atk_charge);
-//		atkcFX.image_xscale = image_xscale
-//	}
-	
-	
-//	//STEP RESET activated in Animation End
-//}
 
 #endregion
 //==========================================================================================

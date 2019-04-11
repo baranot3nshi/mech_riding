@@ -44,8 +44,6 @@ grounded = false;
 dir = 1;
 
 //hurt vars
-x_spd_push = 0;
-y_spd_push = 0;
 
 stun = false;
 stun_y = y;

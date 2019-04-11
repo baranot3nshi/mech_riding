@@ -1,4 +1,5 @@
 can_move = false; //is set again to true in Animation End
+x_spd = 0;
 
 enum atk 
 {

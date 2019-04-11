@@ -1,6 +1,6 @@
 sprite_index = spr_nme_walker_walk;
 x_spd = 1*dir
-move_h_nme(x_spd);
+if (place_meeting(x+x_spd,y,collider)) {dir = -dir;}
 
 //go to other states
 nme_walker_atk();

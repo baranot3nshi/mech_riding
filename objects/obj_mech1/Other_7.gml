@@ -14,10 +14,10 @@ else if (sprite_index = spr_mech1_jump_charge)
 	image_index = image_number - 1;
 }
 #endregion
-#region//ENTER
+#region //ENTER
 else if (sprite_index = spr_mech1_enter)
 {
-	state = mech1_states.on_ground;
+	state = states.on_ground;
 }
 #endregion
 #region //ATK
@@ -30,5 +30,16 @@ else if (sprite_index = spr_mech1_atk1 || sprite_index = spr_mech1_atk1_init ||
 else if (sprite_index = spr_mech1_jump_atk)
 {
 	jump_atk_step = atk.reset;
+}
+#endregion
+#region //DASH
+else if (sprite_index = spr_mech1_dash_init)
+{
+	image_index = image_number - 1;
+}
+
+else if (sprite_index = spr_mech1_dash_atk_post)
+{
+	dash_step = atk.reset;
 }
 #endregion

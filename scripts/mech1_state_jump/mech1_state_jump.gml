@@ -1,6 +1,6 @@
 if (y_spd > 0)
 {
-	state = mech1_states.fall;
+	state = states.fall;
 }
 
 //jump

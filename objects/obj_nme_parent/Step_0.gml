@@ -4,6 +4,7 @@
 //if any of the enemies wants to do something special with a normal state, 
 //substitute the script with a script_execute and put the standard script in the var in Create Event
 
+#region states
 switch (state)
 {
 	case nme_states.idle	: script_execute(script_idle);	break;
@@ -16,26 +17,10 @@ switch (state)
 	case nme_states.hurt	: nme_state_hurt();				break;
 	case nme_states.dead	: nme_state_dead();				break;
 }
-
-#region falling
-
-if(!grounded)
-{
-	if (y_spd < fall_spd_max)
-	{
-		y_spd += weight;
-	}
-	//apply movement
-	if (!place_meeting(x,y+y_spd,obj_wall))
-	{
-		y += y_spd * global.dt;
-	}
-	else //don't fall through
-	{
-		move_contact_solid(point_direction(x,y,x,y+y_spd),fall_spd_max);
-		y_spd = 0;
-	}
-}
 #endregion
+
+if(!grounded){apply_y_spd();}
+
+apply_x_spd(x_spd);
 
 if (HP > 0) {image_xscale = dir;}
