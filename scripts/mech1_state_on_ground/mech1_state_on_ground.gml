@@ -21,7 +21,7 @@ if (
 charging)	{mech1_dash();}
 else										{mech1_atk();}
 //dismount
-if (but_TRIANGLE_pressed)
+if (but_DISMOUNT_pressed)
 {
 	state = states.wait;
 }

@@ -1,4 +1,4 @@
-if (but_CROSS_pressed && jump_number > 0)
+if (but_JUMP_pressed && jump_number > 0)
 {
 	state = states.jump_charge;
 	

@@ -56,7 +56,7 @@ dead_timer = 0;
 dead_timer_max = 30;
 dead_FX = obj_explosion_S_FX;
 
-collider = obj_wall;
+collider = [obj_wall,obj_wall_nme];
 
 
 //DEBUG FEATURES

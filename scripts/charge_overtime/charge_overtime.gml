@@ -1,4 +1,4 @@
-	if (but_R_charge) 
+	if (but_CHARGE_charge) 
 	{
 		charging = true;
 		//image_blend = c_blue; //debug

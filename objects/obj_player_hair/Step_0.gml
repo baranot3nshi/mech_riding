@@ -102,7 +102,7 @@ if (sprite_index = spr_player_hair_f)
 		
 		
 	}
-	
+	//jump_atk
 	else if (obj_mech1.state = states.jump_atk)
 	{
 		anim_X_offset = 6;

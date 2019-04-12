@@ -1,5 +1,5 @@
 	//charging code
-	if(but_R_charge)
+	if(but_CHARGE_charge)
 	{
 		if (global.AP != global.AP_max) {charge_timer ++;}
 		charging = true;

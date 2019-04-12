@@ -12,7 +12,7 @@ if (y_spd > -jet_spd_max && !place_meeting(x,y-1, obj_wall))
 		}
 }
 
-if (but_CROSS_released)
+if (but_JUMP_released)
 {
 	state = states.fall;
 }

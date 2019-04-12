@@ -56,17 +56,17 @@ jump_atk_step = 0;
 
 //dash
 dash_init_timer = 0;
-dash_init_timer_max = 15;
+dash_init_timer_max = 10;
 
 dash_timer = 0;
-dash_timer_max = 25;
+dash_timer_max = 40;
 
 dash_atk_timer = 0;
 dash_atk_timer_max = 20; 
 
 dash_step = 0;
 
-dash_spd = 12;
+dash_spd = 10;
 
 //hurt
 sprite_hurt = spr_mech1_hurt;

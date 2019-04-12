@@ -9,7 +9,7 @@ player_jump_atk();
 
 if (jump_number = 0 && y_spd > 0) {jump_number = -1}
 
-if (but_CROSS_charge && jump_number = -1)
+if (but_JUMP_charge && jump_number = -1)
 {
 	state = states.jetpack;
 }

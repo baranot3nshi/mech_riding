@@ -44,7 +44,7 @@ if(atk_step = atk.atk1_post)
 	atk2_timer = 0;
 	atk1_timer ++;
 	
-	if (but_SQUARE_pressed && 
+	if (but_ATK_pressed && 
 	atk1_timer < atk_timer_max + atk_init_timer_max)
 	{
 		if (atk1_timer > atk_timer_max -3)
@@ -61,7 +61,7 @@ if(atk_step = atk.atk1_post)
 if (atk_step = atk.safe)
 {
 	atkmid_timer ++
-	if (!but_SQUARE_charge || but_SQUARE_charge && atkmid_timer = 2) atk_step = atk.atk2_init;
+	if (!but_ATK_charge || but_ATK_charge && atkmid_timer = 2) atk_step = atk.atk2_init;
 }
 #endregion
 //==========================================================================================
