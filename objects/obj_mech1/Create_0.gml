@@ -2,6 +2,8 @@
 x_spd = 0;
 y_spd = 0;
 dir = 1;
+x_dir = 0;
+colliding = false;
 
 //X movement vars
 x_spd_max = 2;
@@ -16,8 +18,6 @@ weight = .3;
 fall_spd_max = 7;
 
 //FX vars
-jetpack_FX_offset = -5;
-
 collider = obj_wall;	
 
 //states and conditions

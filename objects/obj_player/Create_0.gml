@@ -21,6 +21,7 @@ enum states {
 x_spd = 0;
 y_spd = 0;
 dir = 1;
+x_dir = 0;
 
 //X movement vars
 x_spd_max = 1.7;
@@ -37,7 +38,6 @@ jet_power = .12;
 fall_spd_max = 5;
 
 //FX vars
-jetpack_FX_offset = -5;
 
 collider = obj_wall;	
 

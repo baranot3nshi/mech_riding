@@ -37,8 +37,11 @@ if (state != states.mech)
 }
 else //if riding a mech
 {
-	x_spd = current_mech.x_spd;
+if (current_mech.colliding)	{x_spd = 0}
+else						{x_spd = current_mech.x_spd;}
+
 	y_spd = current_mech.y_spd;
+	dir = current_mech.dir;
 	
 	x = current_mech.x + x_spd;
 	y = current_mech.y - 16 +y_spd;

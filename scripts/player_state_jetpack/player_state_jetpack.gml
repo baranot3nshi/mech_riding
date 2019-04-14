@@ -8,7 +8,8 @@ if (y_spd > -jet_spd_max && !place_meeting(x,y-1, obj_wall))
 		
 		if (y_spd > 0 && !instance_exists(obj_jetpack_FX))
 		{
-			instance_create_depth(x + jetpack_FX_offset,y-3,depth+5,obj_jetpack_FX)
+			var fx = instance_create_depth(x,y,depth+5,obj_jetpack_FX)
+			fx.image_speed = 3
 		}
 }
 
@@ -17,9 +18,9 @@ if (but_JUMP_released)
 	state = states.fall;
 }
 
+//smoke
 if (y_spd < 0)
 {
-	//F
-	instance_create_depth (x+ random_range(-4,-2) + jetpack_FX_offset, random_range(y-6,y-4),depth + 5, obj_jetpack_particle)
-	instance_create_depth (x+ random_range(+4,+2) + jetpack_FX_offset, random_range(y-6,y-4),depth + 5, obj_jetpack_particle)
+	instance_create_depth (x+ random_range(-4,-2) - 5, random_range(y-4,y-2),depth + 10, obj_jetpack_particle)
+	instance_create_depth (x+ random_range(+4,+2) - 5, random_range(y-4,y-2),depth + 10, obj_jetpack_particle)
 }

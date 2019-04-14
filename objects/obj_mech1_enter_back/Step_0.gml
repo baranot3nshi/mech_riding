@@ -1,4 +1,4 @@
 //x = obj_mech1.x
 //y = obj_mech1.y
 
-depth = 100
+depth = obj_player.depth +50
