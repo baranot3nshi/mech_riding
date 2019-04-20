@@ -16,15 +16,15 @@ if (global.AP > global.charge && charging)	{mech1_jump_charged();}
 else										{mech1_jump();}
 
 //atk1
-if (
-//global.AP > global.charge &&
-charging)	{mech1_dash();}
+if (global.AP > global.charge && charging)	{mech1_dash();}
 else										{mech1_atk();}
+
 //dismount
 if (but_DISMOUNT_pressed)
-{
-	state = states.wait;
-}
+{state = states.wait;}
+
+//aim
+player_aim();
 
 #endregion
 

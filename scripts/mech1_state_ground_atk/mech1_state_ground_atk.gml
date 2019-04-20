@@ -61,7 +61,7 @@ if(atk_step = atk.atk1_post)
 if (atk_step = atk.safe)
 {
 	atkmid_timer ++
-	if (!but_ATK_charge || but_ATK_charge && atkmid_timer = 2) atk_step = atk.atk2_init;
+	if (!but_ATK_charge || but_ATK_charge && atkmid_timer = 2) {atk_step = atk.atk2_init;}
 }
 #endregion
 //==========================================================================================
@@ -90,7 +90,7 @@ if(atk_step = atk.atk2)
 	if (sprite_index != spr_mech1_atk2) {image_index = 0;}
 	sprite_index = spr_mech1_atk2;
 
-	if (!instance_exists(obj_mech1_atk1))
+	if (instance_exists(obj_mech1_atk1))
 	{instance_destroy(obj_mech1_atk1)}
 	
 	//atkFX

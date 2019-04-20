@@ -5,7 +5,7 @@ HP = 10;
 
 sprite_idle = spr_nme_walker_idle;
 sprite_walk = spr_nme_walker_walk;
-sprite_hurt = spr_nme_walker_hurt;
+sprite_hurt = [spr_nme_walker_hurt,spr_nme_walker_hurt2];
 sprite_dead = spr_nme_walker_dead;
 
 script_idle = nme_walker_state_idle;

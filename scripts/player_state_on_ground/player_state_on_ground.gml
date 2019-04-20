@@ -12,6 +12,8 @@ if (!place_meeting(x,y + 1, obj_wall))
 	state = states.fall;
 }
 
+player_aim();
+
 //jump
 player_jump();
 

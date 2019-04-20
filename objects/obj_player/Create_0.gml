@@ -11,7 +11,9 @@ enum states {
 	jump_atk,
 	jump_charge,
 	hurt,
+	aim,
 	
+	//new states should be added before this line
 	mech,
 	wait,
 	wake
@@ -59,6 +61,8 @@ atk_timer_max = 15;
 
 atk_step = 0;
 jump_atk_step = 0;
+
+sprite_aim = spr_player_idle;
 
 
 //hurt

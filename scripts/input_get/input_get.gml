@@ -3,12 +3,16 @@ global.but_JUMP = E_INPUT_SLOT.CROSS;
 global.but_ATK = E_INPUT_SLOT.SQUARE;
 global.but_DISMOUNT = E_INPUT_SLOT.TRIANGLE;
 global.but_CHARGE = E_INPUT_SLOT.R;
+global.but_AIM = E_INPUT_SLOT.L;
 global.but_SHOOT = E_INPUT_SLOT.CIRCLE;
 
+but_pad_left =			input_check_pressed		(0,E_INPUT_SLOT.PAD_LEFT)
+but_pad_right =			input_check_pressed		(0,E_INPUT_SLOT.PAD_RIGHT)
 
 but_left =				input_check_analogue	(0, E_INPUT_SLOT.LEFT)
 but_right =				input_check_analogue	(0, E_INPUT_SLOT.RIGHT)
 but_down =				input_check_analogue	(0, E_INPUT_SLOT.DOWN)
+but_up =				input_check_analogue	(0, E_INPUT_SLOT.UP)
 
 but_JUMP_charge =		input_check				(0, global.but_JUMP)
 but_JUMP_pressed =		input_check_pressed		(0, global.but_JUMP)
@@ -29,3 +33,7 @@ but_DISMOUNT_released =	input_check_released	(0, global.but_DISMOUNT)
 but_CHARGE_charge =		input_check				(0, global.but_CHARGE)
 but_CHARGE_pressed =	input_check_pressed		(0, global.but_CHARGE)
 but_CHARGE_released =	input_check_released	(0, global.but_CHARGE)
+
+but_AIM_charge =		input_check				(0, global.but_AIM)
+but_AIM_pressed =		input_check_pressed		(0, global.but_AIM)
+but_AIM_released =		input_check_released	(0, global.but_AIM)

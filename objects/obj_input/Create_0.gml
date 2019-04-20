@@ -2,6 +2,10 @@ global.key_bindings = ["P","M","W","A","D","S","E","Q"];
 
 enum E_INPUT_SLOT
 {
+	PAD_UP,
+	PAD_DOWN,
+	PAD_LEFT,
+	PAD_RIGHT,
     UP,
     DOWN,
     LEFT,

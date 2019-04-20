@@ -6,8 +6,6 @@ if (hurt_timer = 0) {alarm[11] = 5;}
 //can fall
 grounded = false;
 
-//spr
-sprite_index = sprite_hurt;
 
 //FLY AWAY
 x_spd = lerp(x_spd,0,.3);

@@ -54,6 +54,8 @@ jump_atk_init_timer_max = 10;
 atk_step = 0;
 jump_atk_step = 0;
 
+sprite_aim = spr_mech1_idle;
+
 //dash
 dash_init_timer = 0;
 dash_init_timer_max = 10;

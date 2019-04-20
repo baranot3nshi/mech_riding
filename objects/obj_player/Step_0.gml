@@ -2,14 +2,15 @@ input_get();
 #region states
 switch(state)
 {
-	case states.on_ground:		player_state_on_ground();		break;
-	case states.jump:			player_state_jump();			break;
-	case states.fall:			player_state_fall();			break;
-	case states.jetpack:		player_state_jetpack();			break;
-	case states.ground_atk:		player_state_ground_atk();		break;
-	case states.jump_atk:		player_state_jump_atk();		break;
-	case states.hurt:			player_state_hurt();			break;
-	case states.mech:			player_state_mech();			break;
+	case states.on_ground:		player_state_on_ground();	break;
+	case states.jump:			player_state_jump();		break;
+	case states.fall:			player_state_fall();		break;
+	case states.jetpack:		player_state_jetpack();		break;
+	case states.ground_atk:		player_state_ground_atk();	break;
+	case states.jump_atk:		player_state_jump_atk();	break;
+	case states.hurt:			player_state_hurt();		break;
+	case states.aim:			player_state_aim();			break;
+	case states.mech:			player_state_mech();		break;
 }
 #endregion
 

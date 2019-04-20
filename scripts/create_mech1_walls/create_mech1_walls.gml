@@ -33,7 +33,7 @@ right_wall.y = left_wall.y
 
 depth = obj_player.depth - 5;
 
-right_wall.image_blend = c_red;
-//left_wall.visible = false;
-//right_wall.visible = false;
-//bottom_wall.visible = false;
+//right_wall.image_blend = c_red;
+left_wall.visible = false;
+right_wall.visible = false;
+bottom_wall.visible = false;

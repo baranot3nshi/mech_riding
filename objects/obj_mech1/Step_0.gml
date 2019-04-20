@@ -10,6 +10,7 @@ switch(state)
 	case states.jump_atk:		mech1_state_jump_atk();		break;
 	case states.jump_charge:	mech1_state_jump_charge();	break;
 	case states.hurt:			player_state_hurt();		break;
+	case states.aim:			player_state_aim();			break;
 	
 	case states.wait:			mech1_state_wait();			break;
 	case states.wake:			mech1_state_wake();			break;

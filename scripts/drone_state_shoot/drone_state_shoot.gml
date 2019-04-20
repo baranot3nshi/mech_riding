@@ -5,14 +5,17 @@ instance_create_depth(x,y,depth-5,shoot_animation)
 bullet = instance_create_depth(x,y,depth-10,shoot_bullet_type)
 
 
-target = find_closest_nme(180,180)
-
 if (!target)
 {bullet.dir = point_direction(x,y,x+obj_player.dir,y)}
 else
-{bullet.dir = point_direction(x,y,target.x,target.y-target.sprite_height/2)}
+{
+	var _txx = target.bbox_left + (target.bbox_right-target.bbox_left)/2
+	var _tyy = target.bbox_top + (target.bbox_bottom-target.bbox_top)/2
 
+	bullet.dir = point_direction(x,y,_txx,_tyy)
+}
 
 
 //BACK TO FOLLOW
 state = drone_states.follow;
+shoot_timer = shoot_cooldown;

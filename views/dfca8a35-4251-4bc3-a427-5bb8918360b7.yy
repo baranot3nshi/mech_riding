@@ -10,7 +10,6 @@
         "b2e1761e-2352-4506-9f1e-30d7e71817e1",
         "2984d160-a244-4fba-b64b-35037fb0e052",
         "a9e1c4ac-4633-4a6c-a167-1dadf8f34d51",
-        "a69471ac-2ebc-460c-9c72-d856fd97cd8c",
         "a16201ef-025e-4051-b403-d551a4a9958f",
         "256716ce-cbec-412c-bf7f-a7453222a587",
         "177e71af-ab3a-4e1d-846e-458799ea515c",
@@ -23,7 +22,12 @@
         "a38f6546-ac3a-4428-8c51-e76d83b829b8",
         "7e1cd56b-b7ea-4d9d-929d-b78762848cf5",
         "c1c84c7c-de1b-4cb3-bed3-2b9483ebf308",
-        "5f83737c-daaa-43ac-a655-0d2efb19555d"
+        "5f83737c-daaa-43ac-a655-0d2efb19555d",
+        "02c53d97-a06c-4a5a-94d5-21b753b8a135",
+        "c9279c9a-8c10-440f-b80c-ed32af637bfd",
+        "dafa6bb3-3087-439e-bf15-da051f517b23",
+        "36e295f0-cc85-42eb-83d6-a06ccfff15e3",
+        "15a471b4-3ffe-4433-9120-e75786eb03a5"
     ],
     "filterType": "GMSprite",
     "folderName": "mech1",
