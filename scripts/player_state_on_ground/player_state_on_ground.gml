@@ -7,11 +7,9 @@ jump_number = jump_number_max;
 
 #region shift to other states
 //fall
-if (!place_meeting(x,y + 1, obj_wall))
-{
-	state = states.fall;
-}
+player_fall();
 
+//aim
 player_aim();
 
 //jump

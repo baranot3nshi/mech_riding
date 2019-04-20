@@ -5,7 +5,6 @@ switch(state)
 	case drone_states.idle:		drone_state_idle();		break;
 	case drone_states.follow:	drone_state_follow();	break;
 	case drone_states.shoot:	drone_state_shoot();	break;
-	case drone_states.aim:		drone_state_aim();		break;
 }
 
 #region //TYPE
@@ -33,9 +32,6 @@ type = clamp(type, 0, drone_type.size-1)
 if (change_FX != 0) {change_FX--; 					 if (change_FX < 0) {change_FX = 0;}}
 #endregion
 
-//FOLLOW
-follow_x = obj_player.x - sign(image_xscale)*10;
-follow_y = obj_player.y - 20;
 
 //AIMING
 if (but_AIM_charge)
@@ -44,14 +40,16 @@ if (but_AIM_charge)
 	
 	dir = but_right - but_left;
 	if (dir != 0) {image_xscale = sign(dir);}
-	state = drone_states.aim;
 }
 else
 {
-	state = drone_states.follow;
 	target = find_closest_nme(range_w,range_h)
 	dir = obj_player.dir
 	image_xscale = dir;
+	
+	//FOLLOW
+	follow_x = obj_player.x - sign(image_xscale)*10;
+	follow_y = obj_player.y - 20;
 }
 
 //SHOOTING COOLDOWN

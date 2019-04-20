@@ -2,7 +2,6 @@ enum drone_states {
 	idle,
 	follow,
 	shoot,
-	aim,
 	
 	size
 	

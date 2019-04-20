@@ -2199,6 +2199,22 @@
             }
         },
         {
+            "Key": "ed61c98c-5b66-4c9f-93d1-9704eed4ce01",
+            "Value": {
+                "id": "af272118-6132-46a8-bd17-ed9e410ca331",
+                "resourcePath": "scripts\\collision_line_array\\collision_line_array.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "ee3742c2-a2c4-4c32-ac45-4a8e00c6242c",
+            "Value": {
+                "id": "cfab5832-b6e7-4c32-a3b0-3e7b1c06994b",
+                "resourcePath": "scripts\\instance_place_array\\instance_place_array.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "ef84610b-fe1e-45c7-b959-cd8c2ecde154",
             "Value": {
                 "id": "755452fa-04dd-4a22-8bbe-5683d76762e3",
@@ -2252,6 +2268,14 @@
                 "id": "c18d6701-01aa-4207-b082-e484381fd9e1",
                 "resourcePath": "sprites\\spr_mech1_atk1_init\\spr_mech1_atk1_init.yy",
                 "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "f766d098-aaa2-4848-a9ea-f96e7683f69b",
+            "Value": {
+                "id": "ed57ee77-861c-41ec-914c-bdcabe2310a2",
+                "resourcePath": "scripts\\player_fall\\player_fall.yy",
+                "resourceType": "GMScript"
             }
         },
         {
