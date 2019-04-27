@@ -1,4 +1,5 @@
 can_move = false; //is set again to true in Animation End
+grounded = true;
 x_spd = 0;
 
 //==========================================================================================

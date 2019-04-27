@@ -431,10 +431,26 @@
             }
         },
         {
+            "Key": "295df432-98bf-4a2b-9fe7-b230869c00a7",
+            "Value": {
+                "id": "8ed54a09-5673-4ef1-9f24-b3363399b281",
+                "resourcePath": "sprites\\spr_lock_on_charge_part\\spr_lock_on_charge_part.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "2984d160-a244-4fba-b64b-35037fb0e052",
             "Value": {
                 "id": "b2a33ebc-d2c8-4b0b-a326-6b4163bffc64",
                 "resourcePath": "sprites\\spr_mech1_empty\\spr_mech1_empty.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "29c5a295-e824-4ad0-80d1-e57300dba4b9",
+            "Value": {
+                "id": "bb5b2a07-1799-4a45-839e-cc8c8ca03b10",
+                "resourcePath": "sprites\\spr_rock_particle4\\spr_rock_particle4.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -591,6 +607,14 @@
             }
         },
         {
+            "Key": "33a97027-6830-48ec-8993-ed299aa54ad5",
+            "Value": {
+                "id": "99fab91e-263c-427e-8b5d-f5c8f9a533e8",
+                "resourcePath": "sprites\\spr_tile_rock\\spr_tile_rock.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "35cd39b5-e206-441b-b542-e04722770c55",
             "Value": {
                 "id": "81a26afc-d84b-4b77-a6ff-ad5b4652db83",
@@ -623,6 +647,14 @@
             }
         },
         {
+            "Key": "39351a6b-27a9-4111-a8d0-7caab5e033d7",
+            "Value": {
+                "id": "55a59afc-1ee2-4690-854d-3cdd69e2195a",
+                "resourcePath": "scripts\\display_write_specs\\display_write_specs.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "3a78b93c-5681-4cc6-9f3e-1a9022f23be4",
             "Value": {
                 "id": "e71ecc00-366a-4023-9a9e-002a29ef4dca",
@@ -643,6 +675,14 @@
             "Value": {
                 "id": "9c46b5f5-bc69-480e-8c75-cc91ae36d151",
                 "resourcePath": "sprites\\spr_dust_particle3\\spr_dust_particle3.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "3bcd7f39-ad70-4963-868d-46b7d443b7fd",
+            "Value": {
+                "id": "a52d5ad3-334c-4b84-a9fa-64e03c09d80d",
+                "resourcePath": "sprites\\spr_rock_particle3\\spr_rock_particle3.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -679,6 +719,14 @@
             }
         },
         {
+            "Key": "41f8f583-8e2c-454d-b579-d77ad490f09f",
+            "Value": {
+                "id": "7adf0ea4-5f19-438b-b4cc-ad614ca204ed",
+                "resourcePath": "sprites\\spr_rock_particle2\\spr_rock_particle2.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "42469e0d-8a4a-4aab-8a47-b1633a0e2a42",
             "Value": {
                 "id": "e917999a-7507-4321-bbbe-049fb909bf9f",
@@ -687,11 +735,27 @@
             }
         },
         {
+            "Key": "425b82c1-c738-4cff-a736-141811d802ea",
+            "Value": {
+                "id": "6796d488-a3e4-46ab-93e9-6329fbda7c78",
+                "resourcePath": "sprites\\spr_drone_missile_ltt\\spr_drone_missile_ltt.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "43587e01-7d18-4994-a647-6fa377a1f486",
             "Value": {
                 "id": "cbefb173-097e-4d35-9c5c-991b7fcdce79",
                 "resourcePath": "objects\\obj_mech1_jump_atk\\obj_mech1_jump_atk.yy",
                 "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "453ce7c8-a995-4e6c-9a55-23a27218462d",
+            "Value": {
+                "id": "a3bb9e3a-5e08-4363-80a8-944b3738bb7f",
+                "resourcePath": "sprites\\spr_rock_particle1\\spr_rock_particle1.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
@@ -743,6 +807,14 @@
             }
         },
         {
+            "Key": "4a3acbbc-24f8-4a43-aa88-0d0ce1df174b",
+            "Value": {
+                "id": "1467272a-bba7-485a-a8f6-58240e2b4d23",
+                "resourcePath": "views\\4a3acbbc-24f8-4a43-aa88-0d0ce1df174b.yy",
+                "resourceType": "GMFolder"
+            }
+        },
+        {
             "Key": "4ca30183-d931-43c5-89eb-3496af79795b",
             "Value": {
                 "id": "a16d645c-59bf-4c13-8e8d-5f08c53d7e27",
@@ -780,6 +852,14 @@
                 "id": "80034f2a-81d7-4632-bc30-7a1df7be1a9d",
                 "resourcePath": "sprites\\spr_nme_walker_idle\\spr_nme_walker_idle.yy",
                 "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "53bc8e9c-de22-480b-86e9-b0150cade71b",
+            "Value": {
+                "id": "ac8992b8-358b-4c75-b37c-be270c4706ba",
+                "resourcePath": "shaders\\shGameBoy\\shGameBoy.yy",
+                "resourceType": "GMShader"
             }
         },
         {
@@ -975,6 +1055,14 @@
             }
         },
         {
+            "Key": "68eed240-6f5c-43c1-9eda-acc7f785dfd9",
+            "Value": {
+                "id": "e393ca92-5ae2-4581-9698-6c50d3357431",
+                "resourcePath": "sprites\\spr_drone_missile_tt\\spr_drone_missile_tt.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "6c3b08e5-f797-44d0-a72b-59c42a5e7b5e",
             "Value": {
                 "id": "72464f1f-fe1d-477a-af1a-fee4e325d3c6",
@@ -1020,6 +1108,14 @@
                 "id": "66d45fe7-36c8-4118-9fa4-8de941eb739d",
                 "resourcePath": "sprites\\spr_player_idle\\spr_player_idle.yy",
                 "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "70fdafc6-b3b5-4c4f-b42b-4a5200a4cdec",
+            "Value": {
+                "id": "9367e4bd-3451-468f-93d3-6294a6b45c58",
+                "resourcePath": "objects\\obj_drone_bullet2\\obj_drone_bullet2.yy",
+                "resourceType": "GMObject"
             }
         },
         {
@@ -1079,6 +1175,14 @@
             }
         },
         {
+            "Key": "764ad860-fff0-4753-b9fb-6102c88d9b12",
+            "Value": {
+                "id": "9665e7c1-6fde-4839-8821-83fbec8afdf9",
+                "resourcePath": "objects\\obj_drone_missile\\obj_drone_missile.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "789064f2-39c2-41a3-8e31-8d6769605b7f",
             "Value": {
                 "id": "3fe01428-a132-4b7e-ac7c-8f0d9c2dc8fe",
@@ -1123,6 +1227,14 @@
             "Value": {
                 "id": "135bc969-7dd2-4e73-8f41-823af8f8d081",
                 "resourcePath": "scripts\\drone_shoot\\drone_shoot.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "7cf2b3b3-aa35-47d1-9222-521ea82e61d1",
+            "Value": {
+                "id": "e2557871-055e-4f00-85f2-50c3dd585024",
+                "resourcePath": "scripts\\display_write_all_specs\\display_write_all_specs.yy",
                 "resourceType": "GMScript"
             }
         },
@@ -1247,11 +1359,27 @@
             }
         },
         {
+            "Key": "89afae1a-55a1-4cb2-b6c5-f95d467784f6",
+            "Value": {
+                "id": "7aacb612-6285-4bcf-8ab8-bcc9f05bac99",
+                "resourcePath": "sprites\\spr_drone_missile_ll\\spr_drone_missile_ll.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "89b8ecae-fd9e-41d8-89b7-160ab534bce9",
             "Value": {
                 "id": "b8d8a5f4-4c17-453a-b546-830650695e7e",
                 "resourcePath": "views\\89b8ecae-fd9e-41d8-89b7-160ab534bce9.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "8a19404f-ac10-4dd4-8598-1eac1f9c18bd",
+            "Value": {
+                "id": "0ccc2d31-dd44-4c8d-96de-390184d638b5",
+                "resourcePath": "extensions\\GameBoy_Shader\\GameBoy_Shader.yy",
+                "resourceType": "GMExtension"
             }
         },
         {
@@ -1292,6 +1420,14 @@
                 "id": "ddd97be3-348b-4df2-8694-ac73d6e52ee7",
                 "resourcePath": "sprites\\spr_lock_on_part\\spr_lock_on_part.yy",
                 "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "8e7a7094-c85a-406a-8480-0503eb8026e1",
+            "Value": {
+                "id": "2982c92d-84e4-43e1-9de6-ddb3c44f356c",
+                "resourcePath": "views\\8e7a7094-c85a-406a-8480-0503eb8026e1.yy",
+                "resourceType": "GMFolder"
             }
         },
         {
@@ -1543,6 +1679,22 @@
             }
         },
         {
+            "Key": "a9ea847b-a677-4e73-837d-148de41fdb9c",
+            "Value": {
+                "id": "27e4bff5-5a33-4a6c-a8e0-774766604538",
+                "resourcePath": "views\\a9ea847b-a677-4e73-837d-148de41fdb9c.yy",
+                "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "aada7d57-46f5-410c-b615-ad1dce228f33",
+            "Value": {
+                "id": "0b29fcd7-11e4-4366-910d-c66603a131ad",
+                "resourcePath": "scripts\\drone_follow\\drone_follow.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "ab6d81c9-4c2c-46fe-9a54-dba8dc87221d",
             "Value": {
                 "id": "45a3b0b3-fc21-41e3-ac57-22f3b40994aa",
@@ -1599,6 +1751,14 @@
             }
         },
         {
+            "Key": "b27bbb27-e8e7-42ba-8ef8-3e5d427cd5a3",
+            "Value": {
+                "id": "7ede732f-7afe-42a6-8b37-c478c38431d7",
+                "resourcePath": "views\\b27bbb27-e8e7-42ba-8ef8-3e5d427cd5a3.yy",
+                "resourceType": "GMFolder"
+            }
+        },
+        {
             "Key": "b2e1761e-2352-4506-9f1e-30d7e71817e1",
             "Value": {
                 "id": "922d5c0c-88ad-4101-8d63-313198d12ac2",
@@ -1612,6 +1772,14 @@
                 "id": "4e0b527d-79b9-4c86-a379-d5ee989c6d68",
                 "resourcePath": "scripts\\create_dust_particle\\create_dust_particle.yy",
                 "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "b68321df-8822-4532-97b4-690e8524b8c2",
+            "Value": {
+                "id": "517170e8-6ab0-4b0a-a5fb-b13c41bb9256",
+                "resourcePath": "fonts\\fnt_efforts\\fnt_efforts.yy",
+                "resourceType": "GMFont"
             }
         },
         {
@@ -1684,6 +1852,14 @@
                 "id": "f80ad7e2-9add-4559-a250-ac6c6577030d",
                 "resourcePath": "scripts\\player_state_jump\\player_state_jump.yy",
                 "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "bf4bf76d-927e-4d13-88c8-c4df0046e36c",
+            "Value": {
+                "id": "a550f2a3-d999-4602-b539-c6038082efdf",
+                "resourcePath": "sprites\\spr_drone_bullet_big_destroy\\spr_drone_bullet_big_destroy.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
@@ -1927,6 +2103,14 @@
             }
         },
         {
+            "Key": "cf4a9531-f53b-4035-a7fb-16048fa2f23c",
+            "Value": {
+                "id": "35a0cfd4-2382-4dc3-b654-469a94b9e750",
+                "resourcePath": "sprites\\spr_drone_missile_lt\\spr_drone_missile_lt.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "cfe7e86c-c584-45c5-a724-3e02e2a2d6d0",
             "Value": {
                 "id": "a8e8d568-d8a8-44f4-a23c-f54fe6e30fc6",
@@ -2060,6 +2244,14 @@
                 "id": "544c59b8-6cee-4884-908b-59aa90a7b112",
                 "resourcePath": "scripts\\drone_state_shoot\\drone_state_shoot.yy",
                 "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "dd90d5a4-105e-4652-a450-d6ecc2be7b0a",
+            "Value": {
+                "id": "b6213bab-439c-40df-b666-b3c812cb64a2",
+                "resourcePath": "sprites\\spr_drone_missile_llt\\spr_drone_missile_llt.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
@@ -2231,6 +2423,14 @@
             }
         },
         {
+            "Key": "f25a55ac-a389-4b95-b92f-8364049e69ba",
+            "Value": {
+                "id": "ff4f9975-644d-4446-a0c1-98ef5794e5e9",
+                "resourcePath": "objects\\obj_tile_rock\\obj_tile_rock.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "f2f79a4d-10bf-4cd6-824f-5eaddd516f8d",
             "Value": {
                 "id": "2b2dd097-3608-4513-a11c-972f956275f3",
@@ -2271,10 +2471,18 @@
             }
         },
         {
+            "Key": "f748d9e1-a340-4751-b222-0a4836c27f54",
+            "Value": {
+                "id": "b61521ca-825d-4c02-a666-108561d0a364",
+                "resourcePath": "scripts\\choose_from_array\\choose_from_array.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "f766d098-aaa2-4848-a9ea-f96e7683f69b",
             "Value": {
                 "id": "ed57ee77-861c-41ec-914c-bdcabe2310a2",
-                "resourcePath": "scripts\\player_fall\\player_fall.yy",
+                "resourcePath": "scripts\\player_walkoff\\player_walkoff.yy",
                 "resourceType": "GMScript"
             }
         },
@@ -2303,6 +2511,14 @@
             }
         },
         {
+            "Key": "fac42534-6ae4-44b5-aaaa-00bc484db696",
+            "Value": {
+                "id": "215079d6-163d-41bc-a6cc-5aa3b2aa0914",
+                "resourcePath": "sprites\\spr_drone_bullet_big\\spr_drone_bullet_big.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "fb1d2f29-efc9-4cbd-990d-deff956f7d76",
             "Value": {
                 "id": "09d3e166-16a4-43d2-a780-c2e5ede532b4",
@@ -2324,6 +2540,14 @@
                 "id": "8260bafc-dbff-47ab-b595-315c0e34fe83",
                 "resourcePath": "objects\\obj_dust_particle\\obj_dust_particle.yy",
                 "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "fcb438ee-dd59-49dc-9365-eee7dedecddd",
+            "Value": {
+                "id": "b8b70405-103e-47ed-a74e-6d75fade63a7",
+                "resourcePath": "scripts\\drone_state_shoot_charge\\drone_state_shoot_charge.yy",
+                "resourceType": "GMScript"
             }
         },
         {
@@ -2475,7 +2699,16 @@
         "dab72f51-a545-4165-8a66-3531a206a844",
         "e0cd26cf-3f8b-41f2-8cc2-777b00febc88",
         "ef84610b-fe1e-45c7-b959-cd8c2ecde154",
-        "3815e03c-dd9f-4b64-907a-3cb7a2a53e04"
+        "3815e03c-dd9f-4b64-907a-3cb7a2a53e04",
+        "93d906e8-683d-435c-99bc-276eb2740f46",
+        "ed61c98c-5b66-4c9f-93d1-9704eed4ce01",
+        "ee3742c2-a2c4-4c32-ac45-4a8e00c6242c",
+        "f766d098-aaa2-4848-a9ea-f96e7683f69b",
+        "f748d9e1-a340-4751-b222-0a4836c27f54",
+        "fcb438ee-dd59-49dc-9365-eee7dedecddd",
+        "aada7d57-46f5-410c-b615-ad1dce228f33",
+        "7cf2b3b3-aa35-47d1-9222-521ea82e61d1",
+        "39351a6b-27a9-4111-a8d0-7caab5e033d7"
     ],
     "tutorial": ""
 }

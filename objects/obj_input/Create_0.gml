@@ -1,4 +1,6 @@
 global.key_bindings = ["P","M","W","A","D","S","E","Q"];
+global.analog_sensitivity = 0.3
+global.analog_d_sensitivity = 0.6
 
 enum E_INPUT_SLOT
 {
@@ -23,7 +25,7 @@ enum E_INPUT_SLOT
 
 //Millisecond delay times for extended behaviours
 repeat_delay    = 280;
-longpress_delay = 400;
+longpress_delay = 200;
 doubletap_delay = 250;
 
 //No device has been found yet. This variable is handled in "Async - System"

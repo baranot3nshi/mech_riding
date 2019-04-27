@@ -1,3 +1,5 @@
+
+
 x = lerp(x,follow_x,spd)
 y = lerp(y,follow_y,spd)
 

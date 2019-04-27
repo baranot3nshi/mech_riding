@@ -1,5 +1,6 @@
+grounded = false;
 //go to on_ground
-mech1_land();
+player_land();
 //jump
 mech1_jump();
 //jump_atk

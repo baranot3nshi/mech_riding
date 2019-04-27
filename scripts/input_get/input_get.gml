@@ -12,6 +12,7 @@ but_pad_right =			input_check_pressed		(0,E_INPUT_SLOT.PAD_RIGHT)
 but_left =				input_check_analogue	(0, E_INPUT_SLOT.LEFT)
 but_right =				input_check_analogue	(0, E_INPUT_SLOT.RIGHT)
 but_down =				input_check_analogue	(0, E_INPUT_SLOT.DOWN)
+but_down_long =			input_check_long		(0, E_INPUT_SLOT.DOWN)
 but_up =				input_check_analogue	(0, E_INPUT_SLOT.UP)
 
 but_JUMP_charge =		input_check				(0, global.but_JUMP)

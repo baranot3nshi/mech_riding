@@ -3,15 +3,16 @@
 #region states
 enum states {
 	on_ground, //must always be 0
+	ground_atk,
+	dash,
+	hurt,
+	aim,
+	
 	fall,
 	jump,
 	jetpack,
-	ground_atk,
-	dash,
 	jump_atk,
 	jump_charge,
-	hurt,
-	aim,
 	
 	//new states should be added before this line
 	mech,

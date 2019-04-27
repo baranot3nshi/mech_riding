@@ -4,6 +4,7 @@ y_spd = 0;
 dir = 1;
 x_dir = 0;
 colliding = false;
+grounded = false;
 
 //X movement vars
 x_spd_max = 2;

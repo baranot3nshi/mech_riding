@@ -21,6 +21,6 @@ if (but_JUMP_released)
 //smoke
 if (y_spd < 0)
 {
-	instance_create_depth (x+ random_range(-4,-2) - 5, random_range(y-4,y-2),depth + 10, obj_jetpack_particle)
-	instance_create_depth (x+ random_range(+4,+2) - 5, random_range(y-4,y-2),depth + 10, obj_jetpack_particle)
+	instance_create_depth (x+ (random_range(-4,-2) - 5) * dir, random_range(y-4,y-2),depth + 10, obj_jetpack_particle)
+	instance_create_depth (x+ (random_range(+4,+2) - 5) * dir, random_range(y-4,y-2),depth + 10, obj_jetpack_particle)
 }

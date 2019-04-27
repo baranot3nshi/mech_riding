@@ -1,3 +1,5 @@
+grounded = true;
+
 //resetting states
 atk_step = 0;
 jump_atk_step = 0;
@@ -7,7 +9,7 @@ jump_number = jump_number_max;
 
 #region shift to other states
 //fall
-player_fall();
+player_walkoff();
 
 //aim
 player_aim();
@@ -34,8 +36,8 @@ if (but_right || but_left)
 }
 else
 {
-sprite_index = spr_player_idle; 
-walk_timer = 0;
+	sprite_index = spr_player_idle; 
+	walk_timer = 0;
 }
 
 #endregion

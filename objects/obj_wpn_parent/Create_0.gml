@@ -2,4 +2,7 @@
 // You can write your code in this editor
 dmg = 0;
 pushback = 3.5;
-multi_hit = false;
+
+rock_breaker = false;
+
+drill_FX = obj_mech1_dash_atk_destroy_FX

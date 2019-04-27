@@ -1,19 +1,17 @@
 //resetting states
 atk_step = 0;
 jump_atk_step = 0;
+grounded = true;
 
 jump_number = jump_number_max;
 
 #region shift to other states
 //fall
-if (!place_meeting(x,y + 1, obj_wall))
-{
-	state = states.fall;
-}
+player_walkoff();
 
 //jump
 if (global.AP > global.charge && charging)	{mech1_jump_charged();}
-else										{mech1_jump();}
+else										{player_jump();}
 
 //atk1
 if (global.AP > global.charge && charging)	{mech1_dash();}

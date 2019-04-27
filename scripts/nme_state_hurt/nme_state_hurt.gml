@@ -4,9 +4,8 @@
 if (hurt_timer = 0) {alarm[11] = 5;}
 
 //can fall
-grounded = false;
-
-
+grounded = true;
+y_spd = 0;
 //FLY AWAY
 x_spd = lerp(x_spd,0,.3);
 

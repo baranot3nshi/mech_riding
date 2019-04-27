@@ -1,6 +1,9 @@
+
+
 //crouch, stop and delay
 if (jump_charge_step = 0)
 {
+	grounded = true;
 	x_spd = 0;
 	
 	sprite_index = spr_mech1_jump_charge;
@@ -14,6 +17,8 @@ if (jump_charge_step = 0)
 //jump
 if (jump_charge_step = 1)
 {
+	grounded =false;
+	
 	sprite_index = spr_mech1_jump_high;
 		
 	x_spd = 0;

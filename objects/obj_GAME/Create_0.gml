@@ -2,8 +2,7 @@ randomise();
 
 //DELTA TIME
 target_framerate = 60;
-
-freeze_timer = 0;
+global.dt = (delta_time/1000000) * (target_framerate)
 
 global.screenfreeze = 0;
 
@@ -30,3 +29,5 @@ instance_create_depth(0,0,0,obj_RENDER_outline)
 
 BktGlitch_init(); //getting uniform pointers
 application_surface_draw_enable(false); //disabling automatic redrawing of the application surface
+
+gb_shader = false;

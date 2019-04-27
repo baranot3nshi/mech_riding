@@ -29,6 +29,8 @@ script_atk2 = undefined;
 x_spd = 0;
 y_spd = 0;
 
+but_down_long = 0; //to avoid falling down while on platforms
+but_down = 0; //to avoid falling down while on platforms
 
 //X VARS
 x_spd_max = 1;
@@ -46,7 +48,6 @@ dir = 1;
 //hurt vars
 
 stun = false;
-stun_y = y;
 
 hurt_timer = 0;
 hurt_timer_max = 20;

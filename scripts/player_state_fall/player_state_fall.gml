@@ -1,3 +1,5 @@
+grounded = false;
+
 //go to on_ground
 player_land();
 //jump

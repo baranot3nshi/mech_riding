@@ -19,8 +19,7 @@ switch (state)
 }
 #endregion
 
-if(!grounded){apply_y_spd();}
 
-apply_x_spd(x_spd);
+
 
 if (HP > 0) {image_xscale = dir;}

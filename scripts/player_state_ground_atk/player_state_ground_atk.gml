@@ -1,3 +1,4 @@
+grounded = true;
 can_move = false; //is set again to true in Animation End
 x_spd = 0;
 
@@ -73,8 +74,11 @@ if (atk_step = atk.atk1 && charging && global.AP >= global.charge)
 //==========================================================================================
 if (atk_step = atk.safe)
 {
-	atkmid_timer ++
-	if (!but_ATK_charge || but_ATK_charge && atkmid_timer = 2) atk_step = atk.atk2;
+	atkmid_timer++;
+	if (atkmid_timer = 5)
+	{
+		atk_step = atk.atk2;
+	}
 }
 #endregion
 //==========================================================================================
@@ -123,6 +127,7 @@ if (atk_step = atk.reset)
 	state = states.on_ground;
 	can_move = true;
 	atk_step = atk.atk1_init;
+	
 	image_speed = 1;
 }
 

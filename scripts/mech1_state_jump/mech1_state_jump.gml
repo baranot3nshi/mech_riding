@@ -1,3 +1,5 @@
+grounded = false;
+
 if (y_spd > 0)
 {
 	state = states.fall;
