@@ -14,40 +14,48 @@ switch(type)
 	case drone_type.standard:	sprite_index = spr_drone_1;	
 								shoot_animation = obj_drone_shoot1_FX;
 								shoot_bullet_type = obj_drone_bullet1;
+								shoot_snd = snd_shoot;
 								shoot_cooldown = 20;
 								
 								shoot_charge_animation = obj_drone_shoot1_FX;
 								shoot_charge_bullet_type = obj_drone_bullet2;
+								shoot_charge_snd = snd_shoot_charge;
 								shoot_charge_cooldown = 40;
 								break;		
 								
 	case drone_type.laser:		sprite_index = spr_drone_2;	
 								shoot_animation = obj_drone_shoot1_FX;
 								shoot_bullet_type = obj_drone_bullet1;
+								shoot_snd = snd_shoot;
 								shoot_cooldown = 20;
 								
 								shoot_charge_animation = obj_drone_shoot1_FX;
 								shoot_charge_bullet_type = obj_drone_bullet2;
+								shoot_charge_snd = snd_shoot_charge;
 								shoot_charge_cooldown = 40;
 								break;
 								
 	case drone_type.missile:	sprite_index = spr_drone_3;	
 								shoot_animation = obj_drone_shoot1_FX;
 								shoot_bullet_type = obj_drone_bullet1;
+								shoot_snd = snd_shoot;
 								shoot_cooldown = 20;
 								
 								shoot_charge_animation = obj_drone_shoot1_FX;
 								shoot_charge_bullet_type = obj_drone_missile;
+								shoot_charge_snd = snd_missile_shoot;
 								shoot_charge_cooldown = 40;
 								break;
 								
 	case drone_type.tv:			sprite_index = spr_drone_4;	
 								shoot_animation = obj_drone_shoot1_FX;
 								shoot_bullet_type = obj_drone_bullet1;
+								shoot_snd = snd_missile_shoot;
 								shoot_cooldown = 20;
 								
 								shoot_charge_animation = obj_drone_shoot1_FX;
 								shoot_charge_bullet_type = obj_drone_bullet2;
+								shoot_charge_snd = snd_shoot_charge;
 								shoot_charge_cooldown = 40;
 								break;
 }

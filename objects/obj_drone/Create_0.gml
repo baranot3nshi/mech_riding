@@ -31,10 +31,12 @@ dir = 1
 
 instance_create_depth(x,y,depth+5,obj_drone_hover_FX)
 
+shoot_snd = snd_shoot;
 shoot_animation = obj_drone_shoot1_FX;
 shoot_bullet_type = obj_drone_bullet1;
 shoot_cooldown = 20;
 
+shoot_charge_snd = snd_shoot_charge;
 shoot_charge_animation = obj_drone_shoot1_FX;
 shoot_charge_bullet_type = obj_drone_bullet2;
 shoot_cooldown = 40;

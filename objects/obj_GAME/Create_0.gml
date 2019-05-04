@@ -31,3 +31,10 @@ BktGlitch_init(); //getting uniform pointers
 application_surface_draw_enable(false); //disabling automatic redrawing of the application surface
 
 gb_shader = false;
+
+
+//TEMP
+
+//volume
+audio_group_load(audiogroup_SFX)
+audio_group_set_gain(audiogroup_SFX,.3,0)

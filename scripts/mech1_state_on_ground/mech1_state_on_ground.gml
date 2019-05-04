@@ -38,6 +38,13 @@ if (but_right || but_left)
 		create_dust_particle();
 	}
 	
+	//walk sound
+	if (walk_timer%15 = 0) 
+	{
+		audio_sound_pitch(snd_mech_step,random_range(.8,1.2));
+		audio_play_sound(snd_mech_step,5,0);
+	}
+	
 }
 else
 {

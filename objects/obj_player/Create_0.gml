@@ -34,6 +34,10 @@ accel = .4;
 jump_power = 5;
 jump_number = 0;
 jump_number_max = 2;
+jetpack_timer = 0;
+
+sound_jump = snd_jump;
+sound_land = snd_land;
 
 jet_spd_max = 4;
 weight = .3;

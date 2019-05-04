@@ -6,6 +6,9 @@ if (place_meeting(x, y + 1, obj_wall) ||
 {
 	state = states.on_ground;
 	
+	if (!audio_is_playing(sound_land)) 
+	{audio_sound_pitch(sound_land,random_range(.8,1.2)); audio_play_sound(sound_land,5,0);}
+
 	repeat(6)
 	{
 		create_dust_particle();

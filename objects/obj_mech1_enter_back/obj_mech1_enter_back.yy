@@ -4,16 +4,7 @@
     "mvc": "1.0",
     "name": "obj_mech1_enter_back",
     "eventList": [
-        {
-            "id": "8b783503-8eee-494a-8a09-c55ffb430f4c",
-            "modelName": "GMEvent",
-            "mvc": "1.0",
-            "IsDnD": false,
-            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
-            "enumb": 0,
-            "eventtype": 3,
-            "m_owner": "7394198b-ddb1-4bbb-aca5-778e988812c2"
-        }
+        
     ],
     "maskSpriteId": "00000000-0000-0000-0000-000000000000",
     "overriddenProperties": null,

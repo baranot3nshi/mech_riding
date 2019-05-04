@@ -6,7 +6,7 @@ if (y_spd > 0)
 }
 
 //jump
-mech1_jump();
+player_jump();
 
 mech1_jump_atk();
 

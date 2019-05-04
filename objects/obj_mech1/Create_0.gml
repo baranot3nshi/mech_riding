@@ -39,6 +39,8 @@ jump_charge_step = 0;
 jump_charge_timer = 0;
 jump_charge_timer_max = 20;
 
+sound_jump = snd_mech_jump;
+sound_land = snd_mech_land;
 
 //atk vars
 atk_init_timer = 0;

@@ -19,24 +19,10 @@ else
 	target_framerate = 60;	
 }
 
-
-
-//if (global.screenfreeze != false) 
-//{
-//	target_framerate = 0;
-//	freeze_timer++;
-//	if (freeze_timer != 0) {target_framerate = 0}
-//	if (freeze_timer >= 5)
-//	{
-//		target_framerate = 60;
-//		freeze_timer = 0;
-//		global.screenfreeze = 0;
-//	}
-//}
-
 //glitch
 if (global.glitch_FX != 0)
 {
 	global.glitch_FX --;
 	if (global.glitch_FX < 0) {global.glitch_FX = 0;}
 }
+

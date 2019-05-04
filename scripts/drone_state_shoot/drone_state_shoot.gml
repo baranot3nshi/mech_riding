@@ -4,6 +4,7 @@ instance_create_depth(x,y,depth-5,shoot_animation)
 //BULLET
 bullet = instance_create_depth(x,y,depth-10,shoot_bullet_type)
 
+audio_play_sound(shoot_snd,5,0)
 
 if (!target)
 {bullet.dir = point_direction(x,y,x+obj_player.dir,y)}
