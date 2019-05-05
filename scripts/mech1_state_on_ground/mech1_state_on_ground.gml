@@ -39,7 +39,7 @@ if (but_right || but_left)
 	}
 	
 	//walk sound
-	if (walk_timer%15 = 0) 
+	if (walk_timer%15 = 0 || walk_timer = 0) 
 	{
 		audio_sound_pitch(snd_mech_step,random_range(.8,1.2));
 		audio_play_sound(snd_mech_step,5,0);

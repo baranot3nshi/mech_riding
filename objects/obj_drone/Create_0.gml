@@ -57,3 +57,5 @@ range_w = 170;
 range_h = 170;
 
 change_FX = 0;
+
+followed = obj_player;

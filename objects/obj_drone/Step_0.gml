@@ -76,7 +76,13 @@ type = clamp(type, 0, drone_type.size-1)
 if (change_FX != 0) {change_FX--; 					 if (change_FX < 0) {change_FX = 0;}}
 #endregion
 
-if (obj_player.state != states.aim)
+if (obj_player.state != states.mech) 
+{followed = obj_player}
+else
+{followed = obj_player.current_mech}
+
+
+if (followed.state != states.aim)
 {
 	drone_follow();
 }
