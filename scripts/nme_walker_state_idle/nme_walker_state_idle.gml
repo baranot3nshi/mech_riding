@@ -1,5 +1,6 @@
 sprite_index = sprite_idle;
 grounded = true;
+x_spd = 0;
 
 idle_timer++;
 if (idle_timer == idle_timer_max)

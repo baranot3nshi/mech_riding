@@ -14,32 +14,32 @@ switch(state)
 }
 #endregion
 
+//=============================================================================================
 //if human unit is active and not riding a mech
 if (state != states.mech)
 {
-	
 	//X INPUT
 	if (can_move) {player_input_x();}
-	
 	//X APPLY
 	apply_x_spd(x_spd);
-	//Y APPLY
-	if (can_fall) {apply_y_spd();}
 	
+	//Y APPLY
+	if (can_fall) {apply_y_spd();}	
 	
 	//charging
 	charge_overtime();
-
+	
 	visible = true;
 	
-	
-	//creates the servodrone
+	//creating the servodrone
 	if (!instance_exists(obj_drone)) {instance_create_depth(x-10,y-10,depth-5,obj_drone)}
 }
-else //if riding a mech
+//=============================================================================================
+else //if riding a mech, twintails should still follow your position
 {
-if (current_mech.colliding)	{x_spd = 0}
-else						{x_spd = current_mech.x_spd;}
+	//failsafe to avoid twintails to move farther from the character when colliding with a wall
+	if (current_mech.colliding)	{x_spd = 0}
+	else						{x_spd = current_mech.x_spd;}
 
 	y_spd = current_mech.y_spd;
 	dir = current_mech.dir;
@@ -50,7 +50,7 @@ else						{x_spd = current_mech.x_spd;}
 	visible = false;
 	image_xscale = current_mech.image_xscale;
 }
-
+//=============================================================================================
 
 //vulnerability
 if (!vulnerable)

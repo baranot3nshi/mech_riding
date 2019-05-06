@@ -12,6 +12,7 @@ switch (state)
 	case nme_states.follow	: nme_state_follow();			break;
 	case nme_states.jump	: nme_state_jump();				break;
 	case nme_states.fall	: nme_state_fall();				break;
+	case nme_states.land	: nme_state_land();				break;
 	case nme_states.atk1	: script_execute(script_atk1);	break;
 	case nme_states.atk2	: script_execute(script_atk2);	break;
 	case nme_states.hurt	: nme_state_hurt();				break;

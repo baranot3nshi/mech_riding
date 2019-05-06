@@ -4,6 +4,7 @@ enum nme_states {
 	follow,
 	jump,
 	fall,
+	land,
 	atk1,
 	atk2,
 	hurt,
@@ -16,9 +17,12 @@ state = nme_states.fall;
 HP = 5;
 
 sprite_idle = undefined;
+sprite_fall = undefined;
 sprite_walk = undefined;
 sprite_hurt = undefined;
 sprite_dead = undefined;
+sprite_jump = undefined;
+sprite_land = undefined;
 
 script_idle = undefined;
 script_roam = undefined;
@@ -43,22 +47,25 @@ fall_spd_max = 5;
 //simultaneous states
 grounded = false;
 
+//movement related
 dir = 1;
+collider = [obj_wall,obj_wall_nme];
 
 //hurt vars
-
 stun = false;
 
 hurt_timer = 0;
 hurt_timer_max = 20;
 hitting_atk = undefined;
 
+//dead vars
 dead_timer = 0;
 dead_timer_max = 30;
 dead_FX = obj_explosion_S_FX;
 
-collider = [obj_wall,obj_wall_nme];
-
+//land vars
+land_timer = 0;
+land_timer_max = 10;
 
 //DEBUG FEATURES
 hits_taken = 0
