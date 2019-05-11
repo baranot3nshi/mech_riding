@@ -1,7 +1,7 @@
 // Inherit the parent event
 event_inherited();
 
-HP = 10;
+HP = 5;
 
 sprite_idle = spr_nme_walker_idle;
 sprite_walk = spr_nme_walker_walk;

@@ -26,7 +26,7 @@ if (state < states.wait) //DO THESE THINGS ONLY WHEN ACTIVE
 	//X APPLY
 	apply_x_spd(x_spd);
 	//Y APPLY
-	if (can_fall) {apply_y_spd();}
+	if (can_fall) {apply_gravity();}
 	
 	//charge_hold(); //<--- OLD CHARGING SYSTEM
 	charge_overtime();

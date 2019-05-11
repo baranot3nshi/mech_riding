@@ -10,5 +10,5 @@ if (idle_timer == idle_timer_max)
 }
 
 //go to other states
-nme_walker_atk();
+nme_detect_player(nme_states.atk1,110);
 nme_fall();

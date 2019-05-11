@@ -26,6 +26,8 @@ y_spd = 0;
 dir = 1;
 x_dir = 0;
 
+walk_timer = 0;
+
 //X movement vars
 x_spd_max = 1.7;
 accel = .4;

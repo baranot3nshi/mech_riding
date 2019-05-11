@@ -24,7 +24,7 @@ if (state != states.mech)
 	apply_x_spd(x_spd);
 	
 	//Y APPLY
-	if (can_fall) {apply_y_spd();}	
+	if (can_fall) {apply_gravity();}	
 	
 	//charging
 	charge_overtime();

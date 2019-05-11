@@ -127,8 +127,6 @@ if (atk_step = atk.reset)
 	state = states.on_ground;
 	can_move = true;
 	atk_step = atk.atk1_init;
-	
-	image_speed = 1;
 }
 
 #endregion

@@ -11,7 +11,7 @@ enum nme_states {
 	dead
 }
 
-state = nme_states.fall;
+state = nme_states.idle;
 
 //define in each enemy create event after inheriting
 HP = 5;
@@ -26,10 +26,12 @@ sprite_land = undefined;
 
 script_idle = undefined;
 script_roam = undefined;
+script_follow = undefined;
 script_atk1 = undefined; 
 script_atk2 = undefined;
 
 //MOVEMENT
+flying = false;
 x_spd = 0;
 y_spd = 0;
 

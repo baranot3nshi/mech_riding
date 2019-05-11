@@ -7,16 +7,16 @@
 #region states
 switch (state)
 {
-	case nme_states.idle	: script_execute(script_idle);	break;
-	case nme_states.roam	: script_execute(script_roam);	break;
-	case nme_states.follow	: nme_state_follow();			break;
-	case nme_states.jump	: nme_state_jump();				break;
-	case nme_states.fall	: nme_state_fall();				break;
-	case nme_states.land	: nme_state_land();				break;
-	case nme_states.atk1	: script_execute(script_atk1);	break;
-	case nme_states.atk2	: script_execute(script_atk2);	break;
-	case nme_states.hurt	: nme_state_hurt();				break;
-	case nme_states.dead	: nme_state_dead();				break;
+	case nme_states.idle		: script_execute(script_idle);		break;
+	case nme_states.roam		: script_execute(script_roam);		break;
+	case nme_states.follow		: script_execute(script_follow);	break;
+	case nme_states.jump		: nme_state_jump();					break;
+	case nme_states.fall		: nme_state_fall();					break;
+	case nme_states.land		: nme_state_land();					break;
+	case nme_states.atk1		: script_execute(script_atk1);		break;
+	case nme_states.atk2		: script_execute(script_atk2);		break;
+	case nme_states.hurt		: nme_state_hurt();					break;
+	case nme_states.dead		: nme_state_dead();					break;
 }
 #endregion
 
@@ -24,3 +24,9 @@ switch (state)
 
 
 if (HP > 0) {image_xscale = dir;}
+
+
+if (!flying) {apply_gravity();} 
+else		 {apply_y_spd(y_spd);}
+
+apply_x_spd(x_spd);

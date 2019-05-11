@@ -24,7 +24,10 @@ if (hurt_timer = hurt_timer_max)
 	
 	//kill if no HP, otherwise go back to idle
 	if (HP > 0) 
-	{state = nme_states.idle;}
+	{
+		state = nme_states.idle;
+		idle_timer = 0;
+	}
 	else 
 	{state = nme_states.dead;}
 	

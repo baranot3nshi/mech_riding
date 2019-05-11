@@ -59,6 +59,7 @@ draw_text(vw-10,5+_s*1,"AP = " + string(global.AP) + "/" + string(global.AP_max)
 
 draw_text(vw-10,5+_s*2,"screenfreeze = " + string(global.screenfreeze))
 draw_text(vw-10,5+_s*3,"target_framerate = " + string(target_framerate))
+draw_text(vw-10,5+_s*4,"delta = " + string(global.dt))
 
 draw_set_halign(fa_left);
 

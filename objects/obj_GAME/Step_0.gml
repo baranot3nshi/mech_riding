@@ -12,7 +12,7 @@ global.dt = (delta_time/1000000) * (target_framerate)
 if (global.screenfreeze > 0)
 {
 	target_framerate = 0;
-	global.screenfreeze--
+	global.screenfreeze--;
 }
 else 	
 {
