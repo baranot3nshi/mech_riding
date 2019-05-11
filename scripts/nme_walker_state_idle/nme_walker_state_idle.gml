@@ -10,5 +10,5 @@ if (idle_timer == idle_timer_max)
 }
 
 //go to other states
-nme_detect_player(nme_states.atk1,110);
+if (nme_detect_player_rectangle(110, -sprite_height)) {state = nme_states.atk1}
 nme_fall();

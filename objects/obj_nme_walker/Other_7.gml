@@ -10,8 +10,3 @@ else if(sprite_index = spr_nme_walker_atk)
 	sprite_index = spr_nme_walker_idle;
 	atk_step = atk.reset;
 }
-
-else if (sprite_index = sprite_dead)
-{
-	image_index = image_number -1;
-}

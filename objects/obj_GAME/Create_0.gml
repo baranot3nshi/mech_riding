@@ -37,4 +37,4 @@ gb_shader = false;
 
 //volume
 audio_group_load(audiogroup_SFX)
-audio_group_set_gain(audiogroup_SFX,.3,0)
+audio_group_set_gain(audiogroup_SFX,.01,0)
