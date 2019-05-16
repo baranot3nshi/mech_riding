@@ -15,4 +15,5 @@ if (state != states.wait)
 	draw_text(10,_s*7,"colliding = " + string(colliding))
 	
 	draw_set_color(c_white)
+	
 }

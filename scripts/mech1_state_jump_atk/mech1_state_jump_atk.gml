@@ -42,28 +42,6 @@ if (jump_atk_step = atk.atk1 && (!charging || (charging && global.AP = global.ch
 
 #endregion
 //==========================================================================================
-#region STEP CHARGED (INACTIVE)
-//==========================================================================================
-//if (jump_atk_step = atk.atk1 && charging && global.AP >= global.charge)
-//{
-//		//player anim
-//	if (sprite_index != spr_player_jump_atk) {image_index = 0;}
-//	sprite_index = spr_player_jump_atk;
-
-//	//atkFX
-//	if (!instance_exists(obj_player_jump_atk))
-//	{
-//		//FX offset is set in horizontal movement
-//		var atkcFX = instance_create_depth(x, y, depth - 5, obj_player_atk_charge);
-//		atkcFX.image_xscale = image_xscale;
-//	}
-//	jump_atk_step = atk.safe;
-
-//}
-
-
-#endregion
-//==========================================================================================
 #region STEP RESET
 //==========================================================================================
 

@@ -1,6 +1,6 @@
 grounded = false;
 
-if (y_spd > 0)
+if (y_spd >= 0)
 {
 	state = states.fall;
 }
@@ -8,7 +8,9 @@ if (y_spd > 0)
 //jump
 player_jump();
 
-mech1_jump_atk();
+//atk
+if (global.AP > global.charge && charging && got(item.mech_hammer))		{mech1_hammer();}
+else																	{mech1_jump_atk();}
 
 
 sprite_index = spr_mech1_jump_upward;

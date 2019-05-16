@@ -4,7 +4,8 @@ player_land();
 //jump
 mech1_jump();
 //jump_atk
-mech1_jump_atk();
+if (global.AP > global.charge && charging && got(item.mech_hammer))		{mech1_hammer();}
+else																	{mech1_jump_atk();}
 
 //go to jetpack
 

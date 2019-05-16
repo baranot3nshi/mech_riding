@@ -7,11 +7,10 @@ player_jump();
 //jump_atk
 player_jump_atk();
 
-//go to jetpack
-
 if (jump_number = 0 && y_spd > 0) {jump_number = -1}
 
-if (but_JUMP_charge && jump_number = -1)
+//go to jetpack
+if (but_JUMP_charge && jump_number = -1 && got(item.jetpack))
 {
 	state = states.jetpack;
 }

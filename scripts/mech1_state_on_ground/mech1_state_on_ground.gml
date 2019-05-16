@@ -10,12 +10,12 @@ jump_number = jump_number_max;
 player_walkoff();
 
 //jump
-if (global.AP > global.charge && charging)	{mech1_jump_charged();}
-else										{player_jump();}
+if (global.AP > global.charge && charging && got(item.mech_spinjump))	{mech1_jump_charged();}
+else																	{player_jump();}
 
 //atk1
-if (global.AP > global.charge && charging)	{mech1_dash();}
-else										{mech1_atk();}
+if (global.AP > global.charge && charging && got(item.mech_dash))		{mech1_dash();}
+else																	{mech1_atk();}
 
 //dismount
 if (but_DISMOUNT_pressed)
@@ -25,7 +25,6 @@ if (but_DISMOUNT_pressed)
 player_aim();
 
 #endregion
-
 #region animation
 if (but_right || but_left)
 {

@@ -73,6 +73,11 @@ dash_step = 0;
 
 dash_spd = 10;
 
+//hammer
+hammer_step = 0;
+hammer_timer = 0;
+hammer_timer_max = 5;
+
 //hurt
 sprite_hurt = spr_mech1_hurt;
 

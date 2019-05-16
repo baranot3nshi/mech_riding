@@ -4,5 +4,5 @@
     "mvc": "1.0",
     "name": "mech1_jump_atk",
     "IsCompatibility": false,
-    "IsDnD": true
+    "IsDnD": false
 }

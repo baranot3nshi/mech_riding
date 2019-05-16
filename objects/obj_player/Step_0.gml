@@ -1,4 +1,5 @@
 input_get();
+
 #region states
 switch(state)
 {
@@ -13,9 +14,8 @@ switch(state)
 	case states.mech:			player_state_mech();		break;
 }
 #endregion
-
 //=============================================================================================
-//if human unit is active and not riding a mech
+#region//if human unit is active and not riding a mech
 if (state != states.mech)
 {
 	//X INPUT
@@ -34,8 +34,10 @@ if (state != states.mech)
 	//creating the servodrone
 	if (!instance_exists(obj_drone)) {instance_create_depth(x-10,y-10,depth-5,obj_drone)}
 }
+else
+#endregion
 //=============================================================================================
-else //if riding a mech, twintails should still follow your position
+#region//if riding a mech, twintails should still follow your position
 {
 	//failsafe to avoid twintails to move farther from the character when colliding with a wall
 	if (current_mech.colliding)	{x_spd = 0}
@@ -50,9 +52,9 @@ else //if riding a mech, twintails should still follow your position
 	visible = false;
 	image_xscale = current_mech.image_xscale;
 }
+#endregion
 //=============================================================================================
-
-//vulnerability
+#region//vulnerability
 if (!vulnerable)
 {
 	vul_timer++
@@ -65,3 +67,7 @@ if (!vulnerable)
 	if (vul_timer % 3 = 0 && alarm[11] = -1  && state != states.mech) {visible = true ? visible = false : visible = true}
 }
 if (vul_timer = 0 && state != states.mech) {visible = true;}
+#endregion
+//=============================================================================================
+
+if (audio_is_playing(snd_jetpack) && state != states.jetpack) {audio_stop_sound(snd_jetpack)}

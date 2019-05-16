@@ -43,3 +43,17 @@ else if (sprite_index = spr_mech1_dash_atk_post)
 	dash_step = atk.reset;
 }
 #endregion
+else if (sprite_index = spr_mech1_jump_atk_charge_init)
+{
+	image_index = image_number - 1;
+}
+else if (sprite_index = spr_mech1_jump_atk_charge)
+{
+	image_index = 0;
+	sprite_index = spr_mech1_jump_atk_charge_loop;
+}
+else if (sprite_index = spr_mech1_jump_atk_charge_post)
+{
+	hammer_step = atk.reset;
+	image_index = image_number - 1;
+}

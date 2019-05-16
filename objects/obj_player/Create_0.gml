@@ -12,6 +12,7 @@ enum states {
 	jump,
 	jetpack,
 	jump_atk,
+	jump_atk_charge,
 	jump_charge,
 	
 	//new states should be added before this line
@@ -35,7 +36,7 @@ accel = .4;
 //Y movement vars
 jump_power = 5;
 jump_number = 0;
-jump_number_max = 2;
+jump_number_max = 1;
 jetpack_timer = 0;
 
 sound_jump = snd_jump;
@@ -86,6 +87,7 @@ vul_timer_max = 100;
 
 
 #region create hair strands
+instance_create_depth(0,0,0,obj_RENDER_outline)
 
 //hair_F0 = instance_create_depth(x-4,y-14,depth+4,obj_player_hair_fixed)
 hair_F0 = create_hair_strand(spr_player_hair_f, -4, -14, 1);

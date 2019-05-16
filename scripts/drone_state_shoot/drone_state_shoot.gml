@@ -1,8 +1,14 @@
 //ANIMATION
 instance_create_depth(x,y,depth-5,shoot_animation)
 
+var xx = x; 
+var yy = y;
+
+if (place_meeting(xx,y,obj_wall)) {xx+=dir}
+if (place_meeting(x,yy,obj_wall)) {yy++}
+
 //BULLET
-bullet = instance_create_depth(x,y,depth-10,shoot_bullet_type)
+bullet = instance_create_depth(xx,yy,depth-10,shoot_bullet_type)
 
 audio_play_sound(shoot_snd,5,0)
 

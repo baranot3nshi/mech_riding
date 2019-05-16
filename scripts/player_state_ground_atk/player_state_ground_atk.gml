@@ -75,9 +75,10 @@ if (atk_step = atk.atk1 && charging && global.AP >= global.charge)
 if (atk_step = atk.safe)
 {
 	atkmid_timer++;
-	if (atkmid_timer = 5)
+	if (atkmid_timer > 5)
 	{
 		atk_step = atk.atk2;
+		atkmid_timer = 0;
 	}
 }
 #endregion
@@ -103,14 +104,8 @@ if(atk_step = atk.atk2)
  
 if (atk_step = atk.atk2_post)
 {
-	//go to atk1
 	atk1_timer = 0;
 	atk2_timer ++;
-	
-	if (but_ATK_pressed && atk1_timer > atk_timer_max/3 && atk2_timer < atk_timer_max)
-	{
-		atk_step = atk.atk1;
-	}
 	
 	if (atk2_timer > atk_timer_max) {atk_step = atk.reset;}
 }

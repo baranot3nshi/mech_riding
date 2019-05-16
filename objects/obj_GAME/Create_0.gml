@@ -12,7 +12,7 @@ global.glitch_FX = 0;
 global.HP_max = 3;
 global.HP = global.HP_max;
 
-global.AP = 0;
+global.AP = 300;
 global.AP_max = 1000;
 
 // CHARGING SYSTEM
@@ -23,13 +23,14 @@ charge_timer = 0;
 charge_timer_max = 120;
 
 //INIT CONTROLLER OBJECTS
-instance_create_depth(0,0,0,obj_input)
-instance_create_depth(0,0,0,obj_CAMERA)
-instance_create_depth(0,0,0,obj_RENDER_outline)
+instance_create_depth(0,0,0,obj_input);
+instance_create_depth(0,0,0,obj_CAMERA);
+instance_create_depth(0,0,0,obj_INVENTORY);
 
+
+//glitch shader init
 BktGlitch_init(); //getting uniform pointers
 application_surface_draw_enable(false); //disabling automatic redrawing of the application surface
-
 gb_shader = false;
 
 
@@ -38,3 +39,5 @@ gb_shader = false;
 //volume
 audio_group_load(audiogroup_SFX)
 audio_group_set_gain(audiogroup_SFX,.01,0)
+
+alarm[0] = 10;
