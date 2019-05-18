@@ -1,4 +1,4 @@
-//standard scripts for states like roam and follow
+//standard scripts for states like hurt and dead
 //special scripts whenever something is different or non-standard
 
 //if any of the enemies wants to do something special with a normal state, 
@@ -20,11 +20,7 @@ switch (state)
 }
 #endregion
 
-
-
-
 if (HP > 0) {image_xscale = dir;}
-
 
 if (!flying) {apply_gravity();} 
 else		 {apply_y_spd(y_spd);}

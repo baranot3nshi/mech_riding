@@ -1,5 +1,3 @@
-//grounded = true;
-
 #region 1	- GO INTO CHARGING ANIMATION
 if (atk_step = atk.atk1_init)
 {

@@ -7,8 +7,8 @@ grounded = false;
 if (jump_atk_step = atk.atk1_init)
 {
 	
-	if (sprite_index != spr_mech1_atk1_init) {image_index = 0;}
-	sprite_index = spr_mech1_atk1_init;
+	if (sprite_index != spr_mech1_jump_atk_init) {image_index = 0;}
+	sprite_index = spr_mech1_jump_atk_init;
 	jump_atk_init_timer++;
 	
 	if (jump_atk_init_timer = jump_atk_init_timer_max)

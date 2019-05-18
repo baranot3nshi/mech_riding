@@ -6,60 +6,60 @@
 
 #region	BOTH HAIR COORDINATES	(Y, VISIBLE)
 	
-	//atk
-	if (obj_player.state = states.ground_atk)
-	{anim_Y_offset = +1;}
+//atk
+if (obj_player.state = states.ground_atk)
+{anim_Y_offset = +1;}
 	
-	//human & mech walk
-	else if (obj_player.sprite_index = spr_player_walk || obj_mech1.sprite_index = spr_mech1_walk)
-	{
-		timer++;
-		if timer%10 = 0 if (anim_Y_offset = 1) anim_Y_offset = 0 else anim_Y_offset = 1
-		if timer >= 60 timer = 0;		
-	}
+//human & mech walk
+else if (obj_player.sprite_index = spr_player_walk || obj_mech1.sprite_index = spr_mech1_walk)
+{
+	timer++;
+	if timer%10 = 0 if (anim_Y_offset = 1) anim_Y_offset = 0 else anim_Y_offset = 1
+	if timer >= 60 timer = 0;		
+}
 	
-	//jump atk
-	else if (obj_player.state = states.jump_atk)
-	{anim_Y_offset = -2;}
+//jump atk
+else if (obj_player.state = states.jump_atk)
+{anim_Y_offset = -2;}
 	
-	//jump
-	else if (obj_player.state = states.jump || obj_mech1.state = states.jump_atk)
-	{anim_Y_offset = -1;}
+//jump
+else if (obj_player.state = states.jump || obj_mech1.state = states.jump_atk)
+{anim_Y_offset = -1;}
 	
-	//fall
-	else if (obj_player.state = states.fall || obj_mech1.state = states.jump_atk)
-	{anim_Y_offset = -1;}
+//fall
+else if (obj_player.state = states.fall || obj_mech1.state = states.jump_atk)
+{anim_Y_offset = -1;}
 	
-	//jetpack
-	else if (obj_player.state = states.jetpack)
-	{anim_Y_offset = -1;}
+//jetpack
+else if (obj_player.state = states.jetpack)
+{anim_Y_offset = -1;}
 	
-	//mech jump charge
-	else if (obj_mech1.state = states.jump_charge)
-	{
-		if (obj_mech1.jump_charge_step = 0) 
-		{anim_Y_offset = 4;}
-		else
-		{visible = false;}
-	}
-	else if (obj_mech1.state = states.wake)
-	{if (anim_Y_offset != 3) {anim_Y_offset = 3;} anim_Y_offset -= 2}
+//mech jump charge
+else if (obj_mech1.state = states.jump_charge)
+{
+	if (obj_mech1.jump_charge_step = 0) 
+	{anim_Y_offset = 4;}
+	else
+	{visible = false;}
+}
+else if (obj_mech1.state = states.wake)
+{if (anim_Y_offset != 3) {anim_Y_offset = 3;} anim_Y_offset -= 2}
 	
-	//mech atk1
-	else if (obj_mech1.state = states.ground_atk)
-	{anim_Y_offset = 1;}
+//mech atk1
+else if (obj_mech1.state = states.ground_atk)
+{anim_Y_offset = 1;}
 	
-	//mech jump_atk
-	else if (obj_mech1.state = states.jump_atk)
-	{
-		anim_Y_offset = 2;
-	}
-	//idle
-	else {anim_Y_offset = 0; timer = 0; 
-		if (obj_player.state != states.mech) {visible = obj_player.visible;}
-		else								 {visible = obj_mech1.visible;}
-		}
-
+//mech hammer
+else if(obj_mech1.state = states.jump_atk_charge && obj_mech1.sprite_index = spr_mech1_jump_atk_charge_post)
+{anim_Y_offset = 5;}
+	
+//idle
+else {
+	anim_Y_offset = 0; timer = 0; 
+	if (obj_player.state != states.mech) {visible = obj_player.visible;}
+	else								 {visible = obj_mech1.visible;}
+}
+	
 
 #endregion
 
@@ -102,12 +102,12 @@ if (sprite_index = spr_player_hair_f)
 		
 		
 	}
-	//jump_atk
-	else if (obj_mech1.state = states.jump_atk)
-	{
-		anim_X_offset = 6;
-		depth = obj_player.depth -5;
-	}
+	//mech jump_atk
+	//else if (obj_mech1.state = states.jump_atk)
+	//{
+	//	anim_X_offset = 6;
+	//	depth = obj_player.depth -5;
+	//}
 	
 
 	//idle
@@ -146,10 +146,10 @@ else if (sprite_index = spr_player_hair_b)
 	}
 	
 	//mech jump atk
-	else if (obj_mech1.state = states.jump_atk)
-	{
-		anim_X_offset = 2;
-	}
+	//else if (obj_mech1.state = states.jump_atk)
+	//{
+	//	anim_X_offset = 2;
+	//}
 
 	//idle
 	else {anim_X_offset = 0;}

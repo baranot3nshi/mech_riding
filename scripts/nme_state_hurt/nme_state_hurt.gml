@@ -3,12 +3,9 @@
 //flashing
 if (hurt_timer = 0) {alarm[11] = 5;}
 
-//can fall
-grounded = true;
-y_spd = 0;
 //FLY AWAY
-x_spd = lerp(x_spd,0,.3);
-
+x_spd = lerp(x_spd,0,.1);
+y_spd = lerp(y_spd,0,.1);
 
 //end atk fase
 hurt_timer++;
@@ -16,9 +13,6 @@ hurt_timer++;
 if (hurt_timer = hurt_timer_max)
 {
 	hurt_timer = 0;
-	
-	x_spd = 0;
-	y_spd = 0;
 
 	stun = false;
 	

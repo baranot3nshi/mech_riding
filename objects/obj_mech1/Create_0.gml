@@ -52,7 +52,7 @@ atk_init_timer_max = 15;
 atk_timer_max = 12;
 
 jump_atk_init_timer = 0;
-jump_atk_init_timer_max = 10;
+jump_atk_init_timer_max = 15
 
 atk_step = 0;
 jump_atk_step = 0;
@@ -77,6 +77,8 @@ dash_spd = 10;
 hammer_step = 0;
 hammer_timer = 0;
 hammer_timer_max = 5;
+
+
 
 //hurt
 sprite_hurt = spr_mech1_hurt;

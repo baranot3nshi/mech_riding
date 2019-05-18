@@ -1,6 +1,7 @@
 sprite_index = sprite_idle;
 grounded = true;
-x_spd = 0;
+x_spd = lerp(x_spd, 0, .1);
+y_spd = lerp(y_spd, 0, .1);
 
 idle_timer++;
 if (idle_timer == idle_timer_max)
