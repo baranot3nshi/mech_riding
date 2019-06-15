@@ -17,12 +17,12 @@ state = nme_states.idle;
 HP = 5;
 
 sprite_idle = undefined;
-sprite_fall = undefined;
 sprite_walk = undefined;
 sprite_hurt = undefined;
 sprite_dead = undefined;
 sprite_jump = undefined;
-sprite_land = undefined;
+sprite_fall = sprite_idle;
+sprite_land = sprite_idle;
 
 script_idle = undefined;
 script_roam = undefined;
@@ -51,7 +51,7 @@ grounded = false;
 
 //movement related
 dir = 1;
-collider = [obj_wall,obj_wall_nme];
+collider = [obj_wall, obj_wall_nme];
 
 //hurt vars
 stun = false;

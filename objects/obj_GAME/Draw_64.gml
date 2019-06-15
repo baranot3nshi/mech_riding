@@ -49,7 +49,10 @@ if (gb_shader = true)
 }
 	#endregion
 
+#region DEBUG
+
 draw_set_halign(fa_right);
+
 
 var _s = 7;
 ////draw HP
@@ -58,18 +61,31 @@ draw_text(vw-10,5+_s*0,"HP = " + string(global.HP) + "/" + string(global.HP_max)
 draw_text(vw-10,5+_s*1,"AP = " + string(global.AP) + "/" + string(global.AP_max))
 
 draw_text(vw-10,5+_s*2,"screenfreeze = " + string(global.screenfreeze))
-draw_text(vw-10,5+_s*3,"target_framerate = " + string(target_framerate))
+
 draw_text(vw-10,5+_s*4,"delta = " + string(global.dt))
+
+draw_text(vw-10,5+_s*4,"delta = " + string(global.dt))
+
+draw_text(vw-10,5+_s*5,"fps_real = " + string(fps_real))
+
+draw_text(vw-10,5+_s*6,"fps = " + string(fps))
+
+
+draw_text(vw-10,5+_s*7,"fps_real print = " + string(print_fps))
+draw_text(vw-10,5+_s*8,"walls = " + string(instance_number(obj_wall)))
+
 
 draw_set_halign(fa_left);
 
 //display_write_all_specs(5,5)
 
+#endregion
 
 
 
 #region show controls
-//CONTROLS
+////CONTROLS
+
 //if (instance_exists(obj_player))
 //{
 //	draw_set_color(c_orange)

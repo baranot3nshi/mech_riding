@@ -1,5 +1,4 @@
 input_get();
-
 #region states
 switch(state)
 {

@@ -1,5 +1,6 @@
 /// @description 
 
+depth = -200;
 #region states
 enum states {
 	on_ground, //must always be 0
@@ -34,7 +35,7 @@ x_spd_max = 1.7;
 accel = .4;
 
 //Y movement vars
-jump_power = 5;
+jump_power = 4.7;
 jump_number = 0;
 jump_number_max = 1;
 jetpack_timer = 0;

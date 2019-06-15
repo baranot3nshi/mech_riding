@@ -1,4 +1,5 @@
 //nme_land
+
 var _plat = instance_place(x, y + 1, obj_platform)
 
 sprite_index = sprite_fall;

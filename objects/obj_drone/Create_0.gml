@@ -1,3 +1,4 @@
+#region enum
 enum drone_states {
 	idle,
 	follow,
@@ -16,9 +17,27 @@ enum drone_type {
 	
 	size
 }
+#endregion
+#region create list of drones you have
 
-type = drone_type.standard;
-state = drone_states.idle;
+var j = 0;
+for (var i = 0; i < item.drone_size; i++)
+{
+	if (global.inventory[# i, inv.have] = true)
+	{
+		owned_drones[j] = i;
+		j++;
+		//show_debug_message("added drone " + string(i))
+	}
+}
+
+owned_drones_number = array_length_1d(owned_drones);
+//show_debug_message("number of drones: " + string(owned_drones_number))
+#endregion
+
+type_pos = 0;
+type = owned_drones[0];
+state = drone_states.follow;
 
 follow_x = obj_player.x - 10;
 follow_y = obj_player.y - 20;
@@ -35,6 +54,9 @@ shoot_snd = snd_shoot;
 shoot_animation = obj_drone_shoot1_FX;
 shoot_bullet_type = obj_drone_bullet1;
 shoot_cooldown = 20;
+
+sprite_idle = spr_drone_1;
+sprite_open = spr_drone_1;
 
 shoot_charge_snd = snd_shoot_charge;
 shoot_charge_animation = obj_drone_shoot1_FX;

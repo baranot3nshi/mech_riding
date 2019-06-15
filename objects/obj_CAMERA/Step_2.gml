@@ -1,5 +1,7 @@
 /// @description camera movement
 
+
+var vy = global.view_Y;
 var vw = global.view_width;
 var vh = global.view_height;
 
@@ -11,7 +13,9 @@ if (instance_exists(follow))
 {
 	//clamp to the borders and set the coordinates for the camera (1/2 horizontal, 2/3 vertical)
 	var X = clamp(follow.x-vw/2,   0, room_width  - vw);
-	var Y = clamp(follow.y-vh/3*2, 0, room_height - vh);
+	
+	//if (follow.y < vy+vh/4*2 || follow.y > vy+vh/4*3)
+	{Y = clamp(follow.y-vh/3*2, 0, room_height - vh);};
 	
 	//get "previous" position
 	var cur_x = camera_get_view_x(view);

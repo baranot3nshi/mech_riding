@@ -11,7 +11,7 @@ x_spd_max = 2;
 accel = .4;
 
 //Y movement vars
-jump_power = 6; //3 tiles
+jump_power = 6.2; //3 tiles
 jump_number = 0;
 jump_number_max = 1;
 

@@ -4,20 +4,21 @@ global.AP = clamp(global.AP,0,global.AP_max)
 
 if (global.charging) {global.AP++}
 
+#region //OLD DELTA TIME
 //delta time
-global.dt = (delta_time/1000000) * (target_framerate)
-
+//global.dt = (delta_time/1000000) * (target_framerate)
+#endregion
 //screenfreeze
-
 if (global.screenfreeze > 0)
 {
-	target_framerate = 0;
+	global.dt = 0;
 	global.screenfreeze--;
 }
 else 	
 {
-	target_framerate = 60;	
+	global.dt = 1;	
 }
+
 
 //glitch
 if (global.glitch_FX != 0)

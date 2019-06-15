@@ -1,10 +1,13 @@
 randomise();
 
+#region //OLD DELTA TIME & SCREENFREEZE
 //DELTA TIME
-target_framerate = 60;
-global.dt = (delta_time/1000000) * (target_framerate)
+//target_framerate = 60;
+#endregion
 
+global.dt = 1;
 global.screenfreeze = 0;
+
 
 global.glitch_FX = 0;
 
@@ -41,3 +44,5 @@ audio_group_load(audiogroup_SFX)
 audio_group_set_gain(audiogroup_SFX,.01,0)
 
 alarm[0] = 10;
+
+print_fps = false;
