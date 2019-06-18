@@ -21,4 +21,14 @@ global.screenshake = 0;
 
 	global.view_X = 0
 	global.view_Y = 0
+	
+	X = 0;
 	Y = 0;
+	look_down = false;
+	reset_timer = 0;
+	reset_timer_max = 20;
+	
+	look_down_timer = 0;
+	look_down_timer_max = 20;
+	buffer = 0;
+	depth = -500

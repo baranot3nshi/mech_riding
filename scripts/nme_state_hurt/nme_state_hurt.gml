@@ -25,7 +25,7 @@ if (hurt_timer = hurt_timer_max)
 	else 
 	{state = nme_states.dead;}
 	
-	//turn towards character
-	if (point_direction(x,y,obj_player.x,obj_player.y) - 90 < 180)
-	{dir = -1} else {dir = 1}
+	//turn towards character	
+	if (obj_player.dir = 1) {dir = -1}
+	else {dir = 1}
 }
