@@ -16,9 +16,9 @@ enum atk
 
 if (atk_step = atk.atk1_init){atk_step = atk.atk1}
 //==========================================================================================
-#region STEP ATK1 !charged	- normal first atk
+#region STEP ATK1
 //==========================================================================================
-if (atk_step = atk.atk1 && (!charging || (charging && global.AP < global.charge)))
+if (atk_step = atk.atk1)
 {
 	//player anim
 	if (sprite_index != spr_player_atk1) {image_index = 0;}
@@ -31,6 +31,7 @@ if (atk_step = atk.atk1 && (!charging || (charging && global.AP < global.charge)
 		var atk1FX = instance_create_depth(x, y, depth - 5, obj_player_atk1);
 		atk1FX.image_xscale = image_xscale;
 	}
+	
 	atk_step = atk.atk1_post;
 }
 
@@ -46,26 +47,6 @@ if (atk_step = atk.atk1_post)
 	}
 	
 	if (atk1_timer > atk_timer_max) {atk_step = atk.reset;}
-}
-
-#endregion
-//==========================================================================================
-#region STEP ATK1 charged	- charge atk
-//==========================================================================================
-if (atk_step = atk.atk1 && charging && global.AP >= global.charge)
-{
-	if (sprite_index != spr_player_atk1_charge_anim) {image_index = 0;} //AP reduction is here bc it only happens once
-	sprite_index = spr_player_atk1_charge_anim;
-
-	//atkFX
-	if (!instance_exists(obj_player_atk_charge))
-	{
-		var atkcFX = instance_create_depth(x, y-16, depth - 5, obj_player_atk_charge);
-		atkcFX.image_xscale = image_xscale
-	}
-	
-	
-	//STEP RESET and AP REDUCTION activated in Animation End
 }
 
 #endregion
@@ -115,7 +96,6 @@ if (atk_step = atk.atk2_post)
 if (atk_step = atk.reset)
 //==========================================================================================
 {
-	atk_charge_timer = 0;
 	atk1_timer = 0;
 	atkmid_timer = 0;
 	atk2_timer = 0;

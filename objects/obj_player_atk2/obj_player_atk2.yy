@@ -5,16 +5,6 @@
     "name": "obj_player_atk2",
     "eventList": [
         {
-            "id": "7b72ceea-fc1f-473a-9df8-d3defcdaeab7",
-            "modelName": "GMEvent",
-            "mvc": "1.0",
-            "IsDnD": false,
-            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
-            "enumb": 0,
-            "eventtype": 3,
-            "m_owner": "688079bc-0c7e-4bc1-882a-f3ce94ecf748"
-        },
-        {
             "id": "d14682f7-a71e-4dbe-8a4e-65789b1c0af8",
             "modelName": "GMEvent",
             "mvc": "1.0",

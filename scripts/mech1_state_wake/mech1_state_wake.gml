@@ -9,6 +9,7 @@ instance_destroy(enter_back);
 
 if (sprite_index!= spr_mech1_enter){image_index = 0; sprite_index = spr_mech1_enter;}
 obj_player.current_mech = id;
+obj_CAMERA.follow = id;
 depth = obj_player.depth;
 
 //change of state in Animation End

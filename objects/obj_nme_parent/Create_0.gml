@@ -69,5 +69,8 @@ dead_FX = obj_explosion_S_FX;
 land_timer = 0;
 land_timer_max = 10;
 
+//damage
+damage = 1;
+
 //DEBUG FEATURES
 hits_taken = 0

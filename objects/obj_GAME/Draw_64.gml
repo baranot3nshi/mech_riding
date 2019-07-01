@@ -1,6 +1,3 @@
-var vw = global.view_width;
-var vh = global.view_height;
-
 #region glitch
 //activating the shader
 
@@ -49,70 +46,3 @@ if (gb_shader = true)
 }
 	#endregion
 
-#region DEBUG
-
-draw_set_halign(fa_right);
-
-
-var _s = 7;
-////draw HP
-draw_text(vw-10,5+_s*0,"HP = " + string(global.HP) + "/" + string(global.HP_max))
-//draw charges
-draw_text(vw-10,5+_s*1,"AP = " + string(global.AP) + "/" + string(global.AP_max))
-
-draw_text(vw-10,5+_s*2,"screenfreeze = " + string(global.screenfreeze))
-
-draw_text(vw-10,5+_s*4,"delta = " + string(global.dt))
-
-draw_text(vw-10,5+_s*4,"delta = " + string(global.dt))
-
-draw_text(vw-10,5+_s*5,"fps_real = " + string(fps_real))
-
-draw_text(vw-10,5+_s*6,"fps = " + string(fps))
-
-
-draw_text(vw-10,5+_s*7,"fps_real print = " + string(print_fps))
-draw_text(vw-10,5+_s*8,"walls = " + string(instance_number(obj_wall)))
-
-
-draw_set_halign(fa_left);
-
-//display_write_all_specs(5,5)
-
-#endregion
-
-
-
-#region show controls
-////CONTROLS
-
-//if (instance_exists(obj_player))
-//{
-//	draw_set_color(c_orange)
-	
-//	if (obj_player.state != states.mech)
-//	{
-//		var _s = 7;
-//		draw_text(10,_s*0,"CONTROLS:")
-//		draw_text(10,_s*1,"HOLD R = TRIGGER SPECIAL")
-//		draw_text(10,_s*2,"B = JUMP     HOLD B = JETPACK")
-//		draw_text(10,_s*3,"Y = ATTACK   R+Y = SPECIAL ATTACK")
-//		draw_text(10,_s*4,"A = SHOOT    R+A = SPECIAL SHOT")
-//		draw_text(10,_s*5,"HOLD L = AIM")
-//		draw_text(10,_s*6,"LEFT/RIGHT ARROW = CHANGE DRONE")
-//	}
-//	else
-//	{
-//		var _s = 7;
-//		draw_text(10,_s*0,"CONTROLS:")
-//		draw_text(10,_s*1,"HOLD R = TRIGGER SPECIAL")
-//		draw_text(10,_s*2,"B = JUMP     R+B = SPIN JUMP")
-//		draw_text(10,_s*3,"Y = ATTACK   R+Y = DASH     R+Y+Y = DRILL ATTACK")
-//		draw_text(10,_s*4,"A = SHOOT    R+A = SPECIAL SHOT")
-//		draw_text(10,_s*5,"HOLD L = AIM")
-//		draw_text(10,_s*6,"LEFT/RIGHT ARROW = CHANGE DRONE")
-//		draw_text(10,_s*7,"X = EJECT")	
-//	}
-//	draw_set_color(c_white)
-//}
-#endregion

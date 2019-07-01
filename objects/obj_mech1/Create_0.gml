@@ -52,7 +52,7 @@ atk_init_timer_max = 15;
 atk_timer_max = 12;
 
 jump_atk_init_timer = 0;
-jump_atk_init_timer_max = 15
+jump_atk_init_timer_max = 7;
 
 atk_step = 0;
 jump_atk_step = 0;
@@ -67,11 +67,11 @@ dash_timer = 0;
 dash_timer_max = 40;
 
 dash_atk_timer = 0;
-dash_atk_timer_max = 20; 
+dash_atk_timer_max = 10; 
 
 dash_step = 0;
 
-dash_spd = 10;
+dash_spd = 15;
 
 //hammer
 hammer_step = 0;

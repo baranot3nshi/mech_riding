@@ -23,6 +23,7 @@ if (place_meeting(x, y + 1, collider) ||
 		create_dust_particle();
 	}
 	
+	return true;
 }
 
 

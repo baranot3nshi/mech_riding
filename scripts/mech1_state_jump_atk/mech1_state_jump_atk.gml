@@ -1,4 +1,3 @@
-player_land();
 grounded = false;
 
 //==========================================================================================
@@ -23,7 +22,7 @@ if (jump_atk_step = atk.atk1_init)
 //==========================================================================================
 #region STEP ATK1
 //==========================================================================================
-if (jump_atk_step = atk.atk1 && (!charging || (charging && global.AP = global.charge)))
+if (jump_atk_step = atk.atk1 && (!charging || (charging && global.AP = global.AP_chunk)))
 {
 	//player anim
 	if (sprite_index != spr_mech1_jump_atk) {image_index = 0;}
@@ -45,7 +44,7 @@ if (jump_atk_step = atk.atk1 && (!charging || (charging && global.AP = global.ch
 #region STEP RESET
 //==========================================================================================
 
-if (jump_atk_step = atk.reset)
+if (jump_atk_step = atk.reset || player_land())
 {
 	jump_atk_init_timer = 0;
 	jump_atk_step = atk.atk1_init;

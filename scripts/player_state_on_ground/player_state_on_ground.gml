@@ -3,7 +3,6 @@ grounded = true;
 //resetting states
 atk_step = 0;
 jump_atk_step = 0;
-global.charging = true;
 
 jump_number = jump_number_max;
 
@@ -18,7 +17,8 @@ player_aim();
 player_jump();
 
 //atk1
-player_atk();
+if (global.AP > global.AP_chunk/2 && charging)		{player_atk_charged();}
+else												{player_atk();}
 
 #endregion
 

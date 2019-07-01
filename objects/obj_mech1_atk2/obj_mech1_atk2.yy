@@ -5,16 +5,6 @@
     "name": "obj_mech1_atk2",
     "eventList": [
         {
-            "id": "d3e5dafe-7ed9-4638-ad16-9f9b3c6ad4b0",
-            "modelName": "GMEvent",
-            "mvc": "1.0",
-            "IsDnD": false,
-            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
-            "enumb": 0,
-            "eventtype": 3,
-            "m_owner": "c8de5686-b6d7-4390-84eb-5e67370c4bc6"
-        },
-        {
             "id": "558b419b-33d7-480a-98b1-39f237668ba2",
             "modelName": "GMEvent",
             "mvc": "1.0",

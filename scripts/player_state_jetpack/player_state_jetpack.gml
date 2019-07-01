@@ -3,6 +3,9 @@ player_jump_atk();
 jetpack_timer++;
 jetpack_timer = clamp(jetpack_timer,0,10)
 
+global.AP -=4;
+
+//AUDIO
 //set pitch
 var pitch = random_range(.9,1.1) *(jetpack_timer*.1)
 	audio_sound_pitch(snd_jetpack,pitch)
@@ -29,7 +32,7 @@ if (y_spd > -jet_spd_max && !place_meeting(x,y-1, obj_wall))
 		}
 }
 
-if (but_JUMP_released)
+if (but_JUMP_released || global.AP <= 0)
 {
 	audio_stop_sound(snd_jetpack)
 	state = states.fall;

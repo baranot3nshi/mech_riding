@@ -46,7 +46,7 @@ else if (sprite_index = spr_mech1_dash_init)
 
 else if (sprite_index = spr_mech1_dash_atk_post)
 {
-	dash_step = atk.reset;
+	dash_step = dash.reset;
 }
 #endregion
 #region //HAMMER

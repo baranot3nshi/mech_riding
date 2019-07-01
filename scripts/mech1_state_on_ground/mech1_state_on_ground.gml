@@ -3,6 +3,8 @@ atk_step = 0;
 jump_atk_step = 0;
 grounded = true;
 
+
+
 jump_number = jump_number_max;
 
 #region shift to other states
@@ -10,12 +12,12 @@ jump_number = jump_number_max;
 player_walkoff();
 
 //jump
-if (global.AP > global.charge && charging && got(item.mech_spinjump))	{mech1_jump_charged();}
-else																	{player_jump();}
+if (global.AP > global.AP_chunk/2 && charging && got(item.mech_spinjump))	{mech1_jump_charged();}
+else																		{player_jump();}
 
 //atk1
-if (global.AP > global.charge && charging && got(item.mech_dash))		{mech1_dash();}
-else																	{mech1_atk();}
+if (global.AP > global.AP_chunk/2 && charging && got(item.mech_dash))		{mech1_dash();}
+else																		{mech1_atk();}
 
 //dismount
 if (but_DISMOUNT_pressed)
@@ -47,6 +49,7 @@ if (but_right || but_left)
 }
 else
 {
+	x_spd = lerp(x_spd,0,.5)
 	sprite_index = spr_mech1_idle; 
 	walk_timer = 0;
 }
