@@ -70,7 +70,7 @@ land_timer = 0;
 land_timer_max = 10;
 
 //damage
-damage = 1;
+dmg = 1;
 
 //DEBUG FEATURES
 hits_taken = 0

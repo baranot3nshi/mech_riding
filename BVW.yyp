@@ -239,6 +239,14 @@
             }
         },
         {
+            "Key": "091b6046-99a7-4b04-b4f2-c80369a5b9b1",
+            "Value": {
+                "id": "53494c27-1f33-44d3-9566-73b4202a1d40",
+                "resourcePath": "scripts\\macros\\macros.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "091dac64-64b1-4353-af0b-5426c11589bc",
             "Value": {
                 "id": "eae9d603-d8dc-4a7c-83fa-b39284997d31",
@@ -548,6 +556,14 @@
                 "id": "238cfa8a-e124-48e4-aac0-b1e7293d9627",
                 "resourcePath": "scripts\\nme_flyer_state_idle\\nme_flyer_state_idle.yy",
                 "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "1c540756-0d0e-4546-a5ac-cc9e3f85b39b",
+            "Value": {
+                "id": "aa62f0a4-bec1-4fba-94aa-8d216ad9c3f5",
+                "resourcePath": "sprites\\spr_tile_elec_r\\spr_tile_elec_r.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
@@ -1599,6 +1615,14 @@
             }
         },
         {
+            "Key": "6b0a2055-a580-4b46-b41f-d4ed7cf38910",
+            "Value": {
+                "id": "913fcd3d-7575-4226-bb63-4f9699536a25",
+                "resourcePath": "objects\\obj_tile_elec\\obj_tile_elec.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "6c3b08e5-f797-44d0-a72b-59c42a5e7b5e",
             "Value": {
                 "id": "72464f1f-fe1d-477a-af1a-fee4e325d3c6",
@@ -1708,6 +1732,14 @@
                 "id": "230e7e15-03a2-426d-8a1b-0378468ca36e",
                 "resourcePath": "objects\\obj_mech1_enter_back\\obj_mech1_enter_back.yy",
                 "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "73f814fa-da89-447c-80b8-398c5cb0ec97",
+            "Value": {
+                "id": "08e3ef04-0082-4289-8dda-0ca423a61856",
+                "resourcePath": "sprites\\spr_reflect_fx\\spr_reflect_fx.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
@@ -2607,6 +2639,14 @@
             }
         },
         {
+            "Key": "b37aff74-a38a-481c-a58f-ff38032550be",
+            "Value": {
+                "id": "19425fef-4726-4629-a3b2-109dcb17e33c",
+                "resourcePath": "sprites\\spr_tile_elec_c\\spr_tile_elec_c.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "b59d4c82-5765-4d41-807f-3ae1fbc4f87a",
             "Value": {
                 "id": "b5f04669-16cf-4931-a703-cd95032a11b4",
@@ -3031,6 +3071,14 @@
             }
         },
         {
+            "Key": "cf095143-2b0b-4c8b-871b-d62d698da415",
+            "Value": {
+                "id": "6a5c8c4b-342d-4e0e-98d4-760b11ecd0d5",
+                "resourcePath": "objects\\obj_moving_platform\\obj_moving_platform.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "cf4a9531-f53b-4035-a7fb-16048fa2f23c",
             "Value": {
                 "id": "35a0cfd4-2382-4dc3-b654-469a94b9e750",
@@ -3219,6 +3267,14 @@
             "Value": {
                 "id": "b6213bab-439c-40df-b666-b3c812cb64a2",
                 "resourcePath": "sprites\\spr_drone_missile_llt\\spr_drone_missile_llt.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "de0e8352-afef-431a-8a84-9df7df84e9ea",
+            "Value": {
+                "id": "302a93d4-4652-4e46-ad67-fef4bd61d2a7",
+                "resourcePath": "sprites\\spr_tile_elec_l\\spr_tile_elec_l.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -3803,7 +3859,10 @@
         "fa5d8f80-68f5-4de2-a168-5560c5526a15",
         "7f058b5a-d2a6-4648-87d0-b644beabd90b",
         "f92f28f0-0360-4320-a835-5c4822b21be2",
-        "05bebb04-c605-492f-9499-b9dd504379d2"
+        "05bebb04-c605-492f-9499-b9dd504379d2",
+        "2df06196-c1f7-43b9-9e38-bc61804b8260",
+        "044bddcb-9eb0-4cf6-8845-115fd85d5286",
+        "091b6046-99a7-4b04-b4f2-c80369a5b9b1"
     ],
     "tutorial": ""
 }
