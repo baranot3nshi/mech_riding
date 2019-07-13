@@ -20,7 +20,7 @@ global.HP_mech1 = global.HP_mech1_max;
 
 global.AP_chunk = 300;
 global.AP = 1*global.AP_chunk;
-global.AP_max = 1*global.AP_chunk;
+global.AP_max = 3*global.AP_chunk;
 
 AP_timer = 0;
 AP_timer_max = 120;
@@ -37,6 +37,12 @@ instance_create_depth(0,0,0,obj_CAMERA);
 instance_create_depth(0,0,0,obj_INVENTORY);
 instance_create_depth(0,0,0,obj_UI);
 instance_create_depth(0,0,0,obj_DEBUG);
+instance_create_depth(0,0,0,obj_MAP);
+instance_create_depth(0,0,0,obj_SAVE);
+instance_create_depth(0,0,0,obj_MAPPER)
+
+
+
 
 //glitch shader init
 BktGlitch_init(); //getting uniform pointers
@@ -50,7 +56,7 @@ gb_shader = false;
 audio_group_load(audiogroup_SFX)
 audio_group_set_gain(audiogroup_SFX,.01,0)
 
-alarm[0] = 10;
+room_goto_next();
 
 print_fps = false;
 show_controls = false;

@@ -24,6 +24,7 @@ switch(type)
 								shoot_charge_animation = obj_drone_shoot1_FX;
 								shoot_charge_bullet_type = obj_drone_bullet2;
 								shoot_charge_snd = snd_shoot_charge;
+								shoot_charge_AP =  global.AP_chunk/3.5;
 								shoot_charge_cooldown = 40;
 								break;		
 								
@@ -37,9 +38,10 @@ switch(type)
 								sprite_close = spr_drone_2_close;
 								sprite_open = spr_drone_2_open;
 								
-								shoot_charge_animation = obj_drone_shoot1_FX;
-								shoot_charge_bullet_type = obj_drone_bullet2;
+								shoot_charge_animation = obj_drone_laser_shoot_FX;
+								shoot_charge_bullet_type = obj_drone_laser;
 								shoot_charge_snd = snd_shoot_charge;
+								shoot_charge_AP =  global.AP_chunk/3;
 								shoot_charge_cooldown = 40;
 								break;
 								
@@ -56,6 +58,7 @@ switch(type)
 								shoot_charge_animation = obj_drone_shoot1_FX;
 								shoot_charge_bullet_type = obj_drone_missile;
 								shoot_charge_snd = snd_missile_shoot;
+								shoot_charge_AP =  global.AP_chunk/2;
 								shoot_charge_cooldown = 40;
 								break;
 								
@@ -72,6 +75,7 @@ switch(type)
 								shoot_charge_animation = obj_drone_shoot1_FX;
 								shoot_charge_bullet_type = obj_drone_bullet2;
 								shoot_charge_snd = snd_shoot_charge;
+								shoot_charge_AP =  global.AP_chunk/3;
 								shoot_charge_cooldown = 40;
 								break;
 }

@@ -1,3 +1,5 @@
+state = 0; //prevent crash from plyaer checking for nme invulnerability to be hurt
+
 spd = 1;
 
 collider = [obj_player_parent, obj_wall];

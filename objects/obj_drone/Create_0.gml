@@ -40,7 +40,7 @@ type = owned_drones[0];
 state = drone_states.follow;
 
 follow_x = obj_player.x - 10;
-follow_y = obj_player.y - 20;
+follow_y = obj_player.y ;
 
 
 x_spd = 0;
@@ -61,6 +61,7 @@ sprite_open = spr_drone_1;
 shoot_charge_snd = snd_shoot_charge;
 shoot_charge_animation = obj_drone_shoot1_FX;
 shoot_charge_bullet_type = obj_drone_bullet2;
+shoot_charge_AP =  global.AP_chunk/3;
 shoot_cooldown = 40;
 
 shoot_timer = 0;

@@ -17,6 +17,8 @@ if (!global.charging)
 if (global.charging) {global.AP++}
 if (global.AP <= 0) {global.charging = false; global.AP = 0;}
 
+global.AP = real_round(global.AP);
+
 //screenfreeze
 if (global.screenfreeze > 0)
 {
