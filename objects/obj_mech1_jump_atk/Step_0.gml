@@ -1,3 +1,3 @@
 event_inherited();
-x = obj_mech1.x
-y = obj_mech1.y
+x = obj_player.x
+y = obj_player.y

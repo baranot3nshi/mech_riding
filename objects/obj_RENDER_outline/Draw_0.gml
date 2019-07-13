@@ -32,8 +32,11 @@ else
 	var wy = 0
 	
 	//set alpha for character blinking
-	if (obj_player.state != states.mech) {var alpha = obj_player.visible;}
-	else								 {var alpha = obj_mech1.visible;}
+	//if (obj_player.state != states.mech) {var alpha = obj_player.visible;}
+	//else								 {var alpha = obj_mech1.visible;}
+	
+	var alpha = obj_player.visible;
+	
 	draw_set_alpha(alpha)
 	
 	gpu_set_fog(true,c_black,0,1)

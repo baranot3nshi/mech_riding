@@ -1,6 +1,3 @@
-enter_back =	 instance_create_depth(x,y,obj_player.depth+500000000,obj_mech1_enter_back);
-enter_back.image_xscale = image_xscale
-
 //BOTTOM
 bottom_wall =	 instance_create_depth(x,y,depth-10,obj_wall_mech1_enter);
 

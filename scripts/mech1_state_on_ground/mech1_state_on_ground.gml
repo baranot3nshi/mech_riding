@@ -1,6 +1,6 @@
 //resetting states
 atk_step = 0;
-jump_atk_step = 0;
+mech1_jump_atk_step = 0;
 grounded = true;
 
 
@@ -21,7 +21,14 @@ else																		{mech1_atk();}
 
 //dismount
 if (but_DISMOUNT_pressed)
-{state = states.wait;}
+{
+	state = states.jump
+	y_spd -= jump_power;
+	current_mech = mechs.none
+	
+	var mech1 = instance_create_depth(x,y,depth,obj_mech1)
+	mech1.image_xscale = image_xscale;
+}
 
 //aim
 player_aim();

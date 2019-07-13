@@ -1,5 +1,5 @@
 {
-    "id": "7394198b-ddb1-4bbb-aca5-778e988812c2",
+    "id": "5568782b-3617-4b2b-9cdd-52a40aa0ea49",
     "modelName": "GMObject",
     "mvc": "1.0",
     "name": "obj_mech1_enter_back",

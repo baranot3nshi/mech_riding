@@ -14,11 +14,11 @@ enum atk
 	reset
 }
 
-if (atk_step = atk.atk1_init){atk_step = atk.atk1}
+if (human_atk_step = atk.atk1_init){human_atk_step = atk.atk1}
 //==========================================================================================
 #region STEP ATK1
 //==========================================================================================
-if (atk_step = atk.atk1)
+if (human_atk_step = atk.atk1)
 {
 	//player anim
 	if (sprite_index != spr_player_atk1) {image_index = 0;}
@@ -32,41 +32,41 @@ if (atk_step = atk.atk1)
 		atk1FX.image_xscale = image_xscale;
 	}
 	
-	atk_step = atk.atk1_post;
+	human_atk_step = atk.atk1_post;
 }
 
-if (atk_step = atk.atk1_post)
+if (human_atk_step = atk.atk1_post)
 {
 	//go to atk2
-	atk2_timer = 0;
-	atk1_timer ++;
+	human_atk2_timer = 0;
+	human_atk1_timer ++;
 	
-	if (but_ATK_pressed && atk1_timer > atk_timer_max/3 && atk1_timer < atk_timer_max)
+	if (but_ATK_pressed && human_atk1_timer > human_atk_timer_max/3 && human_atk1_timer < human_atk_timer_max)
 	{
-		atk_step = atk.safe;
+		human_atk_step = atk.safe;
 	}
 	
-	if (atk1_timer > atk_timer_max) {atk_step = atk.reset;}
+	if (human_atk1_timer > human_atk_timer_max) {human_atk_step = atk.reset;}
 }
 
 #endregion
 //==========================================================================================
 #region STEP SAFE			- preventing button to be pressed twice with one push from atk1 to atk2
 //==========================================================================================
-if (atk_step = atk.safe)
+if (human_atk_step = atk.safe)
 {
-	atkmid_timer++;
-	if (atkmid_timer > 5)
+	human_atkmid_timer++;
+	if (human_atkmid_timer > 5)
 	{
-		atk_step = atk.atk2;
-		atkmid_timer = 0;
+		human_atk_step = atk.atk2;
+		human_atkmid_timer = 0;
 	}
 }
 #endregion
 //==========================================================================================
 #region STEP ATK2			- second atk
 //==========================================================================================
-if(atk_step = atk.atk2)
+if(human_atk_step = atk.atk2)
 {
 	//player anim
 	if (sprite_index != spr_player_atk2) 
@@ -80,28 +80,28 @@ if(atk_step = atk.atk2)
 		var atk2FX = instance_create_depth(x, y, depth - 5, obj_player_atk2);
 		atk2FX.image_xscale = image_xscale
 	}
-	atk_step = atk.atk2_post
+	human_atk_step = atk.atk2_post
 }
  
-if (atk_step = atk.atk2_post)
+if (human_atk_step = atk.atk2_post)
 {
-	atk1_timer = 0;
-	atk2_timer ++;
+	human_atk1_timer = 0;
+	human_atk2_timer ++;
 	
-	if (atk2_timer > atk_timer_max) {atk_step = atk.reset;}
+	if (human_atk2_timer > human_atk_timer_max) {human_atk_step = atk.reset;}
 }
 #endregion
 //==========================================================================================
 #region STEP RESET (sometimes activated from Animation End)
-if (atk_step = atk.reset)
+if (human_atk_step = atk.reset)
 //==========================================================================================
 {
-	atk1_timer = 0;
-	atkmid_timer = 0;
-	atk2_timer = 0;
+	human_atk1_timer = 0;
+	human_atkmid_timer = 0;
+	human_atk2_timer = 0;
 	state = states.on_ground;
 	can_move = true;
-	atk_step = atk.atk1_init;
+	human_atk_step = atk.atk1_init;
 }
 
 #endregion

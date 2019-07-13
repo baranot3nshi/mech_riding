@@ -1,8 +1,8 @@
 grounded = true;
 
 //resetting states
-atk_step = 0;
-jump_atk_step = 0;
+human_atk_step = 0;
+human_jump_atk_step = 0;
 
 jump_number = jump_number_max;
 
