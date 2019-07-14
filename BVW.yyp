@@ -2151,6 +2151,14 @@
             }
         },
         {
+            "Key": "85e4b2a1-4298-4bff-8b2c-83f01f1c68ad",
+            "Value": {
+                "id": "f2eac3c3-b5ae-4198-a45f-fb56e6326cbf",
+                "resourcePath": "scripts\\map_get_y\\map_get_y.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "86e4dea3-9201-49e9-801b-c61dbaab24c0",
             "Value": {
                 "id": "00617700-a45d-422f-a032-59f7c1b1f551",
@@ -2319,10 +2327,10 @@
             }
         },
         {
-            "Key": "91e398d8-f207-4e69-920e-ff138bbdd57b",
+            "Key": "91a44747-d922-4164-b7ad-65cebe1bd8f0",
             "Value": {
-                "id": "3cdb1af7-6efd-49c8-99b4-9c01d24294ae",
-                "resourcePath": "sprites\\sprite169\\sprite169.yy",
+                "id": "a37539f5-4ad4-4ae8-bfd1-1b1abb123737",
+                "resourcePath": "sprites\\spr_map_mech1_location\\spr_map_mech1_location.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -2347,6 +2355,14 @@
             "Value": {
                 "id": "a163f8d3-6417-47d4-a944-5ae754245899",
                 "resourcePath": "scripts\\drone_state_aim\\drone_state_aim.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "957234f5-8ee5-4d9a-a025-c89fbadf1e57",
+            "Value": {
+                "id": "af1f99d5-4370-4600-84e5-cda59f888efe",
+                "resourcePath": "scripts\\map_get_x\\map_get_x.yy",
                 "resourceType": "GMScript"
             }
         },
@@ -3644,14 +3660,6 @@
                 "id": "422e8dfd-b31d-4ae0-ba52-1d9564e331eb",
                 "resourcePath": "rooms\\test\\test.yy",
                 "resourceType": "GMRoom"
-            }
-        },
-        {
-            "Key": "e845bd19-9878-4e03-9999-9876642cdfa0",
-            "Value": {
-                "id": "8ed6b309-eeaa-4591-ada4-13b53f5a7b14",
-                "resourcePath": "objects\\obj_player_hair_fixed\\obj_player_hair_fixed.yy",
-                "resourceType": "GMObject"
             }
         },
         {

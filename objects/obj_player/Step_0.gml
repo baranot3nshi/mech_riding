@@ -54,6 +54,10 @@ switch(state)
 		fall_spd_max = mech1_fall_spd_max;
 	
 		sprite_aim = spr_mech1_idle;
+		
+		global.mech1_x = x;
+		global.mech1_y = y;
+		global.mech1_rm = room;
 	
 }
 //=============================================================================================

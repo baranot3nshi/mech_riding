@@ -12,7 +12,8 @@
         "ff1f473e-53e2-4f41-ac34-9b05b247e82b",
         "74314652-aa0f-48c2-8182-5311de8a81f5",
         "fba258e4-98d0-47a8-9c18-cf0db3d16586",
-        "7dd17952-ff38-47c9-be0d-841709411d00"
+        "7dd17952-ff38-47c9-be0d-841709411d00",
+        "591ade46-efcf-4a5a-bdc7-c828b9497857"
     ],
     "filterType": "GMObject",
     "folderName": "FX",

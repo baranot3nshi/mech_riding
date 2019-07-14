@@ -1,15 +1,13 @@
 randomise();
 
-#region //OLD DELTA TIME & SCREENFREEZE
-//DELTA TIME
-//target_framerate = 60;
-#endregion
-
 global.dt = 1;
 global.screenfreeze = 0;
 
-
 global.glitch_FX = 0;
+
+global.mech1_x = 0;
+global.mech1_y = 0;
+global.mech1_rm = rm_mapping_test1;
 
 //HP & AP
 global.HP_max = 3;

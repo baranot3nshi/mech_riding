@@ -21,7 +21,9 @@ enum states {
 
 enum mechs {
 	none,
-	mech1
+	mech1,
+	
+	transition
 
 }
 #endregion

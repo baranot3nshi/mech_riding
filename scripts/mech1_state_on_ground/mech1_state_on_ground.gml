@@ -24,10 +24,14 @@ if (but_DISMOUNT_pressed)
 {
 	state = states.jump
 	y_spd -= jump_power;
-	current_mech = mechs.none
+	current_mech = mechs.none;
+	
+	//global.mech1_x = x;
+	//global.mech1_y = y;
+	//global.mech1_rm = room;
 	
 	var mech1 = instance_create_depth(x,y,depth,obj_mech1)
-	mech1.image_xscale = image_xscale;
+		mech1.image_xscale = image_xscale;
 }
 
 //aim
