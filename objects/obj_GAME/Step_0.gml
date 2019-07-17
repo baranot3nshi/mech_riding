@@ -5,7 +5,7 @@ if (global.AP >= global.AP_max) {global.AP = global.AP_max;}
 
 if (!global.charging) 
 {
-	AP_timer++;
+	AP_timer += global.dt
 	if (AP_timer >= AP_timer_max)
 	{
 		global.charging = true;
@@ -14,7 +14,7 @@ if (!global.charging)
 }
 
 
-if (global.charging) {global.AP++}
+if (global.charging) {global.AP += global.dt}
 if (global.AP <= 0) {global.charging = false; global.AP = 0;}
 
 global.AP = real_round(global.AP);
@@ -37,4 +37,3 @@ if (global.glitch_FX != 0)
 	global.glitch_FX --;
 	if (global.glitch_FX < 0) {global.glitch_FX = 0;}
 }
-

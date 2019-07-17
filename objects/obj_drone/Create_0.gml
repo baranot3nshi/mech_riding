@@ -36,7 +36,17 @@ owned_drones_number = array_length_1d(owned_drones);
 #endregion
 
 type_pos = 0;
-type = owned_drones[0];
+
+if (global.drone_type = undefined)
+{
+	type = owned_drones[0];
+	global.drone_type = type;
+}
+else
+{
+	type = global.drone_type;
+}
+
 state = drone_states.follow;
 
 follow_x = obj_player.x - 10;
@@ -80,3 +90,5 @@ range_w = 170;
 range_h = 170;
 
 change_FX = 0;
+
+instant = false;

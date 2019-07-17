@@ -18,6 +18,8 @@ display_set_gui_size(vw,vh)
 follow = obj_player;
 
 global.screenshake = 0;
+global.screenyank_x = 0;
+global.screenyank_y = 0;
 
 	global.view_X = 0
 	global.view_Y = 0

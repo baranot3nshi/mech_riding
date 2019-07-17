@@ -3,7 +3,7 @@ grounded = true;
 x_spd = lerp(x_spd, 0, .5);
 y_spd = lerp(y_spd, 0, .5);
 
-idle_timer++;
+idle_timer += global.dt
 if (idle_timer == idle_timer_max)
 {
 	state = nme_states.roam;

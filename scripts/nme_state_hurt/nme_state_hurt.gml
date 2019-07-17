@@ -8,7 +8,7 @@ x_spd = lerp(x_spd,0,.1);
 y_spd = lerp(y_spd,0,.1);
 
 //end atk fase
-hurt_timer++;
+hurt_timer += global.dt
 
 if (hurt_timer = hurt_timer_max)
 {

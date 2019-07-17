@@ -88,11 +88,13 @@ if (but_pad_left || but_pad_right)
 	
 	change_FX = 8; 
 	alarm[11] = 2;
-}
+
 
 type_pos = clamp(type_pos, 0, owned_drones_number-1)
 
 type = owned_drones[type_pos];
+global.drone_type = type;
+}
 
 //type FX timer
 if (change_FX != 0) {change_FX--; 					 if (change_FX < 0) {change_FX = 0;}}

@@ -21,7 +21,7 @@ if (instance_exists(follow))
 	
 	if (but_down_long)
 	{
-		look_down_timer++;
+		look_down_timer += global.dt
 		if (look_down_timer > look_down_timer_max){look_down = true}
 	} else {look_down = false; look_down_timer = 0}
 	
@@ -47,7 +47,7 @@ if (instance_exists(follow))
 	//resets the camera
 	if (follow.y_spd = 0 && follow.y < vy+vh/4*3 && !look_down)
 	{
-		reset_timer++;
+		reset_timer += global.dt
 		if (reset_timer > reset_timer_max)
 		{Y = lerp(Y, clamp(follow.y-vh/4*3, 0, room_height - vh),.025)}
 	}
@@ -69,11 +69,22 @@ if (instance_exists(follow))
 	
 	global.screenshake = lerp(global.screenshake,0,.2)
 	
+	#region //directional slide
+	if (global.screenyank_x != 0 || global.screenyank_y != 0)
+	{
+		cur_x += global.screenyank_x;
+		cur_x += global.screenyank_y;
+		
+		global.screenyank_x =	lerp(global.screenyank_x,0,.2)
+		global.screenyank_y =	lerp(global.screenyank_y,0,.2)
+	}
+	#endregion
+	
 	//lerp and save X and Y to globals
 	if (!instant)
 	{
-		global.view_X = lerp(cur_x,X,spd)
-		global.view_Y = lerp(cur_y,Y,spd)
+		global.view_X = lerp(cur_x,X,spd*global.dt)
+		global.view_Y = lerp(cur_y,Y,spd*global.dt)
 	}
 	else
 	{

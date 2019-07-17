@@ -19,7 +19,7 @@ else if (atk_step = atk.atk2)
 {
 	sprite_index = spr_nme_walker_atk_charge;
 	
-	atk_timer++;
+	atk_timer += global.dt
 	if (atk_timer = atk_timer_max) 
 	{
 		atk_step = atk.atk1; 

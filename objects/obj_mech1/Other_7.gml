@@ -15,6 +15,6 @@ if (sprite_index = spr_mech1_enter)
 else if (sprite_index = spr_mech1_exit)
 {
 	sprite_index = spr_mech1_enter_front; 
-	enter_back =	 instance_create_depth(x,y,obj_player.depth+5,obj_mech1_enter_back);
+	enter_back =	 instance_create_depth(x,y,depth+10,obj_mech1_enter_back);
 	enter_back.image_xscale = image_xscale;
 }

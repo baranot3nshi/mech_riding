@@ -10,7 +10,7 @@ if (mech1_atk_step = atk.atk1_init)
 {
 	if (sprite_index != spr_mech1_atk1_init) {image_index = 0;}
 	sprite_index = spr_mech1_atk1_init;
-	mech1_atk_init_timer++;
+	mech1_atk_init_timer += global.dt
 	mech1_atk1_timer ++;
 	
 	if (mech1_atk_init_timer = mech1_atk_init_timer_max)
@@ -73,7 +73,7 @@ if (mech1_atk_step = atk.atk2_init)
 {
 	if (sprite_index != spr_mech1_atk2_init) {image_index = 0;}
 	sprite_index = spr_mech1_atk2_init;
-	mech1_atk_init_timer++;
+	mech1_atk_init_timer += global.dt
 		
 	if (mech1_atk_init_timer = mech1_atk_init_timer_max)
 	{

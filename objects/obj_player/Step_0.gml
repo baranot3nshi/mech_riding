@@ -1,4 +1,5 @@
 input_get();
+
 if (current_mech = mechs.none)
 {
 	
@@ -50,7 +51,7 @@ switch(state)
 
 		mask_index = spr_mech1_idle;
 	
-		x_spd_max = human_x_spd_max;
+		x_spd_max = mech1_x_spd_max;
 		jump_power = mech1_jump_power;
 		fall_spd_max = mech1_fall_spd_max;
 		sprite_hurt = spr_mech1_hurt;
@@ -86,7 +87,7 @@ switch(state)
 #region//vulnerability
 if (!vulnerable)
 {
-	vul_timer++
+	vul_timer += global.dt
 	if (vul_timer >= vul_timer_max)
 	{
 		vulnerable = true;

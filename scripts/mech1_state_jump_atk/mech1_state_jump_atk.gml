@@ -8,7 +8,7 @@ if (mech1_jump_atk_step = atk.atk1_init)
 	
 	if (sprite_index != spr_mech1_jump_atk_init) {image_index = 0;}
 	sprite_index = spr_mech1_jump_atk_init;
-	mech1_jump_atk_init_timer++;
+	mech1_jump_atk_init_timer += global.dt
 	
 	if (mech1_jump_atk_init_timer = mech1_jump_atk_init_timer_max)
 	{

@@ -1,7 +1,7 @@
 x_spd = lerp(x_spd,0,.07);
 y_spd = lerp(y_spd,0,.07);
 
-dead_timer++;
+dead_timer += global.dt
 if (dead_timer = dead_timer_max)
 {
 	instance_destroy();

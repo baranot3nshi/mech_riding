@@ -17,7 +17,7 @@ if (obj_player.current_mech = mechs.none)
 	//human & mech walk
 	else if (obj_player.sprite_index = spr_player_walk)
 	{
-		timer++;
+		timer += global.dt;
 		if timer%10 = 0 if (anim_Y_offset = 1) anim_Y_offset = 0 else anim_Y_offset = 1
 		if timer >= 60 timer = 0;		
 	}
@@ -108,7 +108,7 @@ if (obj_player.current_mech = mechs.mech1)
 	//human & mech walk
 	else if (obj_player.sprite_index = spr_mech1_walk)
 	{
-		timer++;
+		timer += global.dt
 		if timer%10 = 0 if (anim_Y_offset = 1) anim_Y_offset = 0 else anim_Y_offset = 1
 		if timer >= 60 timer = 0;		
 	}

@@ -55,7 +55,7 @@ if (human_atk_step = atk.atk1_post)
 //==========================================================================================
 if (human_atk_step = atk.safe)
 {
-	human_atkmid_timer++;
+	human_atkmid_timer += global.dt
 	if (human_atkmid_timer > 5)
 	{
 		human_atk_step = atk.atk2;

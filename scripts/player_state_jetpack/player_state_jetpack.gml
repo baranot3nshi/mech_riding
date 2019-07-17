@@ -1,6 +1,6 @@
 player_jump_atk();
 
-jetpack_timer++;
+jetpack_timer += global.dt
 jetpack_timer = clamp(jetpack_timer,0,10)
 
 global.AP -=4;

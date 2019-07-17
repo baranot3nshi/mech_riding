@@ -1,9 +1,9 @@
-	if (but_CHARGE_charge) 
+	if (but_CHARGE_charge && global.dt != 0) 
 	{
 		charging = true;
 		//image_blend = c_blue; //debug
 		
-		charge_timer++;
+		charge_timer += global.dt
 		if (charge_timer %3 = 0)
 		{
 		//drawing the particle

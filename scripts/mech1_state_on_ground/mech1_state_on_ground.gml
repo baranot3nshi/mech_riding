@@ -1,9 +1,11 @@
 //resetting states
 atk_step = 0;
+dash_step = 0;
+if (instance_exists(obj_dash_FX)) {instance_destroy(obj_dash_FX);}
+can_move = true;
+
 mech1_jump_atk_step = 0;
 grounded = true;
-
-
 
 jump_number = jump_number_max;
 
