@@ -32,3 +32,5 @@ global.screenshake = 0;
 	look_down_timer_max = 20;
 	buffer = 0;
 	depth = -500
+	
+	instant = true;

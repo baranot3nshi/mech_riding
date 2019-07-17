@@ -233,10 +233,17 @@ if (obj_player.current_mech = mechs.transition)
 var anim_flipping = sign(obj_player.image_xscale); //needed to flip the animation offset
 
 //apply coordinates
-x = lerp(x,	obj_player.x + X+ flip_offset	+anim_X_offset*anim_flipping,	hair_lerp)
-y = lerp(y,	obj_player.y + real_Y			+anim_Y_offset,					hair_lerp)
+if (!instant)//failsafe for room start
+{
+	x = lerp(x,	obj_player.x + X+ flip_offset	+anim_X_offset*anim_flipping,	hair_lerp)
+	y = lerp(y,	obj_player.y + real_Y			+anim_Y_offset,					hair_lerp)
+}
+else
+{	
+	x = X+ flip_offset	+anim_X_offset*anim_flipping
+	y = real_Y			+anim_Y_offset
+	instant = false;
+}
 
-//depth = obj_player.depth -50;
-//image_blend = c_red;
-
+//flash with the player
 alarm[11] = obj_player.alarm[11];

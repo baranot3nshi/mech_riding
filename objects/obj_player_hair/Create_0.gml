@@ -8,3 +8,5 @@ anim_Y_offset = 0;
 
 
 surface_hair = 0;
+
+instant = true;

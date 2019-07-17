@@ -23,6 +23,7 @@ switch(state)
 		x_spd_max = human_x_spd_max;
 		jump_power = human_jump_power;
 		fall_spd_max = human_fall_spd_max;
+		sprite_hurt = spr_player_hurt;
 	
 		sprite_aim = spr_player_idle;
 	
@@ -52,6 +53,7 @@ switch(state)
 		x_spd_max = human_x_spd_max;
 		jump_power = mech1_jump_power;
 		fall_spd_max = mech1_fall_spd_max;
+		sprite_hurt = spr_mech1_hurt;
 	
 		sprite_aim = spr_mech1_idle;
 		
@@ -78,23 +80,6 @@ switch(state)
 	
 	//creating the servodrone
 	if (!instance_exists(obj_drone)) {instance_create_depth(x-10,y-10,depth-5,obj_drone)}
-
-#endregion
-//=============================================================================================
-#region//if riding a mech, twintails should still follow your position
-
-	////failsafe to avoid twintails to move farther from the character when colliding with a wall
-	//if (current_mech.colliding)	{x_spd = 0}
-	//else						{x_spd = current_mech.x_spd;}
-
-	//y_spd = current_mech.y_spd;
-	//dir = current_mech.dir;
-	
-	//x = current_mech.x + x_spd;
-	//y = current_mech.y - 16 +y_spd;
-	
-	//visible = false;
-	//image_xscale = current_mech.image_xscale;
 
 #endregion
 //=============================================================================================

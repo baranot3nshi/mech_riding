@@ -142,3 +142,23 @@ hammer_step = 0;
 hammer_timer = 0;
 hammer_timer_max = 5;
 #endregion
+
+#region create hair strands
+instance_create_depth(0,0,0,obj_RENDER_outline)
+
+//hair_F0 = instance_create_depth(x-4,y-14,depth+4,obj_player_hair_fixed)
+hair_F0 = create_hair_strand(spr_player_hair_f, -4, -14, 1);
+hair_F1 = create_hair_strand(spr_player_hair_f, -4, -14, .9);
+hair_F2 = create_hair_strand(spr_player_hair_f, -4, -12, .7);
+hair_F3 = create_hair_strand(spr_player_hair_f, -4, -12, .6);
+hair_F4 = create_hair_strand(spr_player_hair_f, -4, -11, .5);
+
+//hair_B0 = instance_create_depth(x+4,y-15,depth+4,obj_player_hair_fixed);
+hair_B0 = create_hair_strand(spr_player_hair_b, +4, -14, 1);
+hair_B1 = create_hair_strand(spr_player_hair_b, +4, -14, .9);
+hair_B2 = create_hair_strand(spr_player_hair_b, +4, -13, .7);
+hair_B3 = create_hair_strand(spr_player_hair_b, +4, -12, .6);
+hair_B4 = create_hair_strand(spr_player_hair_b, +4, -11, .5);
+
+//hair_B0.sprite_index = spr_player_hair_b;
+#endregion

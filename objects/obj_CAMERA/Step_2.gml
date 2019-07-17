@@ -15,6 +15,10 @@ if (instance_exists(follow))
 	//clamp to the borders and set the coordinates for the camera (1/2 horizontal, 2/3 vertical)
 	var X = clamp(follow.x-vw/2,   0, room_width  - vw);
 	
+	
+	//Y
+	//look down input
+	
 	if (but_down_long)
 	{
 		look_down_timer++;
@@ -24,16 +28,18 @@ if (instance_exists(follow))
 	
 	if (look_down && follow.y_spd = 0) {buffer = 100;} else {buffer = 0;}
 
-	//Y
+
 	//camera going up
+	
+	var _dest_y = follow.y-vh/4*3+buffer
+	
 	if (follow.y < vy+vh/4*1)	
-	{Y = lerp(Y, clamp(follow.y-vh/4*3+buffer, 0, room_height - vh),.075)}
+	{Y = lerp(Y, clamp(_dest_y, 0, room_height - vh),.075)}
 	
 	//camera going down
 	if (follow.y > vy+vh/4*3-buffer)
 	{
-		Y = follow.y-vh/4*3+buffer
-		Y = clamp(follow.y-vh/4*3+buffer, 0, room_height - vh)
+		Y = clamp(_dest_y, 0, room_height - vh)
 	}
 	
 	
@@ -63,10 +69,18 @@ if (instance_exists(follow))
 	
 	global.screenshake = lerp(global.screenshake,0,.2)
 	
-	//save X and Y to globals
-	global.view_X = lerp(cur_x,X,spd)
-	global.view_Y = lerp(cur_y,Y,spd)
-	
+	//lerp and save X and Y to globals
+	if (!instant)
+	{
+		global.view_X = lerp(cur_x,X,spd)
+		global.view_Y = lerp(cur_y,Y,spd)
+	}
+	else
+	{
+		global.view_X = X;
+		global.view_Y = clamp(_dest_y, 0, room_height - vh);
+		instant = false;
+	}
 	//draw camera
 	camera_set_view_pos(view, global.view_X,global.view_Y);
 }
