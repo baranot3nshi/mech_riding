@@ -65,6 +65,10 @@ dead_timer = 0;
 dead_timer_max = 30;
 dead_FX = obj_explosion_S_FX;
 
+pickup_droprate = 10;
+particle_sprite = spr_nme_destroy_particle;
+particle_number = 4;
+
 //land vars
 land_timer = 0;
 land_timer_max = 10;

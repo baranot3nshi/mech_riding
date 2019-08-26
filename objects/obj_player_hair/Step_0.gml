@@ -52,7 +52,7 @@ if (obj_player.current_mech = mechs.none)
 	if (sprite_index = spr_player_hair_f)
 	{
 		//all flipping
-		if(obj_player.image_xscale > 0) 
+		if(obj_player.dir > 0) 
 		{flip_offset = 0;} 
 		else {flip_offset = +6;}
 	
@@ -74,7 +74,7 @@ if (obj_player.current_mech = mechs.none)
 	else if (sprite_index = spr_player_hair_b)
 	{
 		//all flipping
-		if(obj_player.image_xscale > 0) 
+		if(obj_player.dir > 0) 
 		{flip_offset = 0} 
 		else {flip_offset = -10}
 	
@@ -154,7 +154,7 @@ if (obj_player.current_mech = mechs.mech1)
 	if (sprite_index = spr_player_hair_f)
 	{
 		//all flipping
-		if(obj_player.image_xscale > 0) 
+		if(obj_player.dir > 0) 
 		{flip_offset = 0;} 
 		else {flip_offset = +6;}
 	
@@ -198,7 +198,7 @@ if (obj_player.current_mech = mechs.mech1)
 else if (sprite_index = spr_player_hair_b)
 {
 	//all flipping
-	if(obj_player.image_xscale > 0) 
+	if(obj_player.dir > 0) 
 	{flip_offset = 0} 
 	else {flip_offset = -10}
 	
@@ -230,7 +230,7 @@ else if (sprite_index = spr_player_hair_b)
 if (obj_player.current_mech = mechs.transition)
 {real_Y = Y - 3}
 
-var anim_flipping = sign(obj_player.image_xscale); //needed to flip the animation offset
+var anim_flipping = sign(obj_player.dir); //needed to flip the animation offset
 
 //apply coordinates
 if (!instant)//failsafe for room start

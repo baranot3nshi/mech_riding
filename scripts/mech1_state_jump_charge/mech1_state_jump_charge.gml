@@ -7,7 +7,7 @@ if (mech1_jump_charge_step = 0)
 	x_spd = 0;
 	
 	sprite_index = spr_mech1_jump_charge;
-	mech1_jump_charge_timer ++;
+	mech1_jump_charge_timer += global.dt
 	if (mech1_jump_charge_timer >= mech1_jump_charge_timer_max)
 	{
 		mech1_jump_charge_step = 1;

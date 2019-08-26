@@ -100,6 +100,7 @@ global.drone_type = type;
 if (change_FX != 0) {change_FX--; 					 if (change_FX < 0) {change_FX = 0;}}
 #endregion
 
+// follow code, including wall failsafe
 if (obj_player.state != states.aim)
 {
 	drone_follow();

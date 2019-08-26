@@ -14,6 +14,8 @@ player_jump_atk();
 //go to jetpack
 player_jetpack();
 
+//player_wall_slide();
+
 sprite_index = spr_player_jump_upward;
 
 if (but_JUMP_released) {y_spd++;}

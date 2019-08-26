@@ -39,7 +39,7 @@ if (human_atk_step = atk.atk1_post)
 {
 	//go to atk2
 	human_atk2_timer = 0;
-	human_atk1_timer ++;
+	human_atk1_timer +=global.dt;
 	
 	if (but_ATK_pressed && human_atk1_timer > human_atk_timer_max/3 && human_atk1_timer < human_atk_timer_max)
 	{
@@ -86,7 +86,7 @@ if(human_atk_step = atk.atk2)
 if (human_atk_step = atk.atk2_post)
 {
 	human_atk1_timer = 0;
-	human_atk2_timer ++;
+	human_atk2_timer +=global.dt
 	
 	if (human_atk2_timer > human_atk_timer_max) {human_atk_step = atk.reset;}
 }

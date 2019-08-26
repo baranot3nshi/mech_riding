@@ -8,7 +8,7 @@ global.glitch_FX = 0;
 //mech1's position
 global.mech1_x = 0;
 global.mech1_y = 0;
-global.mech1_rm = rm_mapping_test1;
+global.mech1_rm = undefined;
 
 //drone
 global.drone_type = undefined;

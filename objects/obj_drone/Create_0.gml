@@ -49,7 +49,7 @@ else
 
 state = drone_states.follow;
 
-follow_x = obj_player.x - 10;
+follow_x = obj_player.x - 8;
 follow_y = obj_player.y ;
 
 

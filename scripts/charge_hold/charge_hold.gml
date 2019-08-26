@@ -1,7 +1,7 @@
 	//charging code
 	if(but_CHARGE_charge)
 	{
-		if (global.AP != global.AP_max) {charge_timer ++;}
+		if (global.AP != global.AP_max) {charge_timer += global.dt;}
 		charging = true;
 		
 		#region particle FX

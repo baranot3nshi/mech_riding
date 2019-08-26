@@ -11,6 +11,8 @@ enum states {
 	
 	fall,
 	jump,
+	wall_slide,
+	wall_slide_atk,
 	jetpack,
 	jump_atk,
 	jump_atk_charge,
@@ -95,12 +97,15 @@ human_atk_timer_max = 15;
 
 human_atk_step = 0;
 human_jump_atk_step = 0;
+human_wall_slide_atk_step = 0;
 
+wall_slide_timer = 0;
 
+sliding = "none"
 #endregion
 #region mech1 variables
 //charge jump vars
-mech1_charge_jump_power = 7.5
+mech1_charge_jump_power = 8;
 mech1_jump_charge_step = 0;
 mech1_jump_charge_timer = 0;
 mech1_jump_charge_timer_max = 20;

@@ -11,7 +11,7 @@ if (mech1_atk_step = atk.atk1_init)
 	if (sprite_index != spr_mech1_atk1_init) {image_index = 0;}
 	sprite_index = spr_mech1_atk1_init;
 	mech1_atk_init_timer += global.dt
-	mech1_atk1_timer ++;
+	mech1_atk1_timer +=global.dt
 	
 	if (mech1_atk_init_timer = mech1_atk_init_timer_max)
 	{
@@ -43,7 +43,7 @@ if(mech1_atk_step = atk.atk1_post)
 {
 	//go to atk2
 	mech1_atk2_timer = 0;
-	mech1_atk1_timer ++;
+	mech1_atk1_timer += global.dt
 	
 	if (but_ATK_pressed && 
 	mech1_atk1_timer < mech1_atk_timer_max + mech1_atk_init_timer_max)
@@ -61,7 +61,7 @@ if(mech1_atk_step = atk.atk1_post)
 //==========================================================================================
 if (mech1_atk_step = atk.safe)
 {
-	mech1_atkmid_timer ++
+	mech1_atkmid_timer += global.dt
 	if (!but_ATK_charge || but_ATK_charge && mech1_atkmid_timer = 2) {mech1_atk_step = atk.atk2_init;}
 }
 #endregion
@@ -106,7 +106,7 @@ if(mech1_atk_step = atk.atk2)
 
 if(mech1_atk_step = atk.atk2_post)
 {
-	mech1_atk2_timer ++;	
+	mech1_atk2_timer += global.dt	
 	if (mech1_atk2_timer > mech1_atk_timer_max) {mech1_atk_step = atk.reset;}
 }
 #endregion

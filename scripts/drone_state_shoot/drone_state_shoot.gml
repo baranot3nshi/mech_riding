@@ -12,7 +12,7 @@ bullet = instance_create_depth(xx,yy,depth-10,shoot_bullet_type)
 
 audio_play_sound(shoot_snd,5,0)
 
-if (!target)
+if (!target && target != undefined)
 {bullet.dir = point_direction(x,y,x+obj_player.dir,y)}
 else
 {

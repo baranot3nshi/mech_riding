@@ -13,4 +13,4 @@ else
 if (x = follow_x && y = follow_y)
 {state = drone_states.follow}
 
-drone_shoot();
+if (global.dt != 0) drone_shoot();

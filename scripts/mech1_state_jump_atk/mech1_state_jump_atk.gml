@@ -35,7 +35,7 @@ if (mech1_jump_atk_step = atk.atk1 && (!charging || (charging && global.AP = glo
 		var atk1FX = instance_create_depth(x, y, depth - 5, obj_mech1_jump_atk );
 		atk1FX.image_xscale = image_xscale;
 	}
-	mech1_jump_atk_step = 1;
+	mech1_jump_atk_step = atk.reset;
 }
 
 
