@@ -30,6 +30,8 @@ script_follow = undefined;
 script_atk1 = undefined; 
 script_atk2 = undefined;
 
+hurt_reset_state = nme_states.idle;
+
 //MOVEMENT
 flying = false;
 x_spd = 0;
@@ -51,14 +53,16 @@ grounded = false;
 
 //movement related
 dir = 1;
-collider = [obj_wall, obj_wall_nme];
+collider = [obj_wall, obj_wall_nme, obj_platform];
 
 //hurt vars
-stun = false;
+unmovable = false;
 
 hurt_timer = 0;
 hurt_timer_max = 20;
 hitting_atk = undefined;
+
+hurt_dir_array = [0,0,0,0];
 
 //dead vars
 dead_timer = 0;
@@ -66,7 +70,7 @@ dead_timer_max = 30;
 dead_FX = obj_explosion_S_FX;
 
 pickup_droprate = 10;
-particle_sprite = spr_nme_destroy_particle;
+break_particle_sprite = [spr_nme_destroy_particle, spr_wood_particle2];
 particle_number = 4;
 
 //land vars
@@ -78,3 +82,11 @@ dmg = 1;
 
 //DEBUG FEATURES
 hits_taken = 0
+
+// shake
+shake = 0;
+
+spr_x = x;
+spr_y = y;
+start_x = x;
+start_y = y;

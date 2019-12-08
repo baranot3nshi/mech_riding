@@ -26,6 +26,7 @@ if (but_DISMOUNT_pressed)
 {
 	state = states.jump
 	y_spd -= jump_power;
+	jump_step = 0;
 	current_mech = mechs.none;
 	
 	//global.mech1_x = x;

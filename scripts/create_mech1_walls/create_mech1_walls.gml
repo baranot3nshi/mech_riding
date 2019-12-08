@@ -30,7 +30,12 @@ right_wall.y = left_wall.y
 
 depth = obj_player.depth - 5;
 
+//TOP
+top_wall = instance_create_depth(bbox_left,bbox_top-1,0,obj_wall_nme)
+
+top_wall.image_xscale = 1.6
+
 //right_wall.image_blend = c_red;
-left_wall.visible = false;
-right_wall.visible = false;
-bottom_wall.visible = false;
+//left_wall.visible = false;
+//right_wall.visible = false;
+//bottom_wall.visible = false;

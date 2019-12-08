@@ -37,7 +37,6 @@ else if (atk_step = atk.atk1)
 		image_index = 0;
 		
 		var bullet = instance_create_depth(x+11*dir,y-14,depth-5,obj_nme_bullet1);
-		bullet.spd = 3*dir;
 		bullet.image_xscale = image_xscale;
 		bullet.dir = dir;
 	}

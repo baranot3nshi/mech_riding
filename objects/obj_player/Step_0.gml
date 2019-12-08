@@ -3,7 +3,7 @@ input_get();
 if (current_mech = mechs.none)
 {
 	
-	#region human states
+#region human states
 switch(state)
 {
 	case states.on_ground:		player_state_on_ground();			break;

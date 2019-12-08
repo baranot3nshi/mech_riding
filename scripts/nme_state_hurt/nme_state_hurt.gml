@@ -1,4 +1,4 @@
-//GETS HIT IN obj_wpn_parent
+//GETS HIT IN nme_hurt
 
 //flashing
 if (hurt_timer = 0) {alarm[11] = 5;}
@@ -14,12 +14,10 @@ if (hurt_timer = hurt_timer_max)
 {
 	hurt_timer = 0;
 
-	stun = false;
-	
 	//kill if no HP, otherwise go back to idle
 	if (HP > 0) 
 	{
-		state = nme_states.idle;
+		state = hurt_reset_state;
 		idle_timer = 0;
 	}
 	else 

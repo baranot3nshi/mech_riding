@@ -1,21 +1,43 @@
-grounded = false;
-
-if (y_spd >= 0)
+//subtract jump power
+if (jump_step = 0)
 {
-	state = states.fall;
+	y_spd = 0;
+	y_spd -= jump_power; 
+	jump_number -= 1;
+	
+	grounded = false;
+	
+		audio_play_sound(sound_jump,5,0);
+	
+	repeat(6)
+	{
+		create_dust_particle();
+	}
+	
+	jump_step = 1;
 }
 
-//jump
-player_jump();
+//jump state
+else if (jump_step = 1)
+{
+	if (y_spd >= 0)
+	{
+		state = states.fall;
+		jump_step = 0;
+	}
 
-//go to jetpack
-player_jump_atk();
+	//jump
+	player_jump();
 
-//go to jetpack
-player_jetpack();
+	//go to jetpack
+	player_jump_atk();
 
-//player_wall_slide();
+	//go to jetpack
+	player_jetpack();
 
-sprite_index = spr_player_jump_upward;
+	//player_wall_slide();
 
-if (but_JUMP_released) {y_spd++;}
+	sprite_index = spr_player_jump_upward;
+
+	if (but_JUMP_released) {y_spd++;}
+}

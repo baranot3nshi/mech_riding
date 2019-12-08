@@ -86,6 +86,8 @@ vul_timer_max = 100;
 
 #region player variables
 //atk vars
+jump_step = 0;
+
 charge_timer = 0;
 charge_timer_max = 50;
 charging = false;
@@ -136,7 +138,7 @@ dash_timer = 0;
 dash_timer_max = 40;
 
 dash_atk_timer = 0;
-dash_atk_timer_max = 10; 
+dash_atk_timer_max = 20; 
 
 dash_step = 0;
 

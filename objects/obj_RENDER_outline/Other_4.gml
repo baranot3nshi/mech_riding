@@ -1,0 +1,1 @@
+if(surface_exists(surface_hair)) {surface_resize(surface_hair,room_width,room_height)}
