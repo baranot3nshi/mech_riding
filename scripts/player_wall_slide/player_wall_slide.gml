@@ -8,6 +8,8 @@ if ((_vert_wall_R && but_right) ||
 	
 	if (_vert_wall_R && but_right)	{sliding = "right";}
 	if (_vert_wall_L && but_left)	{sliding = "left";}
-	jump_number = 1;
+	
+	if (got(item.wall_jump)) {jump_number = 1;}
+	
 	wall_slide_timer = 0;
 }

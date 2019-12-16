@@ -9,5 +9,6 @@ if (global.SAVE)
 if (global.SAVE)
 {
 	//LOADING CODE
+	
 	global.LOAD = false;
 }

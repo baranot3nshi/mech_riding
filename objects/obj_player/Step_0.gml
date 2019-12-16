@@ -80,9 +80,8 @@ switch(state)
 	charge_overtime();
 	
 	visible = true;
-	
-	//creating the servodrone
-	if (!instance_exists(obj_drone)) {instance_create_depth(x-10,y-10,depth-5,obj_drone)}
+
+
 
 #endregion
 //=============================================================================================

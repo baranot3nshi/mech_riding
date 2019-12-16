@@ -3,15 +3,19 @@
 var _plat = instance_place(x, y + 1, obj_platform)
 
 if (place_meeting(x, y + 1, collider) ||
-	((_plat && _plat.bbox_top > bbox_bottom) && !but_down) 
-	//||
-	//(tilemap_get_at_pixel(tilemap,bbox_left,	bbox_bottom + 1) != 0
-	//||tilemap_get_at_pixel(tilemap,bbox_right,	bbox_bottom + 1) != 0)
-	)
+	((_plat && _plat.bbox_top > bbox_bottom) && !but_down))
 {
 	state = states.on_ground;
 	//y_spd = 0;
 	//grounded = true;
+	
+	if (sliding != 0) 
+	{
+		dir = -dir;
+		sliding = 0;
+	}
+	
+	
 	
 	//sfx
 	if (!audio_is_playing(sound_land)) 

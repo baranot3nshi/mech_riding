@@ -1,5 +1,5 @@
 /// @description REFLECT BULLET
-if (reflect && other.reflected_bullet != id && timer <= 1)
+if (got(item.reflect_bullet) && reflect && other.reflected_bullet != id && timer <= 1)
 {
 	other.reflected_bullet = id;
 	

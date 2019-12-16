@@ -6,6 +6,7 @@ human_jump_atk_step = 0;
 
 jump_number = jump_number_max;
 
+
 #region shift to other states
 //fall
 player_walkoff();

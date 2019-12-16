@@ -12,7 +12,7 @@ if (other.hitting_atk != id)
 	
 		with(other)
 		{
-			instance_destroy();
+			event_user(0);
 			global.screenshake = 5;
 			global.screenfreeze = 10;
 			global.glitch_FX = 3;

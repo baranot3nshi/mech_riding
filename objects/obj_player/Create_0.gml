@@ -46,7 +46,7 @@ accel = .4;
 
 //Y movement vars
 jump_power = 0;
-human_jump_power = 4.7;
+human_jump_power = 5;
 mech1_jump_power = 6.2;
 
 jump_number = 0;
@@ -149,6 +149,7 @@ hammer_step = 0;
 hammer_timer = 0;
 hammer_timer_max = 5;
 #endregion
+
 
 #region create hair strands
 if (!instance_exists(obj_player_hair))

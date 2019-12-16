@@ -1,2 +1,5 @@
-drop_pickup(pickup_droprate)
-create_particle(particle_number,break_particle_sprite)
+//if it's a permanent object, once destroyed it's gone forever
+if (break_forever)
+{
+	save_data_flag_on(save_key);
+}

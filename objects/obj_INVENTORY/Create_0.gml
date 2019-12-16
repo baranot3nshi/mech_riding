@@ -1,3 +1,6 @@
+starting_gear = false;
+
+
 #region enum
 //TYPE OF ITEM
 enum item {
@@ -10,6 +13,10 @@ enum item {
 	
 	jetpack,
 	wall_jump,
+	reflect_bullet,
+	
+	human_size,
+	
 	mech_dash,
 	mech_dash_atk,
 	mech_spinjump,
@@ -49,6 +56,14 @@ inventory_array[item.drone4,			inv.have] =		false;
 inventory_array[item.jetpack,			inv.name] =		"Jetpack";
 inventory_array[item.jetpack,			inv.spr] =		spr_drone_1;
 inventory_array[item.jetpack,			inv.have] =		true;
+										
+inventory_array[item.wall_jump,			inv.name] =		"Gravity Boots";
+inventory_array[item.wall_jump,			inv.spr] =		spr_drone_1;
+inventory_array[item.wall_jump,			inv.have] =		true;
+
+inventory_array[item.reflect_bullet,	inv.name] =		"Reflective Blade";
+inventory_array[item.reflect_bullet,	inv.spr] =		spr_drone_1;
+inventory_array[item.reflect_bullet,	inv.have] =		true;
 
 inventory_array[item.mech_dash,			inv.name] =		"Horizontal propulsors";
 inventory_array[item.mech_dash,			inv.spr] =		spr_drone_1;
@@ -67,6 +82,25 @@ inventory_array[item.mech_hammer,		inv.spr] =		spr_drone_1;
 inventory_array[item.mech_hammer,		inv.have] =		true;
 
 
+
+//STARTING GEAR ON
+if (starting_gear = true)
+{
+	inventory_array[item.drone1,			inv.have] =		false;
+	inventory_array[item.drone2,			inv.have] =		false;
+	inventory_array[item.drone3,			inv.have] =		false;
+	inventory_array[item.drone4,			inv.have] =		false;
+	inventory_array[item.jetpack,			inv.have] =		false;
+	inventory_array[item.wall_jump,			inv.have] =		false;
+	inventory_array[item.reflect_bullet,	inv.have] =		false;
+	inventory_array[item.mech_dash,			inv.have] =		false;
+	inventory_array[item.mech_dash_atk,		inv.have] =		false;
+	inventory_array[item.mech_spinjump,		inv.have] =		false;
+	inventory_array[item.mech_hammer,		inv.have] =		false;
+
+}
+
+//populating the map with the array
 for (var i = 0; i < array_height_2d(inventory_array); i++;)
 { 
 	for (var j = 0; j < array_length_2d(inventory_array, i); j++;)
