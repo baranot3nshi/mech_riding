@@ -1,3 +1,4 @@
+#region//VARIABLES INIT
 depth = -5000;
 
 minimap = true;
@@ -31,7 +32,7 @@ mini_w  = w_goal;
 mini_h  = h_goal;
 mini_cx = cx_goal;
 mini_cy = cy_goal;
-
+#endregion
 #region//maps info enums
 enum door {
 	xx,
@@ -61,17 +62,63 @@ enum map_state {
 
 //create the ds_list
 world_data = ds_list_create();
+/// MAP DATA ///
+//===========================================================================//
+#region/// HANGAR ///
+//===========================================================================//
+//		map id						x		y		doors			x	y	rotation		type
+add_room(rm_hangarA_1_start,		30,		8,		create_array_4(	0,	0,	door_angle.W,	door_type.normal),
+													create_array_4(	1,	0,	door_angle.E,	door_type.normal))
 
-//map id							x		y		doors			x	y	rotation		type
-add_room(rm_mapping_test1,			5,		0,		create_array_4(	0,	0,	door_angle.E,	door_type.normal))
+add_room(rm_hangarA_2,				29,		8,		create_array_4(	0,	0,	door_angle.E,	door_type.normal),
+													create_array_4(	0,	0,	door_angle.W,	door_type.normal))
 
-add_room(rm_mapping_test2,			6,		0,		create_array_4(	0,	0,	door_angle.W,	door_type.normal),
+add_room(rm_hangarA_3,				27,		8,		create_array_4(	0,	0,	door_angle.W,	door_type.normal),
+													create_array_4(	1,	0,	door_angle.E,	door_type.normal))
+
+add_room(rm_hangarA_4,				24,		7,		create_array_4(	0,	0,	door_angle.W,	door_type.normal),
+													create_array_4(	1,	1,	door_angle.S,	door_type.normal),
+													create_array_4(	2,	0,	door_angle.E,	door_type.normal),
+													create_array_4(	2,	1,	door_angle.E,	door_type.normal))
+
+add_room(rm_hangarA_5,				22,		7,		create_array_4(	0,	0,	door_angle.W,	door_type.normal),
+													create_array_4(	1,	0,	door_angle.S,	door_type.normal),
+													create_array_4(	1,	0,	door_angle.E,	door_type.normal))
+
+#endregion
+//===========================================================================//
+#region /// MINES ///
+//===========================================================================//
+//		map id						x		y		doors			x	y	rotation		type
+
+add_room(rm_mines_1,				25,		9,		create_array_4(	0,	0,	door_angle.E,	door_type.normal),
+													create_array_4(	0,	2,	door_angle.W,	door_type.normal))
+
+add_room(rm_mines_2,				23,		11,		create_array_4(	0,	0,	door_angle.N,	door_type.normal),
+													create_array_4(	1,	0,	door_angle.E,	door_type.normal))
+add_room(rm_mines_3,				23,		10,		create_array_4(	0,	0,	door_angle.S,	door_type.normal),
+													create_array_4(	1,	0,	door_angle.N,	door_type.normal))
+
+
+#endregion
+//===========================================================================//
+#region/// TEST ///
+//===========================================================================//
+//		map id						x		y		doors			x	y	rotation		type
+add_room(rm_mapping_test1,			4,		0,		create_array_4(	0,	0,	door_angle.E,	door_type.normal))
+
+add_room(rm_mapping_test2,			5,		0,		create_array_4(	0,	0,	door_angle.W,	door_type.normal),
 													create_array_4(	0,	1,	door_angle.W,	door_type.normal),
 													create_array_4(	0,	1,	door_angle.E,	door_type.normal))
 													
-add_room(rm_mapping_test3,			4,		1,		create_array_4(	1,	0,	door_angle.E,	door_type.normal),
+add_room(rm_mapping_test3,			3,		1,		create_array_4(	1,	0,	door_angle.E,	door_type.normal),
 													create_array_4(	0,	0,	door_angle.W,	door_type.normal))
 													
-add_room(rm_mapping_test4,			7,		1,		create_array_4(	0,	0,	door_angle.W,	door_type.normal))
+add_room(rm_mapping_test4,			6,		1,		create_array_4(	0,	0,	door_angle.W,	door_type.normal))
 
-add_room(rm_mapping_test5,			0,		1,		create_array_4(	3,	0,	door_angle.E,	door_type.normal))
+add_room(rm_mapping_test5,			-1,		1,		create_array_4(	3,	0,	door_angle.E,	door_type.normal))
+
+
+
+#endregion
+//===========================================================================//

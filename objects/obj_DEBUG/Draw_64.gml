@@ -32,6 +32,10 @@ if (debug)
 	draw_text_outlined(_x,5+_y+_s*7,c1,c2,"dir = " + string(obj_player.dir))
 	draw_text_outlined(_x,5+_y+_s*8,c1,c2,"xscale = " + string(obj_player.image_xscale))
 	draw_text_outlined(_x,5+_y+_s*9,c1,c2,"jumps = " + string(obj_player.jump_number))
+	
+	
+	draw_text_outlined(_x,5+_y+_s*10,c1,c2,"camera_x = " + string(global.view_X))
+	draw_text_outlined(_x,5+_y+_s*11,c1,c2,"camera_y = " + string(global.view_Y))
 
 
 

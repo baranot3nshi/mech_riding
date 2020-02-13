@@ -19,7 +19,7 @@ if (atk_step = atk.atk1)
 		
 		//PROJECTILE
 		var bullet = instance_create_depth(x+11*dir,y-8,depth-6,obj_nme_bullet1);
-		bullet.spd = 3*dir;
+		bullet.spd = 3;
 		bullet.image_xscale = image_xscale;
 		bullet.dir = dir;
 		

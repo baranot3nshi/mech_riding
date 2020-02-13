@@ -12,13 +12,16 @@ with (other)
 	vulnerable = true;
 }
 
+
 global.screenfreeze = 10;
 global.glitch_FX = 6;
 
 switch(image_angle)
 {
-	case 0:		global.screenyank_y = - yank; break;
-	case 90:	global.screenyank_x = - yank; break;
-	case 180:	global.screenyank_y = + yank; break;
-	case 270:	global.screenyank_x = + yank; break;
+//horizontal
+	case 90:	global.screenyank_x = - yank; break; //left
+	case 270:	global.screenyank_x = + yank; break; //right
+//vertical
+	case 0:		obj_player.y_spd -= obj_player.jump_power; break; //up
+	//case 180:	global.screenyank_y = + yank; break; //down
 }

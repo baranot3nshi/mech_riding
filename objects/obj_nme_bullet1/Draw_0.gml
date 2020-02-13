@@ -23,3 +23,5 @@ event_inherited();
 //event_inherited();
 
 #endregion
+
+//draw_text_outlined(x-5,y,c_white,c_black,"dir = " + string(dir))

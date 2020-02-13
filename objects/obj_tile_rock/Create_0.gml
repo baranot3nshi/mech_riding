@@ -23,6 +23,7 @@ start_y = y;
 
 hitting_atk = 0;
 
+// set break forever to true to log its destruction in the save file //
 break_forever = false;
 save_key = save_data_key();
 

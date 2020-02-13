@@ -9,9 +9,11 @@ if (place_meeting(x, y + 1, collider) ||
 	//y_spd = 0;
 	//grounded = true;
 	
+	
+	/// avoid going backwards ///
 	if (sliding != 0) 
 	{
-		dir = -dir;
+		if (but_right - but_left != 0) {dir = but_right - but_left;}
 		sliding = 0;
 	}
 	

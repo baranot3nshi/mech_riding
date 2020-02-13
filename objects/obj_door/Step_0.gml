@@ -1,6 +1,7 @@
 if (!locked)
 {
-	if (point_distance(x,0,obj_player.x,0) < open_dist)
+	if (collision_rectangle(x-tw*2, y+1, x+ tw*2, y- tw*3,obj_player,false,false))
+	//if (point_distance(x,0,obj_player.x,0) < open_dist)
 	{
 		state = "open";
 		if (sprite_index != spr_door_open)

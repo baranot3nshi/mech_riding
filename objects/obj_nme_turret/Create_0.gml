@@ -3,10 +3,11 @@ event_inherited();
 
 script_idle = nme_turret_state_idle;
 script_follow = nme_turret_state_follow;
+script_atk1 = nme_turret_state_atk;
+
 sprite_idle = spr_nme_turret_idle;
 sprite_hurt = spr_nme_turret_hurt;
 sprite_turn = spr_nme_turret_turn;
-script_atk1 = nme_turret_state_atk;
 
 HP = 4;
 unmovable = true;

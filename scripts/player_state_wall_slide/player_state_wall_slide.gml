@@ -41,6 +41,7 @@ if (wall_slide_timer >= 10)
 		x_spd = 0;
 		state = states.fall;
 		alarm[0] = 10;
+		sliding = 0;
 	}
 }
 #endregion
