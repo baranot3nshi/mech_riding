@@ -8,7 +8,7 @@ player_jump();
 //jump_atk
 player_jump_atk();
 //wall_slide
-player_wall_slide();
+if (got(item.wall_jump)) {player_wall_slide();}
 
 if (jump_number = 0 && y_spd > 0) {jump_number = -1}
 

@@ -1,8 +1,11 @@
 /// @description init
 camera_size = 5 //the smaller the bigger amount of room will be visible (STANDARD = 6)
 
+
 global.view_width = 1920/camera_size;
 global.view_height = 1080/camera_size;
+global.view_X = 0
+global.view_Y = 0
 
 var vw = global.view_width;
 var vh = global.view_height;
@@ -21,8 +24,7 @@ global.screenshake = 0;
 global.screenyank_x = 0;
 global.screenyank_y = 0;
 
-	global.view_X = 0
-	global.view_Y = 0
+
 	
 	X = 0;
 	Y = 0;

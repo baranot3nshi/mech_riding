@@ -47,9 +47,7 @@ if (wall_slide_timer >= 10)
 #endregion
 
 #region//wallkick
-if (but_JUMP_pressed && jump_number > 0
-&& !but_down && got(item.wall_jump)
-)
+if (but_JUMP_pressed && jump_number > 0 && !but_down)
 {
 	y_spd = 0;
 	y_spd -= jump_power; 

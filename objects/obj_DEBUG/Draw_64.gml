@@ -37,6 +37,9 @@ if (debug)
 	draw_text_outlined(_x,5+_y+_s*10,c1,c2,"camera_x = " + string(global.view_X))
 	draw_text_outlined(_x,5+_y+_s*11,c1,c2,"camera_y = " + string(global.view_Y))
 
+	draw_text_outlined(_x,5+_y+_s*12,c1,c2,"current_room " + string(room))
+	draw_text_outlined(_x,5+_y+_s*13,c1,c2,"fade alpha = " + string(global.fade_FX_alpha))
+
 
 
 	draw_set_halign(fa_left);

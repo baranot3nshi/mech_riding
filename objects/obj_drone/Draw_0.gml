@@ -1,22 +1,24 @@
 #region glitch shader
-shader_set(shdBktGlitch);
+//shader_set(shdBktGlitch);
 
-//resets the shader
-BktGlitch_config_zero();
+////resets the shader
+//BktGlitch_config_zero();
 
-BktGlitch_set_jumbleness(random_range(0.70,0.75));
-BktGlitch_set_jumble_resolution(random_range(0.22,0.30));
-BktGlitch_set_jumble_shift(random_range(0.13,0.20));
-BktGlitch_set_channel_shift(0.44333);
+//BktGlitch_set_jumbleness(random_range(0.70,0.75));
+//BktGlitch_set_jumble_resolution(random_range(0.22,0.30));
+//BktGlitch_set_jumble_shift(random_range(0.13,0.20));
+//BktGlitch_set_channel_shift(0.44333);
 
-BktGlitch_set_intensity(0.00 + change_FX);
+//BktGlitch_set_intensity(0.00 + change_FX);
 
-// Inherit the parent event
-event_inherited();
+//// Inherit the parent event
+//event_inherited();
 
-shader_reset();
+//shader_reset();
 
 #endregion
+//if glitch is enabled, delete next line
+event_inherited();
 
 if (alarm[11] != -1) {event_inherited();}
 

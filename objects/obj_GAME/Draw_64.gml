@@ -1,5 +1,6 @@
-#region glitch
-//activating the shader
+
+
+#region glitch and main appsurf drawing//activating the shader
 
 //if (os_device == os_macosx){
 //	shader_set(shdBktGlitchMac);
@@ -45,4 +46,3 @@ if (gb_shader = true)
 	
 }
 	#endregion
-

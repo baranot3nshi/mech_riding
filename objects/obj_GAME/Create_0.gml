@@ -5,6 +5,8 @@ global.screenfreeze = 0;
 
 global.glitch_FX = 0;
 
+global.fade_FX_alpha = 0;
+
 //mech1's position
 global.mech1_x = 0;
 global.mech1_y = 0;
@@ -16,6 +18,7 @@ global.drone_type = undefined;
 //HP & AP
 global.HP_max = 3;
 global.HP = global.HP_max;
+global.HP = 1;
 
 global.HP_mech1_max = 3;
 global.HP_mech1 = global.HP_mech1_max;
@@ -41,7 +44,8 @@ instance_create_depth(0,0,0,obj_UI);
 instance_create_depth(0,0,0,obj_DEBUG);
 instance_create_depth(0,0,0,obj_MAP);
 instance_create_depth(0,0,0,obj_SAVE);
-instance_create_depth(0,0,0,obj_MAPPER)
+instance_create_depth(0,0,0,obj_MAPPER);
+instance_create_depth(0,0,0,obj_OVERHEAD);
 
 
 

@@ -17,6 +17,7 @@ switch(state)
 	case states.jump_atk:		player_state_jump_atk();			break;
 	case states.hurt:			player_state_hurt();				break;
 	case states.aim:			player_state_aim();					break;
+	case states.death:			player_state_death();				break;
 }
 #endregion
 	
@@ -67,6 +68,9 @@ switch(state)
 }
 //=============================================================================================
 #region//things that are done regardless
+
+	if (global.HP <= 0) {state = states.death}
+
 	image_xscale = dir;
 	//X INPUT
 	if (can_move) {player_input_x();}

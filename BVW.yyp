@@ -455,6 +455,14 @@
             }
         },
         {
+            "Key": "116f244e-f99f-4441-a576-207e50cd4b52",
+            "Value": {
+                "id": "d1977803-fcbf-4b08-9bd3-e6218c3c3c99",
+                "resourcePath": "paths\\path0\\path0.yy",
+                "resourceType": "GMPath"
+            }
+        },
+        {
             "Key": "11b07d98-ed51-4a90-9c07-3699847aebaf",
             "Value": {
                 "id": "ee1232f8-00c4-4ec1-9beb-312f2f977f96",
@@ -1212,6 +1220,14 @@
                 "id": "b303da32-631f-43f6-8f03-b6a3be6a59cd",
                 "resourcePath": "sprites\\spr_mech1_dash_atk_post_fx\\spr_mech1_dash_atk_post_fx.yy",
                 "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "372398ab-e2b0-48fc-9204-f63d10794f18",
+            "Value": {
+                "id": "9c80b3d3-9e60-4062-8c1e-224227f592ae",
+                "resourcePath": "rooms\\rm_deathscreen\\rm_deathscreen.yy",
+                "resourceType": "GMRoom"
             }
         },
         {
@@ -2775,6 +2791,14 @@
             }
         },
         {
+            "Key": "86997f69-c92a-4452-8898-dbd03ef6964c",
+            "Value": {
+                "id": "7c7f3ab8-6f37-47b9-a722-d92df6e42114",
+                "resourcePath": "objects\\obj_DEATHSCREEN\\obj_DEATHSCREEN.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "86e4dea3-9201-49e9-801b-c61dbaab24c0",
             "Value": {
                 "id": "00617700-a45d-422f-a032-59f7c1b1f551",
@@ -3060,6 +3084,14 @@
                 "id": "531dc707-8279-4840-a3c3-90af179c34f1",
                 "resourcePath": "objects\\obj_crosshair\\obj_crosshair.yy",
                 "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "96654939-c2d0-4b10-88ee-bcb38ca8956f",
+            "Value": {
+                "id": "79cc2578-7050-4e65-9b70-39d5843d9831",
+                "resourcePath": "scripts\\player_state_death\\player_state_death.yy",
+                "resourceType": "GMScript"
             }
         },
         {
@@ -3556,6 +3588,14 @@
                 "id": "59d02ef8-3a4b-40cc-af38-9bf4a3b92055",
                 "resourcePath": "sprites\\spr_mech1_jump_downward\\spr_mech1_jump_downward.yy",
                 "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "ad4cc10f-9e78-4331-8e4b-a17449fa66e5",
+            "Value": {
+                "id": "cc614c12-8ba7-4f25-9c23-3ec0f337f0ec",
+                "resourcePath": "objects\\obj_OVERHEAD\\obj_OVERHEAD.yy",
+                "resourceType": "GMObject"
             }
         },
         {
@@ -5401,7 +5441,8 @@
         "66ab219c-c2cc-4ca3-85a4-8ac910296e17",
         "406ade53-899c-4722-8121-f6743ca4d624",
         "e5013eab-924b-4bf9-9cd6-5b2c3abe7d10",
-        "450d82da-331a-4339-9cec-ae608091e289"
+        "450d82da-331a-4339-9cec-ae608091e289",
+        "96654939-c2d0-4b10-88ee-bcb38ca8956f"
     ],
     "tutorial": ""
 }

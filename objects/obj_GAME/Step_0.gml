@@ -1,6 +1,14 @@
-//HP && AP
+///@descr HP, AP, screenfreeze, glitch_FX
+
+///========== HP ==========///
+
+//clamping to 0 and max
 global.HP = clamp(global.HP,0,global.HP_max)
 global.HP_mech1 = clamp(global.HP_mech1,0,global.HP_mech1_max)
+
+//losing HP is in the script player_hurt
+
+///========== AP ==========///
 if (global.AP >= global.AP_max) {global.AP = global.AP_max;}
 
 if (!global.charging) 
@@ -19,7 +27,8 @@ if (global.AP <= 0) {global.charging = false; global.AP = 0;}
 
 global.AP = real_round(global.AP);
 
-//screenfreeze
+
+///========== screenfreeze ==========///
 if (global.screenfreeze > 0)
 {
 	global.dt = 0;
@@ -31,7 +40,7 @@ else
 }
 
 
-//glitch
+///========== glitch ==========///
 if (global.glitch_FX != 0)
 {
 	global.glitch_FX --;

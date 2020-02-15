@@ -18,6 +18,7 @@ enum states {
 	jump_atk_charge,
 	jump_charge,
 	
+	death,
 	mount
 }
 
@@ -46,15 +47,13 @@ accel = .4;
 
 //Y movement vars
 jump_power = 0;
+jump_step = 0;
 human_jump_power = 5;
 mech1_jump_power = 6.2;
 
 jump_number = 0;
 jump_number_max = 1;
 jetpack_timer = 0;
-
-sound_jump = snd_jump;
-sound_land = snd_land;
 
 jet_spd_max = 4;
 weight = .3;
@@ -73,6 +72,8 @@ state = states.fall;
 can_move = true;
 can_fall = true;
 vulnerable = true;
+death_step = atk.atk1_init;
+death_timer = 0;
 
 
 //hurt
@@ -85,8 +86,8 @@ vul_timer_max = 100;
 #endregion
 
 #region player variables
-//atk vars
-jump_step = 0;
+sound_jump = snd_jump;
+sound_land = snd_land;
 
 charge_timer = 0;
 charge_timer_max = 50;
