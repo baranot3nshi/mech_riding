@@ -7,6 +7,7 @@ global.HP = clamp(global.HP,0,global.HP_max)
 global.HP_mech1 = clamp(global.HP_mech1,0,global.HP_mech1_max)
 
 //losing HP is in the script player_hurt
+//death is in the player object
 
 ///========== AP ==========///
 if (global.AP >= global.AP_max) {global.AP = global.AP_max;}
