@@ -1,4 +1,6 @@
 randomise();
+scribble_init("","fnt_efforts",false);
+scribble_add_font("fnt_efforts");
 
 global.dt = 1;
 global.screenfreeze = 0;
