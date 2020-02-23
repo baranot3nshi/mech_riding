@@ -1535,6 +1535,14 @@
             }
         },
         {
+            "Key": "413958a6-8ee5-4af5-8a59-9663ba2c710c",
+            "Value": {
+                "id": "00dfbf28-a230-4dfe-adbe-1d3bdb349571",
+                "resourcePath": "sprites\\UI_textbox\\UI_textbox.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "41db8269-fa9a-4ada-aa87-a3aba577e81c",
             "Value": {
                 "id": "d0171af1-30d2-4f21-b540-29226a01118a",
@@ -1907,6 +1915,14 @@
             "Value": {
                 "id": "f917332d-a096-4a6e-8306-5d1403afb4a9",
                 "resourcePath": "sprites\\spr_nme_walker_hurt2\\spr_nme_walker_hurt2.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "544fdaa9-6ec3-4c8f-b7eb-8477963fc3ef",
+            "Value": {
+                "id": "35fc7ab4-78b1-4d64-ab0a-85c46b335551",
+                "resourcePath": "sprites\\UI_textbox_next\\UI_textbox_next.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -2983,6 +2999,14 @@
             }
         },
         {
+            "Key": "858f7ab2-9813-4772-a19c-cf6ec5b9681d",
+            "Value": {
+                "id": "cbc18a4f-4771-495c-9479-d05f463e05cd",
+                "resourcePath": "sprites\\UI_portrait_violet_smile\\UI_portrait_violet_smile.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "859877eb-75af-4bd3-96bf-f94c6973d5d1",
             "Value": {
                 "id": "1da93006-02b8-4e81-a50e-6d8e68eaf563",
@@ -3244,6 +3268,14 @@
                 "id": "b662bda7-7067-4875-8272-f0e48d353522",
                 "resourcePath": "scripts\\place_meeting_array\\place_meeting_array.yy",
                 "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "91745bee-96f1-4e53-b837-1863f5576acb",
+            "Value": {
+                "id": "4b85f1b4-c954-4fc9-81ff-f3ca834059e0",
+                "resourcePath": "fonts\\fnt_mech_rider\\fnt_mech_rider.yy",
+                "resourceType": "GMFont"
             }
         },
         {
@@ -5140,6 +5172,14 @@
                 "id": "30b1d1df-6e81-47d9-a1e6-6b7b317b3bbb",
                 "resourcePath": "objects\\obj_push_nme\\obj_push_nme.yy",
                 "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "e9905521-8dc5-4962-9d57-69b31e87d47d",
+            "Value": {
+                "id": "35a2e38a-92e5-4c79-a576-0245e5e41f5c",
+                "resourcePath": "datafiles_yy\\fnt_mech_rider.yy.yy",
+                "resourceType": "GMIncludedFile"
             }
         },
         {

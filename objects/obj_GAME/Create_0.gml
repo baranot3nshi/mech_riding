@@ -1,6 +1,6 @@
 randomise();
-scribble_init("","fnt_efforts",false);
-scribble_add_font("fnt_efforts");
+scribble_init("","fnt_mech_rider",false);
+scribble_add_font("fnt_mech_rider");
 
 global.dt = 1;
 global.screenfreeze = 0;

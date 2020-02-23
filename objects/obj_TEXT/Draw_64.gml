@@ -2,23 +2,39 @@
 var vh = global.view_height;
 var vw = global.view_width;
 var screen_buffer = 10;
-var inner_margin = 5;
-var tbh = 70; //textbox height
+var inner_buffer = 5;
 
 ///================= text box coordinates =================///
-var tbx1 = screen_buffer;
-var tby1 = vh - screen_buffer - tbh;
-var tbx2 = vw - screen_buffer;
-var tby2 = vh - screen_buffer;
+//textbox
+var tb_width = sprite_get_width(UI_textbox);
+var tb_x = vw/2 - tb_width/2
+var tb_y = 10;
 
-var tx = tbx1 + inner_margin
-var ty = tby1 + inner_margin;
+//portrait
+var p_x = tb_x + 9;
+var p_y = tb_y + 15;
 
-draw_set_colour(c_light_violet);
-draw_rectangle(tbx1, tby1, tbx2, tby2, false);
-draw_set_colour(c_white);
+//next
+var tn_x = tb_x + 300;
+var tn_y = tb_y + 68;
 
+//text
+var t_x = tb_x + 75;
+var t_y = tb_y + 16;
 
+var t_width = 255;
 
-scribble_draw_set_wrap()
-scribble_draw(tx,ty,"dsvaòsdklmaòsdknvasdnvlksdmvlksnadvldPINGASisdnvasdnvasòdlvnaskmcdsjnasdklmaòsdknvasdnvlksdmvlksnadvldPINGASisdnvasdnvasòdlvnaskmcdsjnasdklmaòsdknvasdnvlksdmvlksnadvldPINGASisdnvasdnvasòdlvnaskmcdsjnavsòdlvmù+èìdvla,àsdmv")
+///================= drawing =================///
+
+//draw portrait
+draw_sprite(portrait, 0, p_x, p_y);
+
+//draw textbox
+draw_sprite(UI_textbox, 0, tb_x, tb_y);
+
+//draw next
+draw_sprite(UI_textbox_next, 0, tn_x, tn_y)
+
+//draw text
+scribble_draw_set_wrap(-1,t_width)
+scribble_draw(t_x,t_y,"iiiàààdsvaòsdklmaòsdknvasdnvlksdmvlksnadvldPINGASisdnvasdnvasòdlvnaskmcdsjnasdklmaòsdknvasdnvlksdmvlksnadvldPINGASisdnvasdnvasòdlvnaskmcdsjnasdklm")
