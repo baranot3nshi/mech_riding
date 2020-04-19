@@ -2,6 +2,7 @@
 /// This script should be called before any other Scribble script.
 /// 
 /// 
+/// Returns: Whether initialisation was successful
 /// @param fontDirectory    The directory to look in (relative to game_save_id) for font .yy files.
 /// @param defaultFont      The name of the default Scribble font to use, as a string.
 /// @param autoScan         Whether or not to automatically find normal font .yy files in the font directory.
@@ -19,17 +20,17 @@
 /// 8) Automatically scans Included Files for fonts (if enabled)
 /// 
 /// 
-/// Scribble v5.3.3
-/// 2020/02/11
+/// Scribble v5.4.5c
+/// 2020-04-16
 /// @jujuadams
-/// With thanks to glitchroy, Mark Turner, Rob van Saaze, DragoniteSpam, and sp202
+/// With thanks to glitchroy, Mark Turner, DragoniteSpam, sp202, Rob van Saaze, soVes, and @stoozey_
 /// 
 /// For use with GMS2.2.2 and later
 
 #region Internal Macro Definitions
 
-#macro __SCRIBBLE_VERSION  "5.3.3"
-#macro __SCRIBBLE_DATE     "2020/02/11"
+#macro __SCRIBBLE_VERSION  "5.4.5c"
+#macro __SCRIBBLE_DATE     "2020-04-16"
 #macro __SCRIBBLE_DEBUG    false
 
 //You'll usually only want to modify SCRIBBLE_GLYPH.X_OFFSET, SCRIBBLE_GLYPH.Y_OFFSET, and SCRIBBLE_GLYPH.SEPARATION
@@ -67,17 +68,34 @@ enum __SCRIBBLE_FONT
 
 enum __SCRIBBLE_FONT_TYPE
 {
-    FONT,
-    SPRITE
+    FONT,  //0
+    SPRITE //1
+}
+
+enum __SCRIBBLE_PAGE
+{
+    LINES,                //0
+    CHARACTERS,           //1
+    LINES_ARRAY,          //2
+    VERTEX_BUFFERS_ARRAY, //3
+    
+    EVENT_PREVIOUS,       //4
+    EVENT_CHAR_PREVIOUS,  //5
+    EVENT_CHAR_ARRAY,     //6
+    EVENT_NAME_ARRAY,     //7
+    EVENT_DATA_ARRAY,     //8
+    
+    __SIZE
 }
 
 enum __SCRIBBLE_LINE
 {
     LAST_CHAR, //0
-    WIDTH,     //1
-    HEIGHT,    //2
-    HALIGN,    //3
-    __SIZE     //4
+    Y,         //1
+    WIDTH,     //2
+    HEIGHT,    //3
+    HALIGN,    //4
+    __SIZE     //5
 }
 
 enum __SCRIBBLE_VERTEX_BUFFER
@@ -118,17 +136,15 @@ enum SCRIBBLE_STATE
     COLOUR,
     ALPHA,
     LINE_MIN_HEIGHT,
-    MIN_WIDTH,
     MAX_WIDTH,
-    MIN_HEIGHT,
     MAX_HEIGHT,
     CHARACTER_WRAP,
     HALIGN,
     VALIGN,
-    TYPEWRITER_FADE_IN,
-    TYPEWRITER_POSITION,
-    TYPEWRITER_SMOOTHNESS,
-    TYPEWRITER_METHOD,
+    AUTOTYPE_FADE_IN,
+    AUTOTYPE_POSITION,
+    AUTOTYPE_SMOOTHNESS,
+    AUTOTYPE_METHOD,
     ANIMATION_ARRAY,
     CACHE_GROUP,
     ALLOW_DRAW,
@@ -141,46 +157,42 @@ enum __SCRIBBLE
     __SECTION0,             // 0
     VERSION,                // 1
     STRING,                 // 2
+    CACHE_STRING,           // 3
     DEFAULT_FONT,           // 3
     DEFAULT_COLOUR,         // 4
     DEFAULT_HALIGN,         // 5
     WIDTH_LIMIT,            // 6
-    LINE_HEIGHT,            // 7
+    HEIGHT_LIMIT,           // 7
+    LINE_HEIGHT,            // 8
     
-    __SECTION1,             // 8
-    WIDTH,                  // 9
-    HEIGHT,                 //10
-    CHARACTERS,             //11
-    LINES,                  //12
-    GLOBAL_INDEX,           //13
+    __SECTION1,             // 9
+    WIDTH,                  //10
+    HEIGHT,                 //11
+    CHARACTERS,             //12
+    LINES,                  //13
+    PAGES,                  //14
+    GLOBAL_INDEX,           //15
     
-    __SECTION2,             //14
-    ANIMATION_TIME,         //15
-    TIME,                   //16
-    FREED,                  //17
-    SOUND_FINISH_TIME,      //18
+    __SECTION2,             //16
+    ANIMATION_TIME,         //17
+    TIME,                   //18
+    FREED,                  //19
+    SOUND_FINISH_TIME,      //20
     
-    __SECTION3,             //19
-    LINE_LIST,              //20
-    VERTEX_BUFFER_LIST,     //21
+    __SECTION3,             //21
+    PAGES_ARRAY,            //22
     
-    __SECTION4,             //22
-    AUTOTYPE_FADE_IN,       //23
-    AUTOTYPE_SPEED,         //24
-    AUTOTYPE_POSITION,      //25
-    AUTOTYPE_METHOD,        //26
-    AUTOTYPE_SMOOTHNESS,    //27
-    AUTOTYPE_SOUND_ARRAY,   //28
-    AUTOTYPE_SOUND_OVERLAP, //29
+    __SECTION4,             //23
+    AUTOTYPE_PAGE,          //24
+    AUTOTYPE_FADE_IN,       //25
+    AUTOTYPE_SPEED,         //26
+    AUTOTYPE_POSITION,      //27
+    AUTOTYPE_METHOD,        //28
+    AUTOTYPE_SMOOTHNESS,    //29
+    AUTOTYPE_SOUND_ARRAY,   //30
+    AUTOTYPE_SOUND_OVERLAP, //31
     
-    __SECTION5,             //30
-    EVENT_PREVIOUS,         //31
-    EVENT_CHAR_PREVIOUS,    //32
-    EVENT_CHAR_ARRAY,       //33
-    EVENT_NAME_ARRAY,       //34
-    EVENT_DATA_ARRAY,       //35
-    
-    __SIZE                  //36
+    __SIZE                  //32
 }
 
 #macro __SCRIBBLE_ON_DIRECTX           ((os_type == os_windows) || (os_type == os_xboxone) || (os_type == os_uwp) || (os_type == os_win8native) || (os_type == os_winphone))
@@ -204,10 +216,10 @@ enum __SCRIBBLE
 
 #endregion
 
-if ( variable_global_exists("__scribble_global_count") )
+if (variable_global_exists("__scribble_global_count"))
 {
-    show_error("Scribble:\nscribble_init() should not be called twice!\n ", false);
-    exit;
+    if (SCRIBBLE_WARNING_REINITIALIZE) show_error("Scribble:\nscribble_init() should not be called twice!\n(Set SCRIBBLE_WARNING_REINITIALIZE to <false> to hide this warning)\n ", false);
+    return false;
 }
 
 show_debug_message("Scribble: Welcome to Scribble by @jujuadams! This is version " + __SCRIBBLE_VERSION + ", " + __SCRIBBLE_DATE);
@@ -270,6 +282,7 @@ else if ((asset_get_type(_default_font) != asset_font) && (asset_get_type(_defau
 }
 
 //Declare global variables
+global.__scribble_lcg               = date_current_datetime()*100;
 global.__scribble_font_directory    = _font_directory;
 global.__scribble_font_data         = ds_map_create();  //Stores a data array for each font defined inside Scribble
 global.__scribble_colours           = ds_map_create();  //Stores colour definitions, including custom colours
@@ -412,7 +425,7 @@ if (_auto_scan)
                     
                     if (asset_get_type(_font) != asset_font)
                     {
-                        show_debug_message("Scribble: WARNING! Autoscan found \"" + _file + "\", but \"" + _font + "\" was not found in the project");
+                        show_debug_message("Scribble: Warning! Autoscan found \"" + _file + "\", but \"" + _font + "\" was not found in the project as a font asset");
                     }
                     else
                     {
@@ -427,3 +440,5 @@ if (_auto_scan)
         ds_list_destroy(_directory_list);
     }
 }
+
+return true;

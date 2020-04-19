@@ -1,5 +1,5 @@
 starting_gear = true;
-//starting_gear = false;
+starting_gear = false;
 
 #region enum
 //TYPE OF ITEM

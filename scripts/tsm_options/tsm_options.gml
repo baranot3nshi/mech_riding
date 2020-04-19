@@ -1,0 +1,11 @@
+//opens the options menu
+
+
+// FULLSCREEN
+// WINDOW SIZE
+// MASTER VOLUME
+// MUSIC VOLUME
+// SFX VOLUME
+// SCREENSHAKE ON OFF
+// LANGUAGE?
+ 

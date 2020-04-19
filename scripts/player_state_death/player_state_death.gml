@@ -13,6 +13,8 @@ if (death_step = atk.atk1_init)
 	if (death_timer > .7)
 	{
 		global.glitch_FX += death_timer-1;
+		
+		global.fade_colour = c_white;
 		global.fade_FX_alpha += .015;
 	}
 
@@ -24,6 +26,4 @@ if (death_step = atk.atk1_init)
 	}
 }
 
-if (death_step = atk.atk1)
-{
-}
+//no need to reset because the player gets destroyed in obj_DEATHSCREEN

@@ -2,13 +2,18 @@
 if (global.SAVE)
 {
 	ds_map_secure_save(save_data,file_name);
+	
+		show_debug_message("game saved");
 	global.SAVE = false;
+	
 }
 
 //LOAD
-if (global.SAVE)
+if (global.LOAD)
 {
-	//LOADING CODE
+	//INSERT LOADING CODE HERE
 	
+	
+	show_debug_message("game loaded");
 	global.LOAD = false;
 }

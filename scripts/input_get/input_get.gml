@@ -15,6 +15,11 @@ but_down =				input_check_analogue	(0, E_INPUT_SLOT.DOWN) * global.dt
 but_down_long =			input_check_long		(0, E_INPUT_SLOT.DOWN) * global.dt && !but_left && !but_right
 but_up =				input_check_analogue	(0, E_INPUT_SLOT.UP) * global.dt
 
+but_left_pressed =		 input_check_pressed	(0, E_INPUT_SLOT.LEFT)
+but_right_pressed =		 input_check_pressed	(0, E_INPUT_SLOT.RIGHT)
+but_down_pressed =		 input_check_pressed	(0, E_INPUT_SLOT.DOWN)
+but_up_pressed =		 input_check_pressed	(0, E_INPUT_SLOT.UP)
+
 but_JUMP_charge =		input_check				(0, global.but_JUMP)
 but_JUMP_pressed =		input_check_pressed		(0, global.but_JUMP)
 but_JUMP_released =		input_check_released	(0, global.but_JUMP)
@@ -40,3 +45,6 @@ but_AIM_pressed =		input_check_pressed		(0, global.but_AIM)
 but_AIM_released =		input_check_released	(0, global.but_AIM)
 
 but_select =			input_check_pressed		(0, E_INPUT_SLOT.SELECT)
+
+but_CONFIRM =			input_check_pressed		(0, E_INPUT_SLOT.CIRCLE)
+but_CANCEL =			input_check_pressed		(0, E_INPUT_SLOT.CROSS)

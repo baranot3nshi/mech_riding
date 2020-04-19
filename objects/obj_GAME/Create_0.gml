@@ -1,4 +1,5 @@
 randomise();
+
 scribble_init("","fnt_mech_rider",false);
 scribble_add_font("fnt_mech_rider");
 
@@ -44,12 +45,8 @@ instance_create_depth(0,0,0,obj_CAMERA);
 instance_create_depth(0,0,0,obj_INVENTORY);
 instance_create_depth(0,0,0,obj_UI);
 instance_create_depth(0,0,0,obj_DEBUG);
-instance_create_depth(0,0,0,obj_MAP);
 instance_create_depth(0,0,0,obj_SAVE);
-instance_create_depth(0,0,0,obj_MAPPER);
 instance_create_depth(0,0,0,obj_OVERHEAD);
-
-
 
 
 //glitch shader init

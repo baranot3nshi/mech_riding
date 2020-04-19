@@ -37,12 +37,10 @@ if (!is_array(_scribble_array)
     var _string = string(_scribble_array);
     
     //Check the cache
-    var _cache_string = _string + ":" + string(global.scribble_state_line_min_height) + ":" + string(global.scribble_state_max_width);
+    var _cache_string = _string + ":" + string(global.scribble_state_line_min_height) + ":" + string(global.scribble_state_max_width) + ":" + string(global.scribble_state_max_height);
     if (ds_map_exists(global.__scribble_global_cache_map, _cache_string))
     {
-        //Grab the text element, and update the TIME property
         var _scribble_array = global.__scribble_global_cache_map[? _cache_string];
-        _scribble_array[@ __SCRIBBLE.TIME] = current_time;
     }
     else
     {

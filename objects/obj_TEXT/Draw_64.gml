@@ -22,7 +22,7 @@ var tn_y = tb_y + 68;
 var t_x = tb_x + 75;
 var t_y = tb_y + 16;
 
-var t_width = 255;
+
 
 ///================= drawing =================///
 
@@ -36,5 +36,5 @@ draw_sprite(UI_textbox, 0, tb_x, tb_y);
 draw_sprite(UI_textbox_next, 0, tn_x, tn_y)
 
 //draw text
-scribble_draw_set_wrap(-1,t_width)
-scribble_draw(t_x,t_y,"iiiàààdsvaòsdklmaòsdknvasdnvlksdmvlksnadvldPINGASisdnvasdnvasòdlvnaskmcdsjnasdklmaòsdknvasdnvlksdmvlksnadvldPINGASisdnvasdnvasòdlvnaskmcdsjnasdklm")
+
+element = scribble_draw(t_x,t_y, element)
