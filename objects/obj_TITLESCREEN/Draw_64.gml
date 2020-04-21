@@ -19,7 +19,7 @@ var cursor_x = tsm_x
 var cursor_y = tsm_y+command_buffer*cursor_pos
 
 //draw menu
-var i = 0; repeat(ts_menu_command.size)
+var i = 0; repeat(ts_menu_size)
 {
 	
 	//change colour if selected

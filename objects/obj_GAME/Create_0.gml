@@ -21,7 +21,7 @@ global.drone_type = undefined;
 //HP & AP
 global.HP_max = 3;
 global.HP = global.HP_max;
-global.HP = 1;
+//global.HP = 1;				//death test
 
 global.HP_mech1_max = 3;
 global.HP_mech1 = global.HP_mech1_max;
@@ -59,7 +59,7 @@ gb_shader = false;
 
 //volume
 audio_group_load(audiogroup_SFX)
-audio_group_set_gain(audiogroup_SFX,.01,0)
+audio_group_set_gain(audiogroup_SFX,.5,0)
 
 room_goto_next();
 

@@ -7,5 +7,5 @@ event_inherited();
 lifespan = 400
 x_spd_max = .5
 
-fx_timer = 0;
-fx = 0;
+fx_timer = -1;
+fx = -1;

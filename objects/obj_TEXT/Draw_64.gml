@@ -25,16 +25,18 @@ var t_y = tb_y + 16;
 
 
 ///================= drawing =================///
+if (alarm[0] = -1)
+{
+	//draw portrait
+	draw_sprite(portrait, 0, p_x, p_y);
 
-//draw portrait
-draw_sprite(portrait, 0, p_x, p_y);
+	//draw textbox
+	draw_sprite(UI_textbox, 0, tb_x, tb_y);
 
-//draw textbox
-draw_sprite(UI_textbox, 0, tb_x, tb_y);
+	//draw next
+	draw_sprite(UI_textbox_next, 0, tn_x, tn_y)
 
-//draw next
-draw_sprite(UI_textbox_next, 0, tn_x, tn_y)
+	//draw text
 
-//draw text
-
-element = scribble_draw(t_x,t_y, element)
+	element = scribble_draw(t_x,t_y, element)
+}
