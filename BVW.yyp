@@ -2151,14 +2151,6 @@
             }
         },
         {
-            "Key": "5d54fe31-e9e6-44c4-9b1d-a6b9d192048a",
-            "Value": {
-                "id": "e746afdf-95e2-455e-9c89-10b90e18c1c1",
-                "resourcePath": "scripts\\script217\\script217.yy",
-                "resourceType": "GMScript"
-            }
-        },
-        {
             "Key": "5db8e02c-a416-4829-b33b-190b02d129fc",
             "Value": {
                 "id": "8a496997-edf6-4860-be70-a418fa72429c",
@@ -4223,14 +4215,6 @@
             }
         },
         {
-            "Key": "b45a5f03-4924-4905-b516-56e9d37bea6e",
-            "Value": {
-                "id": "fa9ffaa4-3220-4b89-ab72-01f43313854b",
-                "resourcePath": "scripts\\tsm_load_game\\tsm_load_game.yy",
-                "resourceType": "GMScript"
-            }
-        },
-        {
             "Key": "b4b98e0d-7a35-4ad3-b567-f6aeea9eca39",
             "Value": {
                 "id": "351789a7-4b36-4c7f-97ab-88cf1adf7659",
@@ -6071,6 +6055,7 @@
         "85e4b2a1-4298-4bff-8b2c-83f01f1c68ad",
         "6afc2a56-db81-42f4-83c4-ad67a31b9f25",
         "357ac388-053d-4b3e-b6bb-1d7adbe0db53",
+        "56f2f6cb-b58e-4bd4-977d-aba0b78827a4",
         "bf4530ef-a1a3-4669-bfa6-d4649e8a0d25",
         "9b7091fa-70fc-4b93-8588-b153ecb411e3",
         "5dd8449f-f6bb-43af-a12c-513132c14f27",
@@ -6094,10 +6079,7 @@
         "4d5b4a91-13b3-4247-8154-e2efe2cb9137",
         "c1f5bc62-ff8e-438f-9bea-8222d2a2e3be",
         "5892d947-38a5-4e79-9a59-3772699a4fd8",
-        "b45a5f03-4924-4905-b516-56e9d37bea6e",
-        "32b1ce85-39df-4349-9d68-05f0e87b96d6",
-        "56f2f6cb-b58e-4bd4-977d-aba0b78827a4",
-        "5d54fe31-e9e6-44c4-9b1d-a6b9d192048a"
+        "32b1ce85-39df-4349-9d68-05f0e87b96d6"
     ],
     "tutorial": ""
 }
