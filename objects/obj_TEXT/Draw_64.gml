@@ -6,7 +6,7 @@ var inner_buffer = 5;
 
 ///================= text box coordinates =================///
 //textbox
-var tb_width = sprite_get_width(UI_textbox);
+var tb_width = sprite_get_width(spr_UI_textbox);
 var tb_x = vw/2 - tb_width/2
 var tb_y = 10;
 
@@ -31,10 +31,10 @@ if (alarm[0] = -1)
 	draw_sprite(portrait, 0, p_x, p_y);
 
 	//draw textbox
-	draw_sprite(UI_textbox, 0, tb_x, tb_y);
+	draw_sprite(spr_UI_textbox, 0, tb_x, tb_y);
 
 	//draw next
-	draw_sprite(UI_textbox_next, 0, tn_x, tn_y)
+	draw_sprite(spr_UI_textbox_next, 0, tn_x, tn_y)
 
 	//draw text
 

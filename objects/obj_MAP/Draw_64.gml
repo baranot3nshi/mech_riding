@@ -1,3 +1,6 @@
+if (room = rm_titlescreen){exit;}
+
+
 var _window_width = (draw_area_width*mtw);
 var _window_height = (draw_area_height*mtw);
 

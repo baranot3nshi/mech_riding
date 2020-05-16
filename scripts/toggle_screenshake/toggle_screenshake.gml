@@ -1,0 +1,1 @@
+global.screenshake_on = argument0;

@@ -1,5 +1,6 @@
-#region//VARIABLES INIT
 depth = -500;
+#region//VARIABLES INIT
+
 
 minimap = true;
 

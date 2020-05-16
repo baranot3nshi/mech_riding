@@ -7,6 +7,7 @@
 
 //When loading a game, that save data is relogged from the file to the save_data ds_map,
 //and the instances read from that file and set themselves to the right version of themselves.
+
 #endregion
 
 global.SAVE = false;
@@ -14,11 +15,11 @@ global.LOAD = false;
 
 save_data = ds_map_create();
 
-file_name = "SaveData.sav"
+save_file = "SaveData.sav"
 
 //load data at start game
-if (file_exists(file_name)) 
-{save_data = ds_map_secure_load(file_name);}
+if (file_exists(save_file)) 
+{save_data = ds_map_secure_load(save_file);}
 
 
 
@@ -27,7 +28,7 @@ if (file_exists(file_name))
 //player health ---
 //inventory ---
 
-//map info
+//map info ---
 //latest savepoint
 
 //played time

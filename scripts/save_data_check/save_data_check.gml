@@ -1,5 +1,8 @@
 ///arg (key)
 
+// returns the data stored in the save data under the specified key
+
+
 var _save_key = argument0;
 var _this_data = ds_map_find_value(obj_SAVE.save_data,_save_key)
 

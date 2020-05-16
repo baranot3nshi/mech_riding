@@ -3,6 +3,8 @@ randomise();
 scribble_init("","fnt_mech_rider",false);
 scribble_add_font("fnt_mech_rider");
 
+global.current_input = "gamepad"
+
 global.dt = 1;
 global.screenfreeze = 0;
 
@@ -47,7 +49,10 @@ instance_create_depth(0,0,0,obj_UI);
 instance_create_depth(0,0,0,obj_DEBUG);
 instance_create_depth(0,0,0,obj_SAVE);
 instance_create_depth(0,0,0,obj_OVERHEAD);
-
+instance_create_depth(0,0,0,obj_MAP);
+instance_create_depth(0,0,0,obj_MAPPER);
+instance_create_depth(0,0,0,obj_SETTINGS);
+instance_create_depth(0,0,0,obj_PAUSE_MENU);
 
 //glitch shader init
 BktGlitch_init(); //getting uniform pointers

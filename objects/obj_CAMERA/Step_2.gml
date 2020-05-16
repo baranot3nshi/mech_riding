@@ -64,10 +64,13 @@ if (instance_exists(follow))
 	var spd = .12;
 	
 	//screenshake
-	cur_x += random_range(global.screenshake,-global.screenshake);
-	cur_y += random_range(global.screenshake,-global.screenshake);
+	if (global.screenshake_on)
+	{
+		cur_x += random_range(global.screenshake,-global.screenshake);
+		cur_y += random_range(global.screenshake,-global.screenshake);
 	
-	global.screenshake = lerp(global.screenshake,0,.2)
+		global.screenshake = lerp(global.screenshake,0,.2)
+	}
 	
 	#region //directional slide
 	if (global.screenyank_x != 0 || global.screenyank_y != 0)

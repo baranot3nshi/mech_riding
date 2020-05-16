@@ -6,6 +6,9 @@ global.but_CHARGE = E_INPUT_SLOT.R;
 global.but_AIM = E_INPUT_SLOT.L;
 global.but_SHOOT = E_INPUT_SLOT.CIRCLE;
 
+if (keyboard_check(vk_anykey)) {global.current_input = "keyboard"}
+else if (gamepad_check_anykey()) {global.current_input = "gamepad"}
+
 but_pad_left =			input_check_pressed		(0,E_INPUT_SLOT.PAD_LEFT)
 but_pad_right =			input_check_pressed		(0,E_INPUT_SLOT.PAD_RIGHT)
 
@@ -45,6 +48,7 @@ but_AIM_pressed =		input_check_pressed		(0, global.but_AIM)
 but_AIM_released =		input_check_released	(0, global.but_AIM)
 
 but_select =			input_check_pressed		(0, E_INPUT_SLOT.SELECT)
+but_start =				input_check_pressed		(0, E_INPUT_SLOT.START)
 
 but_CONFIRM =			input_check_pressed		(0, E_INPUT_SLOT.CIRCLE)
 but_CANCEL =			input_check_pressed		(0, E_INPUT_SLOT.CROSS)

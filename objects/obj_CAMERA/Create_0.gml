@@ -21,6 +21,8 @@ display_set_gui_size(vw,vh)
 follow = obj_player;
 
 global.screenshake = 0;
+global.screenshake_on = true;
+
 global.screenyank_x = 0;
 global.screenyank_y = 0;
 
@@ -38,3 +40,4 @@ global.screenyank_y = 0;
 	depth = -500
 	
 	instant = true;
+	

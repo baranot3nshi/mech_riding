@@ -9,6 +9,9 @@ draw_set_colour(c_white);
 
 scribble_draw(_vw/2,20,"mech_rider")
 
+//credit   [TEMP]
+scribble_draw(_vw-90,_vh-15,"t3nshi 2019-2020")
+
 #region MENU
 //coordinates
 var tsm_x = 30;
@@ -19,7 +22,9 @@ var cursor_x = tsm_x
 var cursor_y = tsm_y+command_buffer*cursor_pos
 
 //draw menu
-var i = 0; repeat(ts_menu_size)
+if (file_exists(obj_SAVE.save_file)){var i = 0;} else {var i = 1;} //skip "continue" command on first boot
+
+repeat(ts_menu_size)
 {
 	
 	//change colour if selected

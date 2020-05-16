@@ -1,4 +1,4 @@
-///@descr HP, AP, screenfreeze, glitch_FX
+///@descr HP, AP, screenfreeze, glitch_FX, pause init
 
 ///========== HP ==========///
 
@@ -47,3 +47,7 @@ if (global.glitch_FX != 0)
 	global.glitch_FX --;
 	if (global.glitch_FX < 0) {global.glitch_FX = 0;}
 }
+
+///========== open_pause_menu ==========///
+input_get();
+if (but_start && room != rm_titlescreen) {global.PAUSE_MENU_show = true;}

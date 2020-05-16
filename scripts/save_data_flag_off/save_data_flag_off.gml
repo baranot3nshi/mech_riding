@@ -1,3 +1,7 @@
+///@arg save_key
+
+//sets the on/off flag for this key to off and saves it
+
 var _save_key = argument0;
 ds_map_replace(obj_SAVE.save_data,_save_key,false);
 

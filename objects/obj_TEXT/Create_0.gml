@@ -1,6 +1,6 @@
 depth = -600
 
-portrait = UI_portrait_violet_smile;
+portrait = spr_UI_portrait_violet_smile;
 
 spd = 1;
 smth = 0; //smoothness

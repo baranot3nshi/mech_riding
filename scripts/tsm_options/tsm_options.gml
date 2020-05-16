@@ -1,11 +1,7 @@
 //opens the options menu
 
+if (input_on) {audio_play_sound(snd_menu_confirm,0,false)}
+input_on = false;
 
-// FULLSCREEN
-// WINDOW SIZE
-// MASTER VOLUME
-// MUSIC VOLUME
-// SFX VOLUME
-// SCREENSHAKE ON OFF
-// LANGUAGE?
- 
+global.SETTINGS_show = true;
+

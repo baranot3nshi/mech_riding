@@ -23,7 +23,7 @@ var _tile = mtw-1;
 
 draw_sprite_tiled(spr_ui_minimap_bg,0,_mapX,_mapY)
 
-var _cur_room = 0; repeat(ds_list_size(world_data)) //current room to be drawn
+var _cur_room = 0; repeat(ds_list_size(world_data))
 {
 	
 	var cur_room_data = world_data[| _cur_room];

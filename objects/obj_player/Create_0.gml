@@ -32,6 +32,8 @@ enum mechs {
 #endregion
 
 #region common variables
+input_on = true;
+
 x_spd = 0;
 y_spd = 0;
 dir = 1;
