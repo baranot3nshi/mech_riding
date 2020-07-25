@@ -32,11 +32,11 @@ if (global.SETTINGS_show)
 			audio_play_sound(snd_menu_confirm,0,false);
 		}
 		/// close menu
-		if (but_CANCEL)
+		if (but_CANCEL || (instance_exists(obj_PAUSE_MENU) && but_CHARGE_pressed))
 		{
 			global.SETTINGS_show = false
 			if (instance_exists(obj_TITLESCREEN)) {obj_TITLESCREEN.input_on = true}
-			if (instance_exists(obj_PAUSE_MENU)) {obj_PAUSE_MENU.input_on = true}
+			if (instance_exists(obj_PAUSE_MENU)) {obj_PAUSE_MENU.input_on = true; obj_PAUSE_MENU.timer = 0;}
 			audio_play_sound(snd_menu_cancel,0,false);
 		}
 

@@ -1,4 +1,6 @@
-input_get();
+if (!global.PAUSE_MENU_show) {input_get();}
+
+
 //STATES
 switch(state)
 {

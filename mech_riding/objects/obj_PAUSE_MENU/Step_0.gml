@@ -2,6 +2,7 @@ if (input_on) {input_get();}
 	
 if (global.PAUSE_MENU_show)
 {
+	global.screenfreeze = 1;
 	timer -= .05
 	var glitch = 6
 	
@@ -56,10 +57,30 @@ if (global.PAUSE_MENU_show)
 	if (change_FX != 0) {change_FX--; 	 if (change_FX < 0) {change_FX = 0;}}
 	
 	//close
-	if (but_start && timer < - 1) {global.PAUSE_MENU_show = false;}
+	if ((but_start || but_CANCEL) && timer < - 1) {fade_fx = "start"; obj_GAME.pause_timer = 0;}
 	
 }
 
 else {
 	timer = 0;
+}
+
+
+// FADE FX
+if (fade_fx = "start")
+{
+	// set up fading fx
+	global.fade_colour = c_black;
+	global.fade_FX_alpha += .07;
+
+	// fade start
+	if (global.fade_FX_alpha >= 1) {fade_fx = "end"}
+}
+if (fade_fx = "end")
+{
+	// fade end
+	global.fade_FX_alpha -= .07;
+	global.PAUSE_MENU_show = false;
+	
+	if (global.fade_FX_alpha <= 0) {fade_fx = "stop"}
 }

@@ -1,3 +1,5 @@
+input_get();
+
 #region enum
 enum drone_states {
 	idle,

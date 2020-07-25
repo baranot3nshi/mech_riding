@@ -50,4 +50,25 @@ if (global.glitch_FX != 0)
 
 ///========== open_pause_menu ==========///
 input_get();
-if (but_start && room != rm_titlescreen) {global.PAUSE_MENU_show = true;}
+
+pause_timer++;
+if (but_start && room != rm_titlescreen && pause_timer > 10) {fade_fx = "start";}
+
+if (fade_fx = "start")
+{
+	// set up fading fx
+	global.fade_colour = c_black;
+	global.fade_FX_alpha += .5;
+
+	// fade start
+	if (global.fade_FX_alpha >= 1) {fade_fx = "end"	global.PAUSE_MENU_show = true;}
+}
+if (fade_fx = "end")
+{
+	
+	global.fade_colour = c_black;
+	global.fade_FX_alpha -= .07;
+	
+	// fade end
+	if (global.fade_FX_alpha <= 0) {fade_fx = "stop"}
+}

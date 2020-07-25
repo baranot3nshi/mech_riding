@@ -50,5 +50,5 @@ but_AIM_released =		input_check_released	(0, global.but_AIM)
 but_select =			input_check_pressed		(0, E_INPUT_SLOT.SELECT)
 but_start =				input_check_pressed		(0, E_INPUT_SLOT.START)
 
-but_CONFIRM =			input_check_pressed		(0, E_INPUT_SLOT.CIRCLE)
-but_CANCEL =			input_check_pressed		(0, E_INPUT_SLOT.CROSS)
+but_CONFIRM =			input_check_pressed		(0, E_INPUT_SLOT.CIRCLE)	|| keyboard_check_pressed(vk_enter) || keyboard_check_pressed(vk_space)
+but_CANCEL =			input_check_pressed		(0, E_INPUT_SLOT.CROSS)		|| keyboard_check_pressed(vk_escape)

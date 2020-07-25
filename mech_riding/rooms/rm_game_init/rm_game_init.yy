@@ -2,12 +2,12 @@
 {
     "name": "rm_game_init",
     "id": "568d64dd-5845-4268-8636-f932e5175460",
-    "creationCodeFile": "",
+    "creationCodeFile": "RoomCreationCode.gml",
     "inheritCode": false,
     "inheritCreationOrder": false,
     "inheritLayers": false,
     "instanceCreationOrderIDs": [
-        "482f5ccc-1653-4c3f-bc96-7a890894bef1"
+
     ],
     "IsDnD": false,
     "layers": [
@@ -25,7 +25,7 @@
             "inheritSubLayers": false,
             "inheritVisibility": false,
             "instances": [
-{"name": "inst_38E20F","id": "482f5ccc-1653-4c3f-bc96-7a890894bef1","colour": { "Value": 4294967295 },"creationCodeFile": "InstanceCreationCode_inst_38E20F.gml","creationCodeType": ".gml","ignore": false,"imageIndex": 0,"imageSpeed": 1,"inheritCode": false,"inheritItemSettings": false,"IsDnD": false,"m_originalParentID": "00000000-0000-0000-0000-000000000000","m_serialiseFrozen": false,"modelName": "GMRInstance","name_with_no_file_rename": "inst_38E20F","objId": "e51f4177-258a-49af-8b68-e3f99fdf513b","properties": null,"rotation": 0,"scaleX": 1,"scaleY": 1,"mvc": "1.1","x": 0,"y": 0}
+
             ],
             "layers": [
 

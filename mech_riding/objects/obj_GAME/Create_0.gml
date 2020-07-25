@@ -71,3 +71,6 @@ room_goto_next();
 print_fps = false;
 show_controls = false;
 
+// fade effect for pause
+fade_fx = "stop"
+pause_timer = 0;

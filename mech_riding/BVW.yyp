@@ -4,7 +4,8 @@
     "mvc": "1.0",
     "IsDnDProject": false,
     "configs": [
-        
+        "default",
+        "default;Editor"
     ],
     "option_ecma": false,
     "parentProject": {
@@ -1567,6 +1568,14 @@
             }
         },
         {
+            "Key": "3c8043af-c35e-4a12-8e43-30b6dbe80b26",
+            "Value": {
+                "id": "faf75297-ff77-4d6f-888c-c27a55a4d3d5",
+                "resourcePath": "rooms\\rm_editor\\rm_editor.yy",
+                "resourceType": "GMRoom"
+            }
+        },
+        {
             "Key": "3cd00fcf-b164-4d84-8cb9-52746260f567",
             "Value": {
                 "id": "78c54a4b-ca58-4f22-b52c-8bf758979180",
@@ -1740,14 +1749,6 @@
                 "id": "ca11e63c-88bd-4033-80fc-bf754f82fd35",
                 "resourcePath": "sprites\\spr_ui_mech1_corner_bot\\spr_ui_mech1_corner_bot.yy",
                 "resourceType": "GMSprite"
-            }
-        },
-        {
-            "Key": "442740ce-0284-4ef4-878c-523381697fcb",
-            "Value": {
-                "id": "2db098bb-5cd5-4597-a878-16722a4dbff6",
-                "resourcePath": "notes\\note1.yy",
-                "resourceType": "GMNotes"
             }
         },
         {
@@ -2428,14 +2429,6 @@
                 "id": "2e9950b2-fdb6-48b0-8503-ffe6e094fcf3",
                 "resourcePath": "views\\635e88cc-1bdc-4365-8e80-6b4ee42bb878.yy",
                 "resourceType": "GMFolder"
-            }
-        },
-        {
-            "Key": "63957d30-24c7-45c7-91d1-574c69187396",
-            "Value": {
-                "id": "f5ba724a-ebd8-4fba-804f-d271e042fdbf",
-                "resourcePath": "notes\\note0.yy",
-                "resourceType": "GMNotes"
             }
         },
         {
@@ -6156,14 +6149,6 @@
                 "id": "76e35ad1-3660-430e-a453-be9f9210d778",
                 "resourcePath": "sprites\\spr_platform\\spr_platform.yy",
                 "resourceType": "GMSprite"
-            }
-        },
-        {
-            "Key": "fe6e5723-19fe-4a26-a850-b98a27ca947d",
-            "Value": {
-                "id": "2e261c1c-befc-49dc-9603-a41b2f65e320",
-                "resourcePath": "notes\\note2.yy",
-                "resourceType": "GMNotes"
             }
         },
         {
