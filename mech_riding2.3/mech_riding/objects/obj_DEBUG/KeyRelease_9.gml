@@ -1,0 +1,1 @@
+show_controls = !show_controls

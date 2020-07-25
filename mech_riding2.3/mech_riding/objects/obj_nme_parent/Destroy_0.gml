@@ -1,0 +1,3 @@
+drop_pickup(pickup_droprate)
+create_particle(particle_number,break_particle_sprite)
+create_particle(1,spr_nme_destroy_particle2)
