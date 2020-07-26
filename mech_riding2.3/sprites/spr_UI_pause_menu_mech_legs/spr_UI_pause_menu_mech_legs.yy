@@ -68,8 +68,8 @@
     {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"9db0effb-3ad4-4c03-aaaa-bb7e0aa0a568","tags":[],"resourceType":"GMImageLayer",},
   ],
   "parent": {
-    "name": "Sprites",
-    "path": "folders/Sprites.yy",
+    "name": "pause menu",
+    "path": "folders/Sprites/UI/pause menu.yy",
   },
   "resourceVersion": "1.0",
   "name": "spr_UI_pause_menu_mech_legs",

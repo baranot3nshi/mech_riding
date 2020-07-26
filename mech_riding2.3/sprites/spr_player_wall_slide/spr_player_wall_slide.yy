@@ -68,8 +68,8 @@
     {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"ed5170ad-dc17-4ea6-b663-84092c5c34b0","tags":[],"resourceType":"GMImageLayer",},
   ],
   "parent": {
-    "name": "player",
-    "path": "folders/Sprites/player.yy",
+    "name": "player sprites",
+    "path": "folders/Player/Player/player sprites.yy",
   },
   "resourceVersion": "1.0",
   "name": "spr_player_wall_slide",

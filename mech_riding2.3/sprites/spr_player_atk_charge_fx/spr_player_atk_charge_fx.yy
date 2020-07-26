@@ -84,8 +84,8 @@
     {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"5640cefa-930f-4127-a7ab-c412218f55e4","tags":[],"resourceType":"GMImageLayer",},
   ],
   "parent": {
-    "name": "player",
-    "path": "folders/Sprites/atks/player.yy",
+    "name": "atk sprites",
+    "path": "folders/Player/Player/player atk/atk sprites.yy",
   },
   "resourceVersion": "1.0",
   "name": "spr_player_atk_charge_fx",

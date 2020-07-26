@@ -3,7 +3,7 @@
   "isCompatibility": false,
   "parent": {
     "name": "bug",
-    "path": "folders/Scripts/enemies/bug.yy",
+    "path": "folders/Scripts/enemy scrpts/bug.yy",
   },
   "resourceVersion": "1.0",
   "name": "nme_bug_s_idle",

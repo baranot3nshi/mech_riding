@@ -50,8 +50,8 @@
   "androidPermissions": [],
   "copyToTargets": -1,
   "parent": {
-    "name": "Extensions",
-    "path": "folders/Extensions.yy",
+    "name": "Junk",
+    "path": "folders/Junk.yy",
   },
   "resourceVersion": "1.0",
   "name": "GameBoy_Shader",

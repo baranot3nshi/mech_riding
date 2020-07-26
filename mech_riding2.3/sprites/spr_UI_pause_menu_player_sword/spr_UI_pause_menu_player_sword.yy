@@ -68,8 +68,8 @@
     {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"e2c83646-e4ca-4cf2-95a3-0d38be5ddb97","tags":[],"resourceType":"GMImageLayer",},
   ],
   "parent": {
-    "name": "Sprites",
-    "path": "folders/Sprites.yy",
+    "name": "pause menu",
+    "path": "folders/Sprites/UI/pause menu.yy",
   },
   "resourceVersion": "1.0",
   "name": "spr_UI_pause_menu_player_sword",

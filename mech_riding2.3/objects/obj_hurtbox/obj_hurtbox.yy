@@ -30,8 +30,8 @@
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "collision",
-    "path": "folders/Objects/collision.yy",
+    "name": "Collision",
+    "path": "folders/Collision.yy",
   },
   "resourceVersion": "1.0",
   "name": "obj_hurtbox",

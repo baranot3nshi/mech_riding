@@ -26,8 +26,8 @@
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "SYSTEM",
-    "path": "folders/Objects/SYSTEM.yy",
+    "name": "FX",
+    "path": "folders/FX.yy",
   },
   "resourceVersion": "1.0",
   "name": "obj_RENDER_outline",

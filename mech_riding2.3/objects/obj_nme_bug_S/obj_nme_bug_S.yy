@@ -32,8 +32,8 @@
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "enemies",
-    "path": "folders/Objects/enemies.yy",
+    "name": "Enemies",
+    "path": "folders/Enemies.yy",
   },
   "resourceVersion": "1.0",
   "name": "obj_nme_bug_S",

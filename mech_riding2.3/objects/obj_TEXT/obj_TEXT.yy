@@ -26,8 +26,8 @@
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "SYSTEM",
-    "path": "folders/Objects/SYSTEM.yy",
+    "name": "UI",
+    "path": "folders/UI.yy",
   },
   "resourceVersion": "1.0",
   "name": "obj_TEXT",

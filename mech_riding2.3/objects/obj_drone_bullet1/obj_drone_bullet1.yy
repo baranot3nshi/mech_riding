@@ -32,8 +32,8 @@
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "drone related",
-    "path": "folders/Objects/drone related.yy",
+    "name": "drone atk",
+    "path": "folders/Player/Player/player sprites/reflected bullets/Drone/drone atk.yy",
   },
   "resourceVersion": "1.0",
   "name": "obj_drone_bullet1",

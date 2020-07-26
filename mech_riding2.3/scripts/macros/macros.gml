@@ -13,5 +13,5 @@ function macros() {
 #macro XX 0 //x for coordinate arrays
 #macro YY 1 //y for coordinate arrays
 
-
+#macro EDITOR os_get_config() = "Editor"
 }

@@ -76,8 +76,8 @@
     {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"d63b00f6-de91-40a6-acd2-3b9a3c5dabbd","tags":[],"resourceType":"GMImageLayer",},
   ],
   "parent": {
-    "name": "mech",
-    "path": "folders/Sprites/atks/mech.yy",
+    "name": "atk sprites",
+    "path": "folders/Player/Mech 1/mech atk/atk sprites.yy",
   },
   "resourceVersion": "1.0",
   "name": "spr_mech1_jump_atk_fx",

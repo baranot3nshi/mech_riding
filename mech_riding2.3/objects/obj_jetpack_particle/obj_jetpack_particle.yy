@@ -31,8 +31,8 @@
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "FX",
-    "path": "folders/Objects/FX.yy",
+    "name": "small FX",
+    "path": "folders/FX/small FX.yy",
   },
   "resourceVersion": "1.0",
   "name": "obj_jetpack_particle",

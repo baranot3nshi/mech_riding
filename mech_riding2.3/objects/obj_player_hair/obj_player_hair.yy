@@ -33,8 +33,8 @@
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "player related",
-    "path": "folders/Objects/player related.yy",
+    "name": "Player",
+    "path": "folders/Player/Player.yy",
   },
   "resourceVersion": "1.0",
   "name": "obj_player_hair",

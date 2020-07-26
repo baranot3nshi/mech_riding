@@ -68,8 +68,8 @@
     {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"3b69415d-e166-4119-a14a-f04cfb7478ae","tags":[],"resourceType":"GMImageLayer",},
   ],
   "parent": {
-    "name": "drone",
-    "path": "folders/Sprites/drone.yy",
+    "name": "drone sprites",
+    "path": "folders/Player/Player/player sprites/reflected bullets/Drone/drone sprites.yy",
   },
   "resourceVersion": "1.0",
   "name": "spr_lock_on_charge_part",

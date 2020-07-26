@@ -88,8 +88,8 @@
     {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"ad4935e1-14e3-41c5-9b33-3d0f40891bd3","tags":[],"resourceType":"GMImageLayer",},
   ],
   "parent": {
-    "name": "mech1",
-    "path": "folders/Sprites/mech1.yy",
+    "name": "mech1 sprites",
+    "path": "folders/Player/Mech 1/mech1 sprites.yy",
   },
   "resourceVersion": "1.0",
   "name": "spr_mech1_walk",

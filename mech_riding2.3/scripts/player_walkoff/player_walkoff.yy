@@ -2,8 +2,8 @@
   "isDnD": false,
   "isCompatibility": false,
   "parent": {
-    "name": "player",
-    "path": "folders/Scripts/player.yy",
+    "name": "player scripts",
+    "path": "folders/Player/Player/player scripts.yy",
   },
   "resourceVersion": "1.0",
   "name": "player_walkoff",

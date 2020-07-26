@@ -80,8 +80,8 @@
     {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"cf0c2c95-cbc0-4c29-96fb-529784a33964","tags":[],"resourceType":"GMImageLayer",},
   ],
   "parent": {
-    "name": "player",
-    "path": "folders/Sprites/player.yy",
+    "name": "player sprites",
+    "path": "folders/Player/Player/player sprites.yy",
   },
   "resourceVersion": "1.0",
   "name": "spr_player_atk1_init",

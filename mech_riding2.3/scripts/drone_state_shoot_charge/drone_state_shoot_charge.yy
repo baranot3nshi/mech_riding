@@ -3,7 +3,7 @@
   "isCompatibility": false,
   "parent": {
     "name": "drone states",
-    "path": "folders/Scripts/drone/drone states.yy",
+    "path": "folders/Scripts/drone scripts/drone states.yy",
   },
   "resourceVersion": "1.0",
   "name": "drone_state_shoot_charge",

@@ -77,7 +77,7 @@
   ],
   "parent": {
     "name": "hammer",
-    "path": "folders/Sprites/mech1/hammer.yy",
+    "path": "folders/Player/mech1 sprites/hammer.yy",
   },
   "resourceVersion": "1.0",
   "name": "spr_mech1_jump_atk_charge_loop",

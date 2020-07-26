@@ -68,8 +68,8 @@
     {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"88ad697f-2e3a-4475-a968-599d7266757a","tags":[],"resourceType":"GMImageLayer",},
   ],
   "parent": {
-    "name": "Sprites",
-    "path": "folders/Sprites.yy",
+    "name": "item icons",
+    "path": "folders/Sprites/item icons.yy",
   },
   "resourceVersion": "1.0",
   "name": "spr_item_icon_jetpack",

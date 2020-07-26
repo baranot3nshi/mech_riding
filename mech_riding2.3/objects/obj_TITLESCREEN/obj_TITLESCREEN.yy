@@ -26,7 +26,7 @@
   "overriddenProperties": [],
   "parent": {
     "name": "SYSTEM",
-    "path": "folders/Objects/SYSTEM.yy",
+    "path": "folders/SYSTEM.yy",
   },
   "resourceVersion": "1.0",
   "name": "obj_TITLESCREEN",

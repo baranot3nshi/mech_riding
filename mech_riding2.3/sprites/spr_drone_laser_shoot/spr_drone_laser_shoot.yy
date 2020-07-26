@@ -88,8 +88,8 @@
     {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"d425375a-7a37-49fa-9df5-ba5001b316f1","tags":[],"resourceType":"GMImageLayer",},
   ],
   "parent": {
-    "name": "drone",
-    "path": "folders/Sprites/atks/drone.yy",
+    "name": "atk sprites",
+    "path": "folders/Player/Drone/drone atk/atk sprites.yy",
   },
   "resourceVersion": "1.0",
   "name": "spr_drone_laser_shoot",

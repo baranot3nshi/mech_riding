@@ -3,7 +3,7 @@
   "isCompatibility": false,
   "parent": {
     "name": "walker",
-    "path": "folders/Scripts/enemies/walker.yy",
+    "path": "folders/Scripts/enemy scrpts/walker.yy",
   },
   "resourceVersion": "1.0",
   "name": "nme_walker_state_roam",

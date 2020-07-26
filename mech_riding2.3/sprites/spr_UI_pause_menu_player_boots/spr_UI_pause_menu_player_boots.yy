@@ -68,8 +68,8 @@
     {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"f46ba9bc-53c3-4cd7-8424-a07060e07651","tags":[],"resourceType":"GMImageLayer",},
   ],
   "parent": {
-    "name": "Sprites",
-    "path": "folders/Sprites.yy",
+    "name": "pause menu",
+    "path": "folders/Sprites/UI/pause menu.yy",
   },
   "resourceVersion": "1.0",
   "name": "spr_UI_pause_menu_player_boots",

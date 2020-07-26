@@ -68,8 +68,8 @@
     {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"6bf1a2cd-b307-41c3-b38d-495b888b0983","tags":[],"resourceType":"GMImageLayer",},
   ],
   "parent": {
-    "name": "player",
-    "path": "folders/Sprites/player.yy",
+    "name": "player sprites",
+    "path": "folders/Player/Player/player sprites.yy",
   },
   "resourceVersion": "1.0",
   "name": "spr_player_hurt",

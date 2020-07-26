@@ -68,8 +68,8 @@
     {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"93404d9e-5d81-47a5-9f8f-eecf5cfe35c8","tags":[],"resourceType":"GMImageLayer",},
   ],
   "parent": {
-    "name": "Sprites",
-    "path": "folders/Sprites.yy",
+    "name": "settings",
+    "path": "folders/Sprites/UI/settings.yy",
   },
   "resourceVersion": "1.0",
   "name": "spr_UI_settings_slider_bar",

@@ -80,8 +80,8 @@
     {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"3ef58f90-982f-4644-9a6b-f0bb9570772f","tags":[],"resourceType":"GMImageLayer",},
   ],
   "parent": {
-    "name": "drone",
-    "path": "folders/Sprites/drone.yy",
+    "name": "drone sprites",
+    "path": "folders/Player/Player/player sprites/reflected bullets/Drone/drone sprites.yy",
   },
   "resourceVersion": "1.0",
   "name": "spr_drone_bullet_big",

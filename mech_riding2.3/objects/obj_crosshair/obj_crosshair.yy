@@ -32,8 +32,8 @@
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "drone related",
-    "path": "folders/Objects/drone related.yy",
+    "name": "Drone",
+    "path": "folders/Player/Drone.yy",
   },
   "resourceVersion": "1.0",
   "name": "obj_crosshair",

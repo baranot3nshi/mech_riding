@@ -76,8 +76,8 @@
     {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"baaf570d-3a98-4c88-80a8-13f1be0e51d9","tags":[],"resourceType":"GMImageLayer",},
   ],
   "parent": {
-    "name": "drone",
-    "path": "folders/Sprites/atks/drone.yy",
+    "name": "atk sprites",
+    "path": "folders/Player/Drone/drone atk/atk sprites.yy",
   },
   "resourceVersion": "1.0",
   "name": "spr_drone_bullet_destroy",

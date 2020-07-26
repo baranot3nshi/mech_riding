@@ -33,8 +33,8 @@
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "atks",
-    "path": "folders/Objects/atks.yy",
+    "name": "mech atk",
+    "path": "folders/Player/Mech 1/mech atk.yy",
   },
   "resourceVersion": "1.0",
   "name": "obj_mech1_dash_atk",

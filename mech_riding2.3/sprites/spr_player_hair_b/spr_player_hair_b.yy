@@ -69,7 +69,7 @@
   ],
   "parent": {
     "name": "FX",
-    "path": "folders/Sprites/player/FX.yy",
+    "path": "folders/Player/player sprites/FX.yy",
   },
   "resourceVersion": "1.0",
   "name": "spr_player_hair_b",

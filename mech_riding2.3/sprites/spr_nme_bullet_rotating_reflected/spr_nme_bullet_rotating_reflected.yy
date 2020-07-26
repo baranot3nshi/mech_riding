@@ -80,8 +80,8 @@
     {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"bf55fdba-73cf-4b3b-876b-3a2b872cfd37","tags":[],"resourceType":"GMImageLayer",},
   ],
   "parent": {
-    "name": "atks",
-    "path": "folders/Sprites/atks.yy",
+    "name": "reflected bullets",
+    "path": "folders/Player/Player/player sprites/reflected bullets.yy",
   },
   "resourceVersion": "1.0",
   "name": "spr_nme_bullet_rotating_reflected",

@@ -76,8 +76,8 @@
     {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"7073906f-5da6-4818-b3a0-e1166a06f168","tags":[],"resourceType":"GMImageLayer",},
   ],
   "parent": {
-    "name": "mech1",
-    "path": "folders/Sprites/mech1.yy",
+    "name": "mech1 sprites",
+    "path": "folders/Player/Mech 1/mech1 sprites.yy",
   },
   "resourceVersion": "1.0",
   "name": "spr_mech1_dash_atk_post",

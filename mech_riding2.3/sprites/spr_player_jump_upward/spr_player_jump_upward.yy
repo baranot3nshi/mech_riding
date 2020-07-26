@@ -68,8 +68,8 @@
     {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"f0775a42-2d5b-4700-a0d3-08b5825aeb36","tags":[],"resourceType":"GMImageLayer",},
   ],
   "parent": {
-    "name": "player",
-    "path": "folders/Sprites/player.yy",
+    "name": "player sprites",
+    "path": "folders/Player/Player/player sprites.yy",
   },
   "resourceVersion": "1.0",
   "name": "spr_player_jump_upward",

@@ -84,8 +84,8 @@
     {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"272804c5-a5ea-42ee-98f9-ae9fd4720cd3","tags":[],"resourceType":"GMImageLayer",},
   ],
   "parent": {
-    "name": "mech",
-    "path": "folders/Sprites/atks/mech.yy",
+    "name": "atk sprites",
+    "path": "folders/Player/Mech 1/mech atk/atk sprites.yy",
   },
   "resourceVersion": "1.0",
   "name": "spr_mech1_atk1_fx",

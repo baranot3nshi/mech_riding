@@ -1,1 +1,0 @@
-window_set_size(room_width,room_height)

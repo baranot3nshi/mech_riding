@@ -68,8 +68,8 @@
     {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"b71fb911-05d3-4ed6-9d64-f7f00ea69f24","tags":[],"resourceType":"GMImageLayer",},
   ],
   "parent": {
-    "name": "Sprites",
-    "path": "folders/Sprites.yy",
+    "name": "pause menu",
+    "path": "folders/Sprites/UI/pause menu.yy",
   },
   "resourceVersion": "1.0",
   "name": "spr_UI_pause_menu_cursor",

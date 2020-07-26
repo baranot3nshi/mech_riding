@@ -27,8 +27,8 @@
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "mech related",
-    "path": "folders/Objects/mech related.yy",
+    "name": "Mech 1",
+    "path": "folders/Player/Mech 1.yy",
   },
   "resourceVersion": "1.0",
   "name": "obj_mech1_enter_back",

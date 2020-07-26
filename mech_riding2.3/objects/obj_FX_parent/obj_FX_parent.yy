@@ -26,8 +26,8 @@
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "parents",
-    "path": "folders/Objects/parents.yy",
+    "name": "Parent Objects",
+    "path": "folders/Parent Objects.yy",
   },
   "resourceVersion": "1.0",
   "name": "obj_FX_parent",

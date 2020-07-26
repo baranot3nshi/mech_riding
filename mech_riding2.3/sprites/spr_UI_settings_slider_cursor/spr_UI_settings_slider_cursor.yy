@@ -68,8 +68,8 @@
     {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"a3f065f3-7838-41c6-ad7d-bb1125020439","tags":[],"resourceType":"GMImageLayer",},
   ],
   "parent": {
-    "name": "Sprites",
-    "path": "folders/Sprites.yy",
+    "name": "settings",
+    "path": "folders/Sprites/UI/settings.yy",
   },
   "resourceVersion": "1.0",
   "name": "spr_UI_settings_slider_cursor",

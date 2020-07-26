@@ -29,8 +29,8 @@
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "TILES",
-    "path": "folders/Objects/TILES.yy",
+    "name": "Environment",
+    "path": "folders/Environment.yy",
   },
   "resourceVersion": "1.0",
   "name": "obj_tile_rock_heavy_S",

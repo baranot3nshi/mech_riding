@@ -76,8 +76,8 @@
     {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"31b47e77-5398-4d0b-b212-a4dba7bdcb9c","tags":[],"resourceType":"GMImageLayer",},
   ],
   "parent": {
-    "name": "atks",
-    "path": "folders/Sprites/atks.yy",
+    "name": "reflected bullets",
+    "path": "folders/Player/Player/player sprites/reflected bullets.yy",
   },
   "resourceVersion": "1.0",
   "name": "spr_bullet2_reflected_destroy",

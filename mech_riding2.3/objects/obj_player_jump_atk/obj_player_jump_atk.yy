@@ -31,8 +31,8 @@
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "atks",
-    "path": "folders/Objects/atks.yy",
+    "name": "player atk",
+    "path": "folders/Player/Player/player atk.yy",
   },
   "resourceVersion": "1.0",
   "name": "obj_player_jump_atk",

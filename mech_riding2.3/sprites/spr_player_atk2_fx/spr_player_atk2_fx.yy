@@ -80,8 +80,8 @@
     {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"6dd1f5ee-5d6a-4e48-8a63-e98a337ba838","tags":[],"resourceType":"GMImageLayer",},
   ],
   "parent": {
-    "name": "player",
-    "path": "folders/Sprites/atks/player.yy",
+    "name": "atk sprites",
+    "path": "folders/Player/Player/player atk/atk sprites.yy",
   },
   "resourceVersion": "1.0",
   "name": "spr_player_atk2_fx",

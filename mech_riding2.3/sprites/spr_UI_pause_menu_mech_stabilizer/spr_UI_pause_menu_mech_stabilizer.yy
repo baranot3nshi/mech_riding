@@ -68,8 +68,8 @@
     {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"ec7e44e1-bd99-45e6-a165-77db538f3455","tags":[],"resourceType":"GMImageLayer",},
   ],
   "parent": {
-    "name": "Sprites",
-    "path": "folders/Sprites.yy",
+    "name": "pause menu",
+    "path": "folders/Sprites/UI/pause menu.yy",
   },
   "resourceVersion": "1.0",
   "name": "spr_UI_pause_menu_mech_stabilizer",

@@ -68,8 +68,8 @@
     {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"8dfeec1f-b7b9-4149-9128-bb0a93c169a9","tags":[],"resourceType":"GMImageLayer",},
   ],
   "parent": {
-    "name": "Sprites",
-    "path": "folders/Sprites.yy",
+    "name": "item icons",
+    "path": "folders/Sprites/item icons.yy",
   },
   "resourceVersion": "1.0",
   "name": "spr_item_icon_HPUP",

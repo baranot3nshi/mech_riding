@@ -72,8 +72,8 @@
     {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"8bb0c310-7325-43ab-8803-389b89aa82f4","tags":[],"resourceType":"GMImageLayer",},
   ],
   "parent": {
-    "name": "mech1",
-    "path": "folders/Sprites/mech1.yy",
+    "name": "mech1 sprites",
+    "path": "folders/Player/Mech 1/mech1 sprites.yy",
   },
   "resourceVersion": "1.0",
   "name": "spr_mech1_jump_atk_init_old",
