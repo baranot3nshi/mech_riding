@@ -13,3 +13,7 @@ if (collision_line( bottom_wall.bbox_left+3 , bottom_wall.bbox_top-1,
 	//VFX
 	//if (!instance_exists(obj_charged_FX)) instance_create_depth(x,y-20, obj_player.depth - 15, obj_charged_FX)
 }
+
+//set dir to facing direction
+if (variable_instance_exists(obj_player, dir)) {dir = obj_player.dir;} else {dir = image_xscale;}
+image_xscale = dir;

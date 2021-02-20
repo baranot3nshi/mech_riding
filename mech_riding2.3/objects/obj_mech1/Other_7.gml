@@ -8,6 +8,7 @@ if (sprite_index = spr_mech1_enter)
 	
 	obj_player.x = x;
 	obj_player.y = y;
+	obj_player.dir = dir;
 	obj_player.can_move = true;
 	obj_player.state = states.on_ground;
 }

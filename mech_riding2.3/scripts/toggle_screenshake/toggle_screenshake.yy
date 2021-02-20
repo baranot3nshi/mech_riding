@@ -3,7 +3,7 @@
   "isCompatibility": false,
   "parent": {
     "name": "settings scripts",
-    "path": "folders/SYSTEM/UI/settings scripts.yy",
+    "path": "folders/Collision/SYSTEM/UI/settings scripts.yy",
   },
   "resourceVersion": "1.0",
   "name": "toggle_screenshake",

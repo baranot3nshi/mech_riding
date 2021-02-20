@@ -228,7 +228,10 @@ else if (sprite_index = spr_player_hair_b)
 }
 
 if (obj_player.current_mech = mechs.transition)
-{real_Y = Y - 3}
+{
+	//real_Y = Y - 3
+	visible = false;
+}
 
 var anim_flipping = sign(obj_player.dir); //needed to flip the animation offset
 

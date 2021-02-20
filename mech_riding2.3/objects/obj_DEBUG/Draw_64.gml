@@ -44,6 +44,7 @@ if (debug)
 	draw_text_outlined(_x,5+_y+_s*14,c1,c2,"drone owned = " + string(global.inventory[# item.drone1, inv.have]))
 	draw_text_outlined(_x,5+_y+_s*15,c1,c2,"current input = " + string(global.current_input))
 	draw_text_outlined(_x,5+_y+_s*16,c1,c2,"pause timer = " + string(obj_GAME.pause_timer))
+	draw_text_outlined(_x,5+_y+_s*17,c1,c2,"current mech = " + string(obj_player.current_mech))
 
 
 
